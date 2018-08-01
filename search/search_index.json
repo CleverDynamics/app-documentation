@@ -1,0 +1,89 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "Additions Documentation\n\n\nThis is the documentation for Dynamics Additions range of products from Technology Management Ltd.",
+            "title": "Home"
+        },
+        {
+            "location": "/#additions-documentation",
+            "text": "This is the documentation for Dynamics Additions range of products from Technology Management Ltd.",
+            "title": "Additions Documentation"
+        },
+        {
+            "location": "/Clever Credit/User Guide/Home/",
+            "text": "Clever Credit gives you better control of overdue balances and approaching\ncredit limits. It puts chosen documents (for example Sales Orders) on hold if a\ncustomer has overdue balances or a Sales Order would put them over their Credit\nLimit. You can give them defined User Specific Monetary Authorisation limits to\nenable Sales Orders to be released as required and/or define a specific grace\nperiod for overdue balances. Users can be set as Credit Controllers and be\nassigned to specific accounts. This Addition also has new features designed to\nassist Credit Controllers in the chasing of debts and ensuring timely payment,\nas well as helping with the recording of promised payment dates and ensuring\nthey are followed up on. These To-Do\u2019s can be created manually or automatically\nand are automatically closed if the payment comes in.",
+            "title": "About"
+        },
+        {
+            "location": "/Clever Credit/User Guide/General Setup/",
+            "text": "",
+            "title": "Clever Credit Setup"
+        },
+        {
+            "location": "/Clever Credit/User Guide/Credit Controllers/",
+            "text": "",
+            "title": "Credit Controllers"
+        },
+        {
+            "location": "/Clever Credit/User Guide/Setup Wizard/",
+            "text": "",
+            "title": "Clever Credit - Assisted Setup"
+        },
+        {
+            "location": "/Clever Credit/User Guide/Credit Controllers Wizard/",
+            "text": "",
+            "title": "New Credit Controllers - Assisted Setup"
+        },
+        {
+            "location": "/Clever Credit/User Guide/Ageing Bands/",
+            "text": "",
+            "title": "Ageing Bands"
+        },
+        {
+            "location": "/Clever Credit/User Guide/Payment Methods/",
+            "text": "",
+            "title": "Payment Methods"
+        },
+        {
+            "location": "/Clever Credit/User Guide/Credit Management Status Codes/",
+            "text": "",
+            "title": "Clever Credit Status Codes"
+        },
+        {
+            "location": "/Clever Credit/User Guide/Customer Card/",
+            "text": "",
+            "title": "Clever Credit FastTab"
+        },
+        {
+            "location": "/Clever Credit/User Guide/Credit Held List/",
+            "text": "",
+            "title": "Credit Held List"
+        },
+        {
+            "location": "/Clever Credit/User Guide/Releasing a Credit Held Document/",
+            "text": "",
+            "title": "Managing Credit Held Document(s)"
+        },
+        {
+            "location": "/Clever Credit/User Guide/Credit Control Screen/",
+            "text": "",
+            "title": "Clever Credit"
+        },
+        {
+            "location": "/Clever Credit/User Guide/Credit Control Interactions/",
+            "text": "",
+            "title": "Clever Interactions and To-do"
+        },
+        {
+            "location": "/Clever Credit/User Guide/Adding Notes/",
+            "text": "",
+            "title": "Adding Notes"
+        },
+        {
+            "location": "/Clever Credit/User Guide/Appendix/",
+            "text": "Deployment:\n Built entirely in NAV, no third-party software to install or\nlicense.\n\n\nGrouping Records:\n Allows the user to highlight multiple records and choose\nwhether to: Release multiple documents from the Credit Held List, update\nmultiple Ledger Entries at once, or pay multiple Invoices early if required.\n\n\nConfiguration:\n Credit Management allows Document Types to be configured by\nany field in the Credit Control table, such as by Credit Controller or Payment\nTerms Code.\n\n\nCustomization:\n Can decide on global Credit Management settings based on\nDocument Type.\n\n\nPersonalization:\n Can override global settings created in Credit Management\nSetup and personalise them to individual customers in their Customer Card e.g.\nfor a customer who you would never want to put on Credit Hold, regardless of\nDocument Type. Within User Setup, it is also possible to personalise the Credit\nManagement functionality on a user by user basis within the NAV system, such as\nby setting different Credit Held Release Limits for different users if required.\n\n\nCustom Table Layout:\n This Addition allows filtering by Balance (LCY) if\nneeded, making it easier to understand data. On the Credit Control page, you are\nalso able to filter by the Ageing of Accounts and differentiate the ageing of\ndebts by 30, 60, 90, 120, and 120+ days.\n\n\nInteraction Method:\n You can link the Credit Management Addition to an\nautomated phone dialler system (TAPI) with customers, as well as interact via\nemail to chase up payments.\n\n\nPlaceholders:\n Document Fields can be created in Credit Management, such as\nnew Credit Management Status Codes. These can then be applied when updating\nLedger Entries.\n\n\nCompatibility with Existing Bespoke:\n Logic can be configured to use existing\nbespoke functionality such as the Cash Receipt Journal.\n\n\nNAV Versions:\n Supports NAV 2017 and later",
+            "title": "Appendix"
+        }
+    ]
+}
