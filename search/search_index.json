@@ -2,13 +2,13 @@
     "docs": [
         {
             "location": "/",
-            "text": "Additions Documentation\n\n\nThis is the documentation for Dynamics Additions range of products from Technology Management Ltd.",
+            "text": "Clever Dynamics\n\n\nWelcome to the documentation for the Clever Dynamics range of apps for Microsoft\nDynamics 365 Business Central.\n\n\nBrowse the table of contents on the left of this page or enter search terms in\nthe box above.\n\n\nwww.cleverdynamics.co.uk",
             "title": "Home"
         },
         {
-            "location": "/#additions-documentation",
-            "text": "This is the documentation for Dynamics Additions range of products from Technology Management Ltd.",
-            "title": "Additions Documentation"
+            "location": "/#clever-dynamics",
+            "text": "Welcome to the documentation for the Clever Dynamics range of apps for Microsoft\nDynamics 365 Business Central.  Browse the table of contents on the left of this page or enter search terms in\nthe box above.  www.cleverdynamics.co.uk",
+            "title": "Clever Dynamics"
         },
         {
             "location": "/Clever Credit/User Guide/Home/",
