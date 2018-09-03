@@ -38,7 +38,7 @@
         {
             "location": "/Clever Credit/User Guide/Ageing Bands/",
             "text": "",
-            "title": "Ageing Bands"
+            "title": "Aging Bands"
         },
         {
             "location": "/Clever Credit/User Guide/Payment Methods/",
@@ -79,6 +79,71 @@
             "location": "/Clever Credit/User Guide/Adding Notes/",
             "text": "",
             "title": "Adding Notes"
+        },
+        {
+            "location": "/MES/User Guide/Portal Framework/",
+            "text": "",
+            "title": "Portal Framework"
+        },
+        {
+            "location": "/Clever Promotions/User Guide/Sales_Receivables Setup/",
+            "text": "",
+            "title": "Sales & Receivables Setup"
+        },
+        {
+            "location": "/Clever Promotions/User Guide/Clever Promotions List/",
+            "text": "",
+            "title": "Clever Promotions List"
+        },
+        {
+            "location": "/Clever Promotions/User Guide/Promotions Card/Promotions Card/",
+            "text": "",
+            "title": "General FastTab"
+        },
+        {
+            "location": "/Clever Promotions/User Guide/Promotions Card/Customer FastTab/",
+            "text": "",
+            "title": "Customer FastTab"
+        },
+        {
+            "location": "/Clever Promotions/User Guide/Promotions Card/Qualification Criteria FastTab/",
+            "text": "",
+            "title": "Qualification Criteria FastTab"
+        },
+        {
+            "location": "/Clever Promotions/User Guide/Promotions Card/Promotions Benefit FastTab/",
+            "text": "",
+            "title": "Promotions Benefit FastTab"
+        },
+        {
+            "location": "/Clever Promotions/User Guide/Promotion Codes/",
+            "text": "",
+            "title": "Promotion Codes"
+        },
+        {
+            "location": "/Clever Promotions/User Guide/Clever Promtions_ Assisted Setup/",
+            "text": "",
+            "title": "Clever Promotions - Assisted Setup"
+        },
+        {
+            "location": "/Clever Promotions/User Guide/Promotion Codes_Assisted Setup/",
+            "text": "",
+            "title": "Promotion Codes - Assisted Setup"
+        },
+        {
+            "location": "/Clever Promotions/User Guide/Applying_unapplying Promotions/",
+            "text": "",
+            "title": "Applying & Un-Applying Promotions"
+        },
+        {
+            "location": "/Clever Promotions/User Guide/Document Promotion Codes/",
+            "text": "",
+            "title": "Document Promotion Codes"
+        },
+        {
+            "location": "/Clever Promotions/User Guide/Promotion Summary/",
+            "text": "",
+            "title": "Promotion Summary"
         }
     ]
 }
