@@ -42,6 +42,8 @@
     
       <link rel="stylesheet" href="../../../assets/stylesheets/application.8d40d89b.css">
       
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.6079476c.css">
+      
     
     
       <script src="../../../assets/javascripts/modernizr.1aa3b519.js"></script>
@@ -49,8 +51,8 @@
     
       <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
-        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Calibri+Light:300,400,400i,700|">
+        <style>body,input{font-family:"Calibri Light","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"","Courier New",Courier,monospace}</style>
       
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
@@ -58,7 +60,9 @@
     
   </head>
   
-    <body dir="ltr">
+    
+    
+    <body dir="ltr" data-md-color-primary="teal" data-md-color-accent="">
   
     <svg class="md-svg">
       <defs>
@@ -687,9 +691,73 @@
                 
                   <h1>Clever Interactions and To-do</h1>
                 
-                <p><img alt="" src="../media/eacf1d3b16a4bd017fe641dee807650d.png" /></p>
-<p><img alt="" src="../media/60c87d604e3c252e049af9713882e87a.png" /></p>
-<p><img alt="" src="../media/82aa1013620a99cc931d5468eadf0c09.png" /></p>
+                <p>The customer balances seen on the Clever Credit List page can be drilled down
+into, giving you access to the Customer Ledger Entries that make up the balance
+you are seeing on the page.</p>
+<p><img alt="" src="../media/4b6af2d2192cf6d2b1344944b1ddcf12.png" /></p>
+<p><img alt="" src="../media/e59e7983f844fe283216963f992a619f.png" /></p>
+<p>From here you can then use the <strong>Make Phone Call</strong> button to create a <strong>Credit
+Control Interaction</strong> for a single or selection of ledger entries.</p>
+<p>Credit Control Interactions are a way of recording interactions with customers
+related to Credit Control. The Make Phone Call button is also available directly
+from the Credit Control Screen, and from the Customer Card.</p>
+<p>Once the Credit Control Interaction is open, you will have quick access to the
+necessary information for making a phone call to the customer. You can see each
+customer ledger entry, along with the amount and due date of the payment. The
+Credit Control Contact details are shown, and notes can be added to the
+interaction for future reference.</p>
+<p><img alt="" src="../media/badb86926df4a980350a659c79165611.png" /></p>
+<p>Ticking to <strong>Select</strong> individual invoices being discussed will add up the
+amounts and populate the fields <strong>Selected Entries Remaining Amount</strong> &amp;
+<strong>Selected Entries Remaining Amount (LCY</strong>), on the interaction header.</p>
+<p>As you are querying payments with the customer you can update the <strong>Clever
+Credit Status Code</strong> of the entries and add notes to the interaction where
+necessary. These functions are covered in more detail in other sections of the
+user guide.</p>
+<p>It is important to update Customer Ledger Entries with the results of your
+interactions. Details such as <strong>Promised Payment Dates</strong> and whether a full
+payment or part payment will be made can be recorded.</p>
+<p>From the Credit Control Interaction, choosing <strong>Update Selected Entries</strong> will
+allow one or more entries to be updated at once. The button can be found on the
+ribbon of the interaction card.</p>
+<p>Choosing to Update Selected Entries will bring up the following dialog box:</p>
+<p><img alt="" src="../media/14147892ee7ccbd0b688f845cb8bb893.png" /></p>
+<p>Ticking the option <strong>Full Amount</strong> means that the customer has promised to pay
+the full amount of the overdue invoice. If ticked the <strong>Promised Payment
+Amount</strong> greys out.</p>
+<p>If they are going to pay less than the full amount, then the Full Amount check
+box needs to be unticked, which will then allow the desired amount to be entered
+in the Promised Payment Amount.</p>
+<p>A <strong>Clever Credit Status Code</strong> can also be assigned to the entry, this will
+help to track the status of the entries. Future interactions are then scheduled
+to follow up on previous calls based on the status.</p>
+<p><img alt="" src="../media/909c1c50bc2ffaec6a5dc7b9842c6a96.png" /></p>
+<p>The creation of Clever Credit Interactions is then visible on the Customer card
+on the <strong>Interactions</strong> FactBox. This acts as a log for any calls/interaction
+you have had with the Customer.</p>
+<p><img alt="" src="../media/fa3067ed8e5fe7e15455c942e177f31f.png" /></p>
+<p>Clicking on the <strong>Call</strong> field will bring up a pop-out window, relating to that
+interaction, giving details for that record.</p>
+<p>This includes information such as any <strong>Notes</strong> made on a Customer Ledger Entry
+or promised payment dates.</p>
+<p>Having this information readily available means that should another Credit
+Controller need to interact with the Customer they are easily able to pick up
+the interaction and deal with it based on previous interactions and notes.</p>
+<p><img alt="" src="../media/f7be80c6a650670baababf06b80e74b0.png" /></p>
+<p>Once this interaction is completed, a <strong>Clever Credit To-Do</strong> is sometimes
+created.</p>
+<p>A Credit Control To-Do operates as a reminder of calls that need to be followed
+up on. These are created when <strong>Promised Payment Dates</strong> are entered on the
+Customer Ledger Entries as part of the interaction. If this is the case the
+description of the To-Do will state as follows: <em>Check promised payment has been
+received</em>.</p>
+<p>When the Next Interaction Date is populated on the interaction header, we
+populate the description with the text: <em>Follow up call from %1</em> (where %1 is
+the date of this interaction).</p>
+<p>This page shows us the Credit Control To-Do List. This can be filtered down to
+invoices that are open and closed. If an invoice is paid early, its status will
+be changed to closed automatically.</p>
+<p><img alt="" src="../media/829d1efc58a6875c7ba219d1274dbc65.png" /></p>
                 
                   
                 

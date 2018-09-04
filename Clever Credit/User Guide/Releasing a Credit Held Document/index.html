@@ -42,6 +42,8 @@
     
       <link rel="stylesheet" href="../../../assets/stylesheets/application.8d40d89b.css">
       
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.6079476c.css">
+      
     
     
       <script src="../../../assets/javascripts/modernizr.1aa3b519.js"></script>
@@ -49,8 +51,8 @@
     
       <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
-        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Calibri+Light:300,400,400i,700|">
+        <style>body,input{font-family:"Calibri Light","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"","Courier New",Courier,monospace}</style>
       
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
@@ -58,7 +60,9 @@
     
   </head>
   
-    <body dir="ltr">
+    
+    
+    <body dir="ltr" data-md-color-primary="teal" data-md-color-accent="">
   
     <svg class="md-svg">
       <defs>
@@ -687,7 +691,27 @@
                 
                   <h1>Managing Credit Held Document(s)</h1>
                 
-                <p><img alt="" src="../media/b1cbdd62f93e2c07b2e1fb3deb886466.png" /></p>
+                <p>If the Credit Controller is happy with the customer account, they can release a
+document from being Credit Held by clicking <strong>Release</strong> on the ribbon.</p>
+<p>A check will be made to see if the Credit Controller releasing the document has
+a sufficiently high <strong>Credit Release Limit</strong> or has <strong>Credit Held Rel.
+Unlimited</strong> set against them in the Credit Controller list. If the Credit
+Controller meets the criteria the document will be released, moving it from the
+<strong>Held Documents</strong> to the <strong>Released Documents</strong> list.</p>
+<p><img alt="" src="../media/78d61ee7efcd55a0ec1b78a33f940524.png" /></p>
+<p>If the user doesn’t have a high enough <strong>Credit Held Release Limit</strong> to release
+the document they will receive an error.</p>
+<p><img alt="" src="../media/8558c03dda60234df7e9e336a4c00c83.png" /></p>
+<p>Once the Order Status on the document header is set to <strong>Released</strong> it can be
+actioned accordingly.</p>
+<p><strong>NB</strong>: Should you modify a newly released document, it may end up going back
+through Credit hold process based on your setup as well as the types of
+modifications you have made to the orginal document.</p>
+<p>Documents that have been released can also be put back on <strong>Hold</strong> if needed.</p>
+<p>To do this switch to the <strong>Released Documents</strong> list, in here you will notice
+the Hold option is available. If selected the highlighted document will be moved
+back to the Credit Held List, with the User ID of the Credit Controller that
+made the change in the description.</p>
                 
                   
                 

@@ -42,6 +42,8 @@
     
       <link rel="stylesheet" href="../../../assets/stylesheets/application.8d40d89b.css">
       
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.6079476c.css">
+      
     
     
       <script src="../../../assets/javascripts/modernizr.1aa3b519.js"></script>
@@ -49,8 +51,8 @@
     
       <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
-        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Calibri+Light:300,400,400i,700|">
+        <style>body,input{font-family:"Calibri Light","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"","Courier New",Courier,monospace}</style>
       
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
@@ -58,7 +60,9 @@
     
   </head>
   
-    <body dir="ltr">
+    
+    
+    <body dir="ltr" data-md-color-primary="teal" data-md-color-accent="">
   
     <svg class="md-svg">
       <defs>
@@ -687,7 +691,31 @@
                 
                   <h1>Clever Credit FastTab</h1>
                 
-                <p><img alt="" src="../media/8e5529059d2d813345ed97edd1492625.png" /></p>
+                <p>To the final bit of setup, the extra FastTab on the customer card, this will
+only be visible once the app has been installed. The <strong>Clever Credit</strong> FastTab
+is where customer specific credit control settings are defined. The setup on the
+customer card takes precedence over the global <strong>Clever Credit Setup</strong> you have
+done previously.</p>
+<p><img alt="" src="../media/e7fc289f52223c2278547eef3a37bb60.png" /></p>
+<p><strong>Overdue Credit Grace Period:</strong> If completed will add on an extra period on top
+of the Payment Terms Code already given to the customer, e.g. an entry of 5D
+here would add on five extra days before they will go on hold.</p>
+<p><strong>Exclude from Credit Hold:</strong> Will stop this customer from ever being credit
+held for any reason (for example this may be used sparingly for important
+customers that we would never want to put on hold).</p>
+<p><strong>Exclude from Overdue Hold:</strong> Will stop this customer from ever being credit
+held if they go overdue on invoices (for example this may be used sparingly for
+important customers that we would never want to put on hold).</p>
+<p><strong>Credit Hold All Documents:</strong> Will ensure that all documents for this customer
+go on hold, regardless of credit limit or overdue status. This may be used if a
+customer has a bad track record or is financially risky and we need to check our
+exposure.</p>
+<p><strong>Credit Controller</strong>: Allows another way of applying a Credit Controller to a
+customer.</p>
+<p><strong>Credit Control Contact:</strong> Populating this field indicates to the Credit
+Controller who they should be contacting regarding the payments. Using the
+assist (the three little dots) next to the field, users will be able to choose
+any contact linked to the customer as a contact.</p>
                 
                   
                 

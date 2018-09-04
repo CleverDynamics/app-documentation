@@ -42,6 +42,8 @@
     
       <link rel="stylesheet" href="../../../assets/stylesheets/application.8d40d89b.css">
       
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.6079476c.css">
+      
     
     
       <script src="../../../assets/javascripts/modernizr.1aa3b519.js"></script>
@@ -49,8 +51,8 @@
     
       <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
-        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Calibri+Light:300,400,400i,700|">
+        <style>body,input{font-family:"Calibri Light","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"","Courier New",Courier,monospace}</style>
       
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
@@ -58,7 +60,9 @@
     
   </head>
   
-    <body dir="ltr">
+    
+    
+    <body dir="ltr" data-md-color-primary="teal" data-md-color-accent="">
   
     <svg class="md-svg">
       <defs>
@@ -687,9 +691,51 @@
                 
                   <h1>Clever Credit - Assisted Setup</h1>
                 
-                <p><img alt="" src="../media/836cf6b7cb41b5761b761e9f5cae2092.png" /></p>
-<p><img alt="" src="../media/22a7c079aa4ce4ba11d6e718edbd7c8f.png" /></p>
-<p><img alt="" src="../media/eca0231c737b6adc896aacbed7eb7ac5.png" /></p>
+                <p>As mentioned at the beginning of the user guide, you can setup Clever Credit
+using the <strong>Assisted Setup(s)</strong> provided. The prompts for assisted setup will
+appear as soon as you sign back into Microsoft Dynamics 365 Business Central
+(installing an app requires you to <strong>Sign Out</strong> and back in again). The prompts
+are identified as <strong>Notifications</strong> along the top of your role centre.</p>
+<p>By clicking on the link <strong>Open Setup</strong> on the notification, it will open the
+<strong>Clever Credit -- Assisted Setup</strong> page.</p>
+<p>Using the Assisted Setup provides you with a step by step guide of everything
+you need to setup to successfully run the Clever Credit App.</p>
+<p><img alt="" src="../media/7e35cdd3dbb977fd34ffac41a958b9a5.png" /></p>
+<p>If you accidently close the notification without going through the setup, don’t
+panic! there is another way. Simply click through the following menu structure
+Setup &amp; Extensions Assisted Setup.</p>
+<p><img alt="" src="../media/f8ff467fae25805786f1278892ccf007.png" /></p>
+<p>From the list choose to run <strong>Set up Clever Credit</strong>, by clicking on the <strong>Start
+setup</strong> option.</p>
+<p>Once you have got past the welcome message you will be presented with a series
+of setup prompts.</p>
+<p><img alt="" src="../media/1fb861ba289467956d6f296424960582.png" /></p>
+<p>Selecting <strong>Yes</strong> (default option) for Credit Hold Documents means that if a
+customer has an overdue balance or is over their credit limit, their documents
+are put on hold. Their documents will not be released until this is no longer
+the case.</p>
+<p><strong>NB</strong>: You have the option to select <strong>No</strong>. If you choose not to credit hold
+any documents, you will not be prompted to select which documents you would like
+to credit hold (next prompt in the series).</p>
+<p><img alt="" src="../media/8278afea06fa473c318b37e4c2ed209f.png" /></p>
+<p><strong>NB:</strong> The Default Credit Controller at this stage does not need to be
+populated, it can be populated later or left completely blank.</p>
+<p>From this page you can also run a second Assisted Setup function called <strong>Set up
+a new Credit Controller.</strong> Details of this can be found later in the user guide.</p>
+<p>Next you come to setting up the <strong>Status Codes,</strong> these can be created to send
+reminders to users (internally) regarding what action, has been or needs to be
+taken for those accounts with overdue balances. These codes will depend on
+business processes and as many, or as few as you require, can be added here as
+you wish.</p>
+<p>The Status Codes can also be found on the <strong>Clever Credit Status List,</strong> where
+again, you can make the necessary changes based on your business requirements.</p>
+<p><img alt="" src="../media/a8babf1a8bb62d1a7e798e96a86966fd.png" /></p>
+<p>The next prompt is regarding <strong>Aging Bands,</strong> when the app is installed it
+automatically imports the below aging bands. Aging Bands are discussed more in
+depth in the next section and are used as part of the Credit Controller’s role.</p>
+<p><img alt="" src="../media/0ce29b1bf09e0c13108f0bda0ded8210.png" /></p>
+<p>Outside of the Assisted setup, aging bands can be created from the <strong>Clever
+Credit Setup</strong> page.</p>
                 
                   
                 

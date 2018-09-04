@@ -42,6 +42,8 @@
     
       <link rel="stylesheet" href="../../../assets/stylesheets/application.8d40d89b.css">
       
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.6079476c.css">
+      
     
     
       <script src="../../../assets/javascripts/modernizr.1aa3b519.js"></script>
@@ -49,8 +51,8 @@
     
       <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
-        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Calibri+Light:300,400,400i,700|">
+        <style>body,input{font-family:"Calibri Light","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"","Courier New",Courier,monospace}</style>
       
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
@@ -58,7 +60,9 @@
     
   </head>
   
-    <body dir="ltr">
+    
+    
+    <body dir="ltr" data-md-color-primary="teal" data-md-color-accent="">
   
     <svg class="md-svg">
       <defs>
@@ -687,7 +691,34 @@
                 
                   <h1>New Credit Controllers - Assisted Setup</h1>
                 
-                <p><img alt="" src="../media/fb229ac92c9c51a8d681b52f0a2b26f2.png" /></p>
+                <p>Just like the assisted setup for Clever Credit, the introduction of the <strong>Setup
+a new Credit Controller</strong> makes it even easier to create users as Credit
+Controllers.</p>
+<p>Using the Assisted Setup, Credit Controllers can be created, assigned to
+customers, and limits can be applied to them determining their authorisation
+values, all within one process. The Credit Controller’s assisted setup can be
+accessed through <strong>Assisted Setup</strong>, highlighted in a previous section of the
+user guide.</p>
+<p><img alt="" src="../media/a50567c55210ca369ab9658350e2e7b3.png" /></p>
+<p>Your first step using the assisted setup is to create a new Credit Controller.
+Select your <strong>User ID</strong> (either use the assist next to the field or type in the
+User ID (based on Microsoft Dynamics 365 Business Central login). Create your
+Credit Controller with a <strong>Unique Code</strong>, as well as populating the <strong>Name</strong>
+field to identify that Unique Code.</p>
+<p><img alt="" src="../media/ece0f998657db18f51c38657336a5e04.png" /></p>
+<p>If the <strong>User Can Release</strong> is set to <strong>No,</strong> the Credit Controller will not
+have authorisation to release documents for customers who have an overdue
+balance.</p>
+<p>If <strong>Yes</strong> is selected a limit can be entered or the <strong>Credit Held Rel.
+Unlimited</strong> can be ticked, which means that the Credit Controller can release
+all held document types regardless of their value.</p>
+<p>Once the above has been setup, the Credit Controller can then be assigned
+customers. To do this, enter the Customer Number within the <strong>No.</strong> column.</p>
+<p>Alternatively, selecting the option <strong>Select Customers</strong> will open the Customer
+List which will give an overview of the Customer Name, Number, Contact and
+Balance Due. It is within this page you could apply a filter to the page to
+select multiple customers at the same time.</p>
+<p><img alt="" src="../media/5559b8c16b2768213749239c38fccf02.png" /></p>
                 
                   
                 
