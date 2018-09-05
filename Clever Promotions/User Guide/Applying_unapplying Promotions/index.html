@@ -691,7 +691,32 @@
                 
                   <h1>Applying & Un-Applying Promotions</h1>
                 
-                <p><img alt="" src="../media/d91e86bfca0b4586ae25d02223e89dc1.png" /></p>
+                <p>Now that all the setup of Clever Promotions has been completed you will notice
+several new Actions into the Ribbon when the user is on a Sales Order. It adds
+<strong>Apply Promotion</strong> and <strong>Un-apply Promotion</strong> on the Actions tab.</p>
+<p><img alt="" src="../media/0769b39c5abcea2a73283f5473897970.png" /></p>
+<p>The <strong>Apply Promotion</strong> action will trigger Dynamics 365 Business Central
+(Dynamics 365 Business Central) to check through the enabled promotions on the
+system and see which ones are a fit for the combination of the customer and the
+items (and their quantity and values). It will then add them into the sales
+document where applicable, for example adding a line discount or an extra line
+giving a product free.</p>
+<p>If there are no enabled promotions that the combination of this customer and
+these items qualify for, the user will get this message when attempting to Apply
+Promotion. When the application is successful you will get a confirmation
+message like below.</p>
+<p><img alt="" src="../media/a8f896fc32ff806dc70ae6a0465ca7f8.png" /></p>
+<p>The <strong>Un-apply Promotion</strong> action will remove previously applied promotions from
+the sales document, all lines will revert to their values without the promotion,
+extra lines that were added will be removed</p>
+<p>It is possible to add further lines to a Sales Document after a Promotion has
+been applied to the original lines, however the new sales lines won’t use the
+applied promotion from the previous lines.</p>
+<p>Instead if the user modifies something (price, discount, quantity) on the lines
+which are already using the promotion, then they will get an information message
+and the promotion lines will be deleted from the Sales Document, and reapplied
+if it meets the criteria and setup of the promotion(s).</p>
+<p><img alt="" src="../media/1a29ccba2174e50b7f3df9f695895b54.png" /></p>
                 
                   
                 
