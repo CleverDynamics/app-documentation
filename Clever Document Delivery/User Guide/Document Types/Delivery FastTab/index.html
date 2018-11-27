@@ -630,6 +630,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Document%20Delivery%20Setup/PrintNode/" title="PrintNode Setup" class="md-nav__link">
+      PrintNode Setup
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -2066,21 +2078,29 @@ rather than send them straight away.</p>
 <p>The other side of the FastTab relates to the printing of documents. Previously
 in the user guide we setup some Print Node fields allowing us to test whether we
 could print documents through Microsoft Dynamics 365 Business Central.</p>
-<p><img alt="" src="../media/8c8fa1f72be8e07a951e67cea66a50d4.png" /></p>
+<p><img alt="" src="../media/43efd521630d448ff3664806f137ac62.png" /></p>
 <p>The settings in here allow you to determine if a document type should be printed
 or not. The <strong>Print</strong> field is a drop-down field allowing you to choose when and
 if you want the document type to print. Leaving the field <strong>Blank</strong> indicates
 that the document type does not need to be printed and only emailed to
 customers. If you choose <strong>When No Recipient</strong>, then you need to make sure you
-fill in the field <strong>Printer Name.</strong> By choosing when no recipient, you are
-telling the application that if don’t find an email address for a
-customer/vendor for this document type then print the document to a dedicated
-printer (indicated in the Printer name field). If you choose the final option
-<strong>Always</strong>, you are saying that regardless of whether there is an email to send
-the document type out to or not, you still want the document printing. This
-means in some cases only a printout of the document type will be done for all
-records selected. In other cases both an email will be sent to the
-customer/vendor as well as printout being done.</p>
+fill in the field <strong>Printer Name.</strong></p>
+<p>By choosing when no recipient, you are telling the application that if an email
+address hasn’t been found for a customer/vendor for a particular document type
+then print the document to a dedicated printer (indicated in the Printer name
+field).</p>
+<p>If you choose the final option <strong>Always</strong>, you are saying that regardless of
+whether there is an email to send the document type out to or not, you still
+want the document printing. This means in some cases only a printout of the
+document type will be done for all records selected. In other cases, both an
+email will be sent to the customer/vendor as well as printout being done.</p>
+<p>When populating the Printer Name field you ca either type in the printer name
+(if know) or use the assist next to the field to choose from the list of
+printers</p>
+<p><img alt="" src="../media/76a80172a90dec2087275a820a302f07.png" /></p>
+<p><strong>NB</strong>: <strong>Printer Tray</strong> is an optional field to populate you don’t need to go
+to that level of detail unless you want your document printing from a certain
+printer tray in your printer.</p>
                 
                   
                 
