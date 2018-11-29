@@ -2282,146 +2282,14 @@
 to select an option for the state of the bin.</p>
 <p>The flow is as follows:</p>
 <p><img alt="" src="../media/918e100bbf31f73d78d94c594049b833.png" /></p>
-<p>local procedure InitBinBlock();</p>
-<p>begin</p>
-<p>//RequestType 'GET'---</p>
-<p>//First call, populate DataItems in Response Data---</p>
-<p>SessionMgt.InitResponseData('BinCode', ItemJnlLine.FIELDCAPTION("Bin Code"),
-false);</p>
-<p>SessionMgt.InitResponseData('BinBlockMovement', Bin.FIELDCAPTION("Block
-Movement"), true);</p>
-<p>SessionMgt.InitResponseData('LocationCode', Location.FIELDCAPTION(Code), true);</p>
-<p>SessionMgt.SetTransResponseData('BinCode', Bin.Code, false);</p>
-<p>SessionMgt.SetTransResponseData('LocationCode', LocationCode, true);</p>
-<p>OnAfterInitBinBlock();</p>
-<p>end;</p>
-<p>local procedure InitBinBlockMovementStatus();</p>
-<p>var</p>
-<p>CurrBlockedVal: Text;</p>
-<p>begin</p>
-<p>Bin.GET(SessionMgt.GetContent('LocationCode'),
-SessionMgt.GetContent('BinCode'));</p>
-<p>if Bin."Block Movement" \&lt;> Bin."Block Movement"::" " then</p>
-<p>SessionMgt.AddTransSubFunction('_BinBlockNone', BlockUnblockedCaption);</p>
-<p>if Bin."Block Movement" \&lt;> Bin."Block Movement"::All then</p>
-<p>SessionMgt.AddTransSubFunction('_BinBlockAll', BlockAllCaption);</p>
-<p>if Bin."Block Movement" \&lt;> Bin."Block Movement"::Inbound then</p>
-<p>SessionMgt.AddTransSubFunction('_BinBlockInbound', BlockInboundCaption);</p>
-<p>if Bin."Block Movement" \&lt;> Bin."Block Movement"::Outbound then</p>
-<p>SessionMgt.AddTransSubFunction('_BinBlockOutbound', BlockOutboundCaption);</p>
-<p>OnAfterInitBinBlockMovementStatus;</p>
-<p>end;</p>
-<p>local procedure ValidateBinBlock(var TempHandheldContent: Record "HHF Handheld
-Content");</p>
-<p>begin</p>
-<p>//RequestType 'GET'---</p>
-<p>//Pick Block Type---</p>
-<p>if RequestSubFuncCode \&lt;> '' then begin</p>
-<p>case RequestSubFuncCode of</p>
-<p>'_BinBlockNone':</p>
-<p>SessionMgt.SetTransResponseData('BinBlockMovement', BlockUnblockedCaption,
-true);</p>
-<p>'_BinBlockAll':</p>
-<p>SessionMgt.SetTransResponseData('BinBlockMovement', BlockAllCaption, true);</p>
-<p>'_BinBlockInbound':</p>
-<p>SessionMgt.SetTransResponseData('BinBlockMovement', BlockInboundCaption, true);</p>
-<p>'_BinBlockOutbound':</p>
-<p>SessionMgt.SetTransResponseData('BinBlockMovement', BlockOutboundCaption, true);</p>
-<p>end;</p>
-<p>end;</p>
-<p>InitBinBlockMovementStatus;</p>
-<p>case TempHandheldContent."Column Name" of</p>
-<p>'BinCode':</p>
-<p>begin</p>
-<p>Bin.GET(SessionMgt.GetContent('LocationCode'), TempHandheldContent.Text);</p>
-<p>SessionMgt.SetTransResponseData('LocationCode', Bin."Location Code", true);</p>
-<p>SessionMgt.AddTransColumnStyleGroup('BinCode', ItemJnlLine.FIELDCAPTION("Bin
-Code"));</p>
-<p>SessionMgt.AddTransColumnStyle('BinCode', TempHandheldContent."Column Name",</p>
-<p>ItemJnlLine.FIELDCAPTION("Bin Code"), 100);</p>
-<p>SessionMgt.AddTransColumnStyle('BinCode', 'BinBlockMovement',</p>
-<p>Bin.FIELDCAPTION("Block Movement"), 100);</p>
-<p>SessionMgt.SetTransResponseData('BinCode', Bin.Code, true);</p>
-<p>GetInitBinBlockMovementValue;</p>
-<p>end;</p>
-<p>end;</p>
-<p>OnAfterValidateBinBlock;</p>
-<p>end;</p>
-<p>local procedure CancelBinBlock(var TempHandheldContent: Record "HHF Handheld
-Content");</p>
-<p>begin</p>
-<p>//RequestType 'CANCEL'---</p>
-<p>case TempHandheldContent."Column Name" of</p>
-<p>'BinCode':</p>
-<p>begin</p>
-<p>SessionMgt.SetTransResponseData('BinCode', '', false);</p>
-<p>SessionMgt.SetTransResponseData('BinBlockMovement', '', true);</p>
-<p>InitBinBlock;</p>
-<p>end;</p>
-<p>else begin</p>
-<p>SessionMgt.SetTransResponseData(TempHandheldContent."Column Name", '', false);</p>
-<p>end;</p>
-<p>end;</p>
-<p>OnAfterCancelBinBlock;</p>
-<p>end;</p>
-<p>local procedure PostBinBlock();</p>
-<p>begin</p>
-<p>//RequestType 'POST'---</p>
-<p>Location.GET(SessionMgt.GetContent('LocationCode'));</p>
-<p>Bin.GET(Location.Code, SessionMgt.GetContent('BinCode'));</p>
-<p>case SessionMgt.GetContent('BinBlockMovement') of</p>
-<p>BlockUnblockedCaption:</p>
-<p>Bin.VALIDATE("Block Movement", Bin."Block Movement"::" ");</p>
-<p>BlockAllCaption:</p>
-<p>Bin.VALIDATE("Block Movement", Bin."Block Movement"::All);</p>
-<p>BlockInboundCaption:</p>
-<p>Bin.VALIDATE("Block Movement", Bin."Block Movement"::Inbound);</p>
-<p>BlockOutboundCaption:</p>
-<p>Bin.VALIDATE("Block Movement", Bin."Block Movement"::Outbound);</p>
-<p>end;</p>
-<p>Bin.MODIFY;</p>
-<p>SessionMgt.SetTransResponseData('BinCode', '', false);</p>
-<p>SessionMgt.SetTransResponseData('BinBlockMovement', '', true);</p>
-<p>InitBinBlock;</p>
-<p>end;</p>
-<p>local procedure GetInitBinBlockMovementValue();</p>
-<p>begin</p>
-<p>case Bin."Block Movement" of</p>
-<p>Bin."Block Movement"::" ":</p>
-<p>SessionMgt.SetTransResponseData('BinBlockMovement', BlockUnblockedCaption,
-true);</p>
-<p>Bin."Block Movement"::All:</p>
-<p>SessionMgt.SetTransResponseData('BinBlockMovement', BlockAllCaption, true);</p>
-<p>Bin."Block Movement"::Inbound:</p>
-<p>SessionMgt.SetTransResponseData('BinBlockMovement', BlockInboundCaption, true);</p>
-<p>Bin."Block Movement"::Outbound:</p>
-<p>SessionMgt.SetTransResponseData('BinBlockMovement', BlockOutboundCaption, true);</p>
-<p>end;</p>
-<p>end;</p>
+<p><img alt="" src="../media/332095a110125921b969de37de2da843.png" /></p>
+<p><img alt="" src="../media/8023a4e45c4a1283289118c8172232d8.png" /></p>
+<p><img alt="" src="../media/c92fa23281b1097a9f7b48a6fbf95a6f.png" /></p>
 <h2 id="yes-92-no-prompt-for-specific-pick">Yes \ No Prompt for Specific Pick</h2>
 <p>Here is an example of how the standard Handheld Warehouse uses the ResponseCode,
 ResponseMessage and ConfirmedFlag functionality in order to ask the user if they
 want to prompt for a specific pick.</p>
-<p>local procedure InitActivity();</p>
-<p>var</p>
-<p>ColumnStyle: Record "HHF Handheld Content";</p>
-<p>RecRef: RecordRef;</p>
-<p>begin</p>
-<p>...</p>
-<p>...</p>
-<p>else</p>
-<p>if DeviceUser."Prompt for Specific Pick" then begin</p>
-<p>SessionMgt.InitResponseData('ZoneKey', WhseActLine.FIELDCAPTION("Zone Code"),
-true);</p>
-<p>SessionMgt.InitResponseData('ZoneCode', WhseActLine.FIELDCAPTION("Zone Code"),
-true);</p>
-<p>SessionMgt.InitResponseData('SpecificActCheck',</p>
-<p>STRSUBSTNO(EnterSpecificTxt, ActivityType), false);</p>
-<p>ResponseCode := 'YESNO';</p>
-<p>ResponseMessage := STRSUBSTNO(EnterSpecificTxt, ActivityType);</p>
-<p>end;</p>
-<p>...</p>
-<p>...</p>
+<p><img alt="" src="../media/c4889f84aefa66ff895647190aed8a24.png" /></p>
 <p>On InitActivity, if “Prompt for Specific Pick” is true then SpecificActCheck is
 initialised. ResponseCode is set to YESNO and ResponseMessage is set to “Enter a
 specific Pick?”.</p>
@@ -2433,37 +2301,10 @@ ResponseMessage are passed through to the Device Client</p>
 value of the ConfirmedFlag is returned.</p>
 <p>Then, because the SpecificActCheck DataItem has been initialised and is the
 current DataItem, the validation code is run:</p>
-<p>'SpecificActCheck':</p>
-<p>begin</p>
-<p>SessionMgt.SetTransResponseData('SpecificActCheck', TempHandheldContent.Text,
-true);</p>
-<p>if UPPERCASE(ConfirmedFlag) = 'FALSE' then //Find next available pick line</p>
-<p>begin</p>
-<p>SessionMgt.SetTransResponseData('ActivityNo', '', true);</p>
-<p>if ActivityType in [ActivityType::"Put-away", ActivityType::"Invt. Put-away"]
-then begin</p>
-<p>if not GetNextAvailablePutActLine('', '', '', '', '', 0) then</p>
-<p>if SessionMgt.GetContent('ZoneCode') \&lt;> '' then</p>
-<p>ERROR(NoMatchingActivityErr, Zone.TABLECAPTION,
-SessionMgt.GetContent('ZoneCode'))</p>
-<p>else</p>
-<p>ERROR(NoMatchingActivityErr, Location.TABLECAPTION, LocationCode);</p>
-<p>end</p>
-<p>else</p>
-<p>if not GetNextAvailableActLine('', '', '') then</p>
-<p>if SessionMgt.GetContent('ZoneCode') \&lt;> '' then</p>
-<p>ERROR(NoMatchingActivityErr, Zone.TABLECAPTION,
-SessionMgt.GetContent('ZoneCode'))</p>
-<p>else</p>
-<p>ERROR(NoMatchingActivityErr, Location.TABLECAPTION, LocationCode);</p>
-<p>BuildActLineLookup(WhseActLine."No.");</p>
-<p>end</p>
-<p>else // Get specific pick</p>
-<p>SessionMgt.SetTransResponseData('ActivityNo', '', false);</p>
-<p>end;</p>
+<p><img alt="" src="../media/1bad3fcd6bf6122331e7561660060001.png" /></p>
 <p>Here, the code checks the value of the ConfirmedFlag. There are 3 possible
 values for the flag:</p>
-<p><img alt="" src="../media/9e4dd4803628750dae329b8880287ea1.png" /></p>
+<p><img alt="" src="../media/a7321a8cd3eda2533ff3bfb36d571b39.png" /></p>
 <p>If the flag is false, then this means the user has selected the “No” button.
 They do not want to select a specific Pick. So, the code finds the next
 available Pick line. If there is any other value returned, then the code unlocks
