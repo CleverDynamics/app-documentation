@@ -741,11 +741,6 @@
             "title": "New Bespoke Functions"
         },
         {
-            "location": "/Clever MES/User Guide/Portal Framework/",
-            "text": "",
-            "title": "Portal Framework"
-        },
-        {
             "location": "/Clever Payment Gateway_1/User Guide/About/",
             "text": "Payment Gateway has been created to quickly take online card payments through\nthe most popular payment providers: SagePay, WorldPay and PayPal. This Dynamic\nAddition connects seamlessly into Microsoft Dynamics NAV and keeps your\ncustomers safe and secure. No card details will be taken or stored within your\nDynamics NAV environment, which means you won't be needing more vigorous data\nprotection in place.\n\n\nPayment Gateway can be set as the default payment option or be selected at the\ntime of ordering. Similarly, the process can be set to enforce the taking of a\npayment before an order can be released to the warehouse.\n\n\nAll payments processed will be automatically matched up with, and applied\nagainst the Posted Invoice(s) which have been generated from the Sales Order\u2026\nthat\u2019s one less step for you to remember.",
             "title": "About"
