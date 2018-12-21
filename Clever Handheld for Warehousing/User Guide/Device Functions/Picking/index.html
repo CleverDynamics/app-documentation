@@ -74,6 +74,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
+      <a href="#advanced-warehousing-picking" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -1280,9 +1284,36 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Picking
+      </label>
+    
     <a href="./" title="Picking" class="md-nav__link md-nav__link--active">
       Picking
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-warehousing-picking" title="Advanced Warehousing Picking" class="md-nav__link">
+    Advanced Warehousing Picking
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -1490,6 +1521,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../../../Clever%20MES/User%20Guide/Home/" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../../../Clever%20MES/User%20Guide/Portal%20Framework/" title="Portal Framework" class="md-nav__link">
       Portal Framework
     </a>
@@ -1503,13 +1546,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-1-2" type="checkbox" id="nav-7-1-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-1-3" type="checkbox" id="nav-7-1-3">
     
-    <label class="md-nav__link" for="nav-7-1-2">
+    <label class="md-nav__link" for="nav-7-1-3">
       MES Setup
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-      <label class="md-nav__title" for="nav-7-1-2">
+      <label class="md-nav__title" for="nav-7-1-3">
         MES Setup
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2365,6 +2408,35 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-warehousing-picking" title="Advanced Warehousing Picking" class="md-nav__link">
+    Advanced Warehousing Picking
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -2383,7 +2455,69 @@ need actioning within your location.</p>
 <p><img alt="" src="../media/464ce522b4d7706e25a8ae107bbd9116.png" /></p>
 <p>If a user selects the <strong>Pick</strong> tile, they will be asked if they are <strong>Entering a
 Specific Pick?</strong></p>
-<p><strong>NB:</strong> This message will only come</p>
+<p><strong>NB:</strong> This message will only come based on your Handheld User Setup</p>
+<p>If you select <strong>Yes,</strong> then you will be prompted by the device to scan in the
+ick number you are working on, if you select <strong>No</strong>, you will be presented
+either with the next pick in the pick list in Microsoft Dynamics 365 Business
+Central not being worked on, by another user . Or you will be presented with a
+pick that has been assigned to you by your warehouse manager.</p>
+<p><strong>NB:</strong> Picks are assigned to handheld user in Microsoft Dynamics 365 Business
+Central.</p>
+<p>If once you have chosen a pick or a pick has been given/ assigned to you, you
+decide you want to change it, you can.</p>
+<p>On the device when the pick information comes up no screen, you can click on the
+pick number and choose to <strong>Adjust/ Cancel the Warehouse Activity Line,</strong> by
+saying <strong>Yes</strong> you will then be taken to the following screen where you be asked
+to specify instead which pick you would like to proceed with.</p>
+<p><img alt="" src="../media/7e4348133fa872378af9340c68c5764f.png" /></p>
+<p>As you begin the pick you will first be prompted to enter the <strong>Item No.</strong> the
+device will have presented you with the item that it wants you to pick, this
+will be the first item on the pick in Microsoft Dynamics 365 Business Central.
+By scanning the same item on the screen, you are simply validating against the
+pick line this is the item you are picking.</p>
+<p><img alt="" src="../media/a52bb6307415411f2bfe58ef720484b2.png" /></p>
+<p>You can at this point choose to change to a different item, this may be in
+circumstances where you know what else is on the pick and choose to action that
+line instead. When prompted for the <strong>Item No</strong> simply scan in a different item
+code to eth one on the device. If it exists then the item code along with all
+the pick lines details about it will change. If not the device will error.</p>
+<p>Don’t panic if you pass being able to change the item code at the beginning you
+can change it at any point before posting. To do this click on the <strong>Item No.</strong>
+field on the device. When the pop up appears on screen asking whether you want
+to adjust the line say yes. At the top of the device it will then prompt you for
+the <strong>Item No</strong> again.</p>
+<p>Following one from entering the Item No, you will be prompted to enter a <strong>Bin
+Code,</strong> there is an <strong>Expected Bin</strong> code presented you on the device however at
+this point you can scan a different bin. The bin code states where you will be
+picking the stock from.</p>
+<p>At this point you won’t know whether Microsoft Dynamics 365 Business Central
+holds that item in that bin – it is sometimes the case where stock is physically
+in a location but systematically it is not there.</p>
+<p>Once the <strong>Bin Code</strong> has been entered, the <strong>Quantity to Handle</strong> will need to
+be entered, this will be how much stock they would like to pick from that bin.
+Regardless of whether you have changed the bin or not, you can’t pick more than
+the quantity on the device.</p>
+<p><strong>NB</strong>: It is at this point that a validation will happen to confirm whether the
+item you plan on picking can be taken from the bin entered. If not it will
+error.</p>
+<p><img alt="" src="../media/d15b607189fded359c45bce7b0e59907.png" /></p>
+<p>Once the quantity to Handle has been entered the pick line will automatically
+post. There if there no more lines it will go back to the beginning, asking If
+you would like to Enter a Specific pick or not. If there are more pick lines it
+will present you with the next line in the pick.</p>
+<p>During the pick you may be asked to enter the Lot No. this is because your item
+requires lot tracking. If the item tracking has been added during the sales
+order process then on the device you will see which lot number you need to pick.
+If it hasn’t the you can tell the device which lot for the item you will be
+picking.</p>
+<h2 id="advanced-warehousing-picking">Advanced Warehousing Picking</h2>
+<p>When setting up your locations for certain warehouse processes, you may decide
+that you want to setup your warehouse for Directed Put- away and Pick, a setting
+on the <strong>Location</strong> card under the <strong>Warehouse FastTab.</strong></p>
+<p><strong>NB</strong>: all other advanced warehousing settings are detailed in other sections
+of the user guide.</p>
+<p>When doing a pick in an advanced location the first thing that you will be asked
+is</p>
                 
                   
                 
