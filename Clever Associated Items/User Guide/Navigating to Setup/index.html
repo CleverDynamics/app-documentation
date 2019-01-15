@@ -36,7 +36,7 @@
     
     
       
-        <title>Navigating to Setup - Clever Dynamics</title>
+        <title>Associated Item Setup - Clever Dynamics</title>
       
     
     
@@ -96,7 +96,7 @@
                 Clever Dynamics
               </span>
               <span class="md-header-nav__topic">
-                Navigating to Setup
+                Associated Item Setup
               </span>
             
           
@@ -239,8 +239,8 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
     
-    <a href="./" title="Navigating to Setup" class="md-nav__link md-nav__link--active">
-      Navigating to Setup
+    <a href="./" title="Associated Item Setup" class="md-nav__link md-nav__link--active">
+      Associated Item Setup
     </a>
     
   </li>
@@ -2753,23 +2753,33 @@
               
                 
                 
-                  <h1>Navigating to Setup</h1>
+                  <h1>Associated Item Setup</h1>
                 
                 <p>Once installed the Clever Associated Items app needs a small amount of setup in
-order to work. All setup is done against the Item.</p>
-<p>To get to the <strong>Item Card</strong> simply navigate using the <strong>Search</strong> on your role
-centre to the <strong>Items List.</strong></p>
-<p><img alt="" src="../media/b6eedcdbe722f8708a06e12288c71467.png" /></p>
-<p>Depending on your Role centre you may be able to get to the Items list without
-needing to use the search. The below screen shot has the role centre of <strong>Sales
-Order Processor</strong>.</p>
-<p><img alt="" src="../media/03312e280c57200cf1c33078c3fce3ab.png" /></p>
-<p>Once on the item list click on the item, which you will be created your
-Associated Items against. On the Item Card a new action has been added to the
-ribbon called <strong>Associated Items.</strong></p>
-<p><img alt="" src="../media/14911fa2437cdf4eb51288e57a109561.png" /></p>
-<p>Clicking on the action Associated Items will open up the setup page for the app
-to work.</p>
+order to work.</p>
+<p>You need to begin by navigating to the <strong>Associated Items Setup,</strong> you can do
+this by using the search on your role centre.</p>
+<p><img alt="" src="../media/88b29c83ce7c24d9337ef56533ed8deb.png" /></p>
+<p>Opening this page will later prompt users with notifications. When an item which
+has associated items has been put on the Sales Line.</p>
+<p>NB: If you do not open the page, then the notifcation will not appear when items
+are put onto the Sales Order – this does not mean that the app does not work, it
+simply means users wont know if there are associated items that can be added to
+the order.</p>
+<p>Once the page has been opened you can start to select and fill in some of the
+field below.</p>
+<p>By enabling the field <strong>Automatic Suggestions</strong>, it will always update the
+suggestions regardless of when they were last checked</p>
+<p>The <strong>Suggestions Refresh Period</strong> can be set to update the suggestions if the
+<strong>Suggestions Last Updated</strong> (mentioned later on in the user guide) on the item
+card is less than the refresh period calculation</p>
+<p>The final field <strong>Item Match Threshold %</strong> , determines how many % of the time
+the items appear together on a sales document to then be suggested.</p>
+<p>The Clever Associated Items app is only useful if you have set some associations
+up. This will probably be pretty time consuming, to make it easier we have
+created a Processing report <strong>9030229 Assoc. Item Suggestions</strong>. This should be
+put on a Job Queue to update all item suggestions based on the setup in this
+page.</p>
                 
                   
                 
