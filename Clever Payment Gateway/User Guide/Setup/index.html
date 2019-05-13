@@ -713,6 +713,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Clever Data Validation/Change Log/" title="Changelog" class="md-nav__link">
+      Changelog
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -843,6 +855,18 @@
   <li class="md-nav__item">
     <a href="../../../Clever Document Delivery/User Guide/Document Delivery Setup/PrintNode/" title="PrintNode Setup" class="md-nav__link">
       PrintNode Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Clever Document Delivery/User Guide/Document Delivery Setup/on Prem printing/" title="On Prem Printing" class="md-nav__link">
+      On Prem Printing
     </a>
   </li>
 
@@ -3233,6 +3257,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../../Clever Promotions/User Guide/Permisison set Pro/" title="Permission Sets" class="md-nav__link">
+      Permission Sets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../../Clever Promotions/User Guide/Sales_Receivables Setup/" title="Sales & Receivables Setup" class="md-nav__link">
       Sales & Receivables Setup
     </a>
@@ -3258,13 +3294,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14-1-4" type="checkbox" id="nav-14-1-4">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14-1-5" type="checkbox" id="nav-14-1-5">
     
-    <label class="md-nav__link" for="nav-14-1-4">
+    <label class="md-nav__link" for="nav-14-1-5">
       Promotions Card
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-      <label class="md-nav__title" for="nav-14-1-4">
+      <label class="md-nav__title" for="nav-14-1-5">
         Promotions Card
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -4284,28 +4320,55 @@
                 
                   <h1>Payment Gateway Setup</h1>
                 
-                <p>Once the addition has been installed you need to navigate to the <strong>Payment
-Gateway Setup</strong> page. In Microsoft Dynamics NAV, go to Departments >
-Administration > Application Setup > Financial Management > Payment Gateway
-and select Payment Gateway Setup.</p>
-<p><strong>NB</strong>: You can also use the search to find the page you are looking for.</p>
-<p>This page defines how Microsoft Dynamics NAV connects to the Payment Gateway
-services</p>
-<p>Like most of the additions there is a <strong>Get Default Configuration</strong> action found
-on the pages ribbon.</p>
-<p><img alt="" src="../media/92fbd8b624905622b61a7264e77120e3.png" /></p>
-<p>Running the default configuration will populate the <strong>Web Service URL</strong> the
-<strong>Domain</strong> and the <strong>User Name</strong> fields.</p>
-<p><strong>NB</strong>: The password field is something that you will need to request from our
-support staff or project leads</p>
-<p><img alt="" src="../media/5cc7089e1eb14e72c3fb4a206e8b8e28.png" /></p>
+                <p>Some of our Apps require a dependency, the installation of Clever Payment
+Gateway is one of those apps. Another app of ours called <strong>Clever Config</strong> will
+be installed at the same time.</p>
+<p><strong>NB:</strong> You should not <strong>uninstall</strong> Clever config if you plan on using the
+Clever Payment Gateway App.</p>
+<p>Unlike some of our other apps Clever Payment Gateway requires all your setup to
+be done manually, which consists of you going into each of the setup pages
+(highlighted throughout the user guide) and creating the required business
+setup. We do help a little by providing you with the option to import our
+<strong>Default Configuration</strong></p>
+<p>Below we will explain the requirements for manually setting up the app and how
+importing the default configuration will save you time in getting the app ready
+for use. The first thing to do is navigate to <strong>Payment Gateway</strong> Page.</p>
+<p><img alt="" src="../media/5e66ff91dac59f658a7764ae08d6c477.png" /></p>
+<p>The first thing to do is click on the <strong>Actions</strong> tab on the ribbon and select
+the option <strong>Default Configuration.</strong></p>
+<p><img alt="" src="../media/833c6a75908112fce5f6f5f428425a13.png" /></p>
+<p>Running the default configuration will populate the <strong>Web Service URL</strong> and
+<strong>Payment Providers</strong> (detailed further on in the documentation).</p>
+<p>The <strong>Web Service URL</strong> field on the <strong>Web Service FastTab</strong> is populated so a
+connection to be made between your Microsoft Dynamics 365 Business Central
+environment and <strong>Payment Gateway Service.</strong></p>
+<p><strong>NB</strong>: The <strong>User Name, Password &amp; Domain</strong> fields are something that you will
+need to request from our Clever Dynamics Support Team<strong>.</strong></p>
+<p><img alt="" src="../media/23ea198580ca876eb88897a671fe0ac8.png" /></p>
+<p>The next FastTab down is the <strong>Business Central Endpoint FastTab.</strong></p>
+<p><img alt="" src="../media/4315869f60c5042306d04a39d3bdb99a.png" /></p>
+<p>The details held in this FastTab are based on how the Payment Gateway service
+will communicate with your Microsoft Dynamics 365 Business Central environment
+with a response regarding a payment that was made.</p>
+<p><strong>NB</strong>: The details will originally b</p>
 <p>On the <strong>Tenant FastTab</strong> you will see two fields <strong>Tenant Code</strong> and <strong>Access
-Key</strong>, these will be allocated to you on installation of the addition. The
-combination of these two ensures a payment can only be taken for the set
-specific company, a payment cannot be taken on behalf of a different company.</p>
-<p>NB: If you plan on using Payment Gateway in both a test and live environment of
-Microsoft Dynamics NAV, you will be given different Tenant Code and Access Keys
-based on those two different environments.</p>
+Key</strong>. The combination of these two ensures a payment can only be taken for the
+set specific company, a payment cannot be taken on behalf of a different
+company.</p>
+<p>To generate the <strong>Tenant Code</strong> and <strong>Access Key,</strong> click on the <strong>Create
+Tenant</strong> action.</p>
+<p><img alt="" src="../media/1bf3682e72e73a1eb1b5461f6acc00a6.png" /></p>
+<p>Based on the settings in the Web Service FastTab the Tenant Code and Access Key
+will be populated.</p>
+<p><strong>NB</strong>: If there is a problem with the setup an error message will appear on the
+screen. If this happens you will need to contact the Clever Dynamics Support
+Team to assist with the error, you are getting.</p>
+<p><img alt="" src="../media/02fbb925b34c703d0e7478675fd7e2f2.png" /></p>
+<p>The other actions on the page include <strong>Test Connection</strong> – to make sure the
+connection with your Microsoft Dynamics 365 Business Central environment and
+Payment Gateway Service. If you click on <strong>Send Payment Settings</strong> action a file
+will be sent to Clever Dynamics Support Team detailing any changes that may have
+been made to the web service URL, for example if the company name has changed</p>
                 
                   
                 
