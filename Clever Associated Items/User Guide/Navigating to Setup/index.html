@@ -4627,14 +4627,14 @@ this by using the search on your role centre.</p>
 <p><img alt="" src="../media/9ed83a0a1d3ad06a4d457e2e7036fa7a.png" /></p>
 <p>Opening this page will later prompt users with notifications. When an item which
 has associated items has been put on the Sales Line.</p>
-<p>NB: If you do not open the page, then the notifcation will not appear when items
-are put onto the Sales Order – this does not mean that the app does not work, it
-simply means users wont know if there are associated items that can be added to
-the order.</p>
+<p><strong>NB</strong>: If you do not open the page, then the notifcation will not appear when
+items are put onto the Sales Order – this does not mean that the app does not
+work, it simply means users wont know if there are associated items that can be
+added to the order.</p>
 <p>Once the page has been opened you can start to select and fill in some of the
 field below.</p>
-<p>By enabling the field <strong>Automatic Suggestions</strong>, it will always update the
-suggestions regardless of when they were last checked</p>
+<p>By enabling the field <strong>Automatic Suggestions</strong>, must be set for suggestions,
+when set the <strong>Suggestions Refresh Period</strong> is respected.</p>
 <p>The <strong>Suggestions Refresh Period</strong> can be set to update the suggestions if the
 <strong>Suggestions Last Updated</strong> (mentioned later on in the user guide) on the item
 card is less than the refresh period calculation</p>
@@ -4645,9 +4645,11 @@ all the time in the background.</p>
 the items appear together on a sales document to then be suggested.</p>
 <p>The Clever Associated Items app is only useful if you have set some associations
 up. This will probably be pretty time consuming, to make it easier we have
-created a Processing report <strong>9030229 Assoc. Item Suggestions</strong>. This should be
-put on a Job Queue to update all item suggestions based on the setup in this
-page.</p>
+created a Processing report called <strong>Update Item Suggestions.</strong> You can perform
+the update manually. i.e. if the customer does not want set Automatic
+Suggestions, they can use this report to update item suggestions, the period is
+respected, a job queue can be setup against the report.</p>
+<p><img alt="" src="../media/d2bd2f0acc3d0b38d475cb64997c3fb8.png" /></p>
                 
                   
                 
