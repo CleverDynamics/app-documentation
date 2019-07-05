@@ -83,6 +83,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#excluding-certain-items" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -268,9 +272,36 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Creating Associated Items
+      </label>
+    
     <a href="./" title="Creating Associated Items" class="md-nav__link md-nav__link--active">
       Creating Associated Items
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#excluding-certain-items" title="Excluding certain Items" class="md-nav__link">
+    Excluding certain Items
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -4612,6 +4643,35 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#excluding-certain-items" title="Excluding certain Items" class="md-nav__link">
+    Excluding certain Items
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -4637,7 +4697,7 @@ ribbon called <strong>Associated Items.</strong></p>
 to work.</p>
 <p>On the <strong>Associated Items</strong> page, you then simply enter the item number for each
 item to be associated, the system will pull through the description.</p>
-<p><img alt="" src="../media/bfcb4b421df3cf3373ab50977e64f52d.png" /></p>
+<p><img alt="" src="../media/85db61f7a8623bbfe4075d3c89f397cf.png" /></p>
 <p>You can add the item to the list one of two ways. If you know the item code, in
 the <strong>Associated Item No.</strong> field type in the item code. If you don’t know the
 item code click on the drop-down arrow next to the field. You will be presented
@@ -4647,6 +4707,18 @@ populate the required field.</p>
 <p>A default / suggested quantity must then be set for each associated item. Once
 items are added with suggested quantities and a unit of measure code, the
 associated items are ready for use.</p>
+<h2 id="excluding-certain-items">Excluding certain Items</h2>
+<p>In some cases, users will switch on the <strong>Automatic suggestions</strong> field
+(highlighted in the setup part of the document) to always make sure that any
+associated items are being suggested. Naturally this can slow the system down
+especially when the users only have a few items they want to check the
+association for.</p>
+<p>A field on the Item card called <strong>Exclude from Suggestions</strong> can be enabled per
+item. This will stop it checking this and other items enabled in the same way
+for associated items, and in turn stop them from being suggested.</p>
+<p>To enable the field, navigate to your item card, click on the Associated Items
+FastTab to expand it, showing you the field, you need to enable.</p>
+<p><img alt="" src="../media/0f61da816a1f7b308891ffe6b596e3e2.png" /></p>
                 
                   
                 
