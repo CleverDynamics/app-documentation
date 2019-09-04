@@ -1,0 +1,28 @@
+v7.2.1.1 (69) 10/6/19
+Fixed bug after scanning a token barcode.
+
+v7.2.1.2 (70) 10/6/19
+Fixed squashed button bug.
+
+v7.2.1.3 (71) 13/6/19
+Web service name is worked out by probing the WSDL - N.B. the possible options are WhseWebService or HandheldFramework (or a name supplied by the
+registration service).
+
+Intervening versions are Speech to Text POC packages.
+
+v7.2.1.6 (74) 20/6/19
+Login process for 7.2 now supported. Compatibility with 7.1 maintained.
+Removed formatting characters from company name on the login screen.
+Handled non granting of camera permissions better.
+
+v7.2.1.7 (75) 1/7/19
+GetHandheldAppVersions is called to work out the version of the Handheld Framework. If this method is not present in the WSDL the version of the
+Handheld Framework is assumed to be 7.1
+
+v7.2.1.8 (76) 2/7/19
+<br/> is only swapped with \n in text fields in the web implementations.
+userID used instead of userId in GetWarehouseUser.
+Stopping and Starting the scanner is logged.
+
+v7.2.2.0 (77) 10/7/19
+Public release of Handheld Framework 7.2 compatible version.

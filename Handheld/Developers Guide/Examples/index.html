@@ -4867,7 +4867,92 @@ framework plus extensions drive the entire transaction.</p>
 contextual data and does not know what <strong>Data Items</strong> are required to process
 the receipt.</p>
 <p>The framework/handheld for warehousing returns the following response data…</p>
-<p><img alt="" src="../media/61429e838b2e1d591c3b2493ef428a17.png" /></p>
+<table>
+<thead>
+<tr>
+<th>DataItem Name</th>
+<th>Value</th>
+<th>Locked</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DocumentNo</td>
+<td>\&lt;blank></td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>SourceDocument</td>
+<td>\&lt;blank></td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>SourceType</td>
+<td>\&lt;blank></td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>LocationCode</td>
+<td>\&lt;blank></td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>NoOfLabels</td>
+<td>1</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>ItemNo</td>
+<td>\&lt;blank></td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>VariantCode</td>
+<td>\&lt;blank></td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>\&lt;blank></td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>UnitOfMeasure</td>
+<td>\&lt;blank></td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>QtyOutstanding</td>
+<td>\&lt;blank></td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>LotNo</td>
+<td>\&lt;blank></td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>SerialNo</td>
+<td>\&lt;blank></td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>Quantity</td>
+<td>\&lt;blank></td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>ExpirationDate</td>
+<td>\&lt;blank></td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>WarrantyDate</td>
+<td>\&lt;blank></td>
+<td>FALSE</td>
+</tr>
+</tbody>
+</table>
 <p>No ColumnStyle data is returned, we do not have anything to display at this
 point (Although we could if we needed to).</p>
 <p>When a <strong>Data Item</strong> is marked as <strong>Locked</strong> the device will not prompt for it.
@@ -4886,7 +4971,87 @@ DocumentNo. The user enters the purchase order number on the supplied
 documentation (For the sake of the example let’s say <strong>Purchase Order No.
 106044</strong>).</p>
 <p>The following validation data is sent.</p>
-<p><img alt="" src="../media/45839537fefebe93af2b4897173af63c.png" /></p>
+<table>
+<thead>
+<tr>
+<th>DataItem Name</th>
+<th>Value</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DocumentNo</td>
+<td>106044</td>
+<td></td>
+</tr>
+<tr>
+<td>DataItem Name</td>
+<td>Value</td>
+<td>Locked</td>
+</tr>
+<tr>
+<td>SourceDocument</td>
+<td>\&lt;blank></td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>SourceType</td>
+<td>\&lt;blank></td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>LocationCode</td>
+<td>\&lt;blank></td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>NoOfLabels</td>
+<td>1</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>ItemNo</td>
+<td>\&lt;blank></td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>VariantCode</td>
+<td>\&lt;blank></td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>\&lt;blank></td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>UnitOfMeasure</td>
+<td>\&lt;blank></td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>QtyOutstanding</td>
+<td>\&lt;blank></td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>LotNo</td>
+<td>\&lt;blank></td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>SerialNo</td>
+<td>\&lt;blank></td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>Quantity</td>
+<td>\&lt;blank></td>
+<td>FALSE</td>
+</tr>
+</tbody>
+</table>
 <p>We have not collected much contextual data so far, but it is also passed to the
 Clever Handheld Framework…</p>
 <p>As previously stated, the framework does not maintain context internally – it’s
@@ -4899,12 +5064,114 @@ validate an item without knowing the document number.</p>
 <p>Clever Handheld for Warehousing now knows that it needs to validate a <strong>Document
 No.</strong> of 106044. It finds the purchase order number and collects a set of
 response data to return…</p>
-<p><img alt="" src="../media/3eb17c98499d18cb502b2f62692c2a2c.png" /></p>
+<table>
+<thead>
+<tr>
+<th>DataItem Name</th>
+<th>Value</th>
+<th>Locked</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DocumentNo</td>
+<td>106044</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>SourceDocument</td>
+<td>Purchase Order</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>SourceType</td>
+<td>39</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>LocationCode</td>
+<td>WHITE</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>NoOfLabels</td>
+<td>1</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>ItemNo</td>
+<td>\&lt;blank></td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>VariantCode</td>
+<td>\&lt;blank></td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>\&lt;blank></td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>UnitOfMeasure</td>
+<td>\&lt;blank></td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>QtyOutstanding</td>
+<td>\&lt;blank></td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>LotNo</td>
+<td>\&lt;blank></td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>SerialNo</td>
+<td>\&lt;blank></td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>Quantity</td>
+<td>\&lt;blank></td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>ExpirationDate</td>
+<td>\&lt;blank></td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>WarrantyDate</td>
+<td>\&lt;blank></td>
+<td>FALSE</td>
+</tr>
+</tbody>
+</table>
 <p>Notice that <strong>DocumentNo</strong> has now been locked, we do not want the device to
 prompt for the source document again as we have collected that data.</p>
 <p>We also want to display this information, so we prepare a <strong>ColumnStyleGroup</strong>
 encapsulating the following <strong>ColumnStyle</strong> data.</p>
-<p><img alt="" src="../media/b5ba4f7ac5b5d0c22532d8c17e8dd862.png" /></p>
+<table>
+<thead>
+<tr>
+<th>DataItem Name</th>
+<th>Caption</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DocumentNo</td>
+<td>Purchase Order</td>
+</tr>
+<tr>
+<td>NoOfLabels</td>
+<td>No. of Labels</td>
+</tr>
+</tbody>
+</table>
 <p>Notice that the caption for <strong>DocumentNo</strong> has changed, we know it’s a purchase
 order and want to use that as the caption on the device.</p>
 <p>This is what the device screen now displays…</p>
@@ -4927,7 +5194,97 @@ authentication with the web service, so it is more expedient to collect the
 information together.</p>
 <p>The following collected validation data is sent… Along with the collected
 contextual data so far…</p>
-<p><img alt="" src="../media/deb4de1d07acec925a33df1d07d7e644.png" /></p>
+<table>
+<thead>
+<tr>
+<th>DataItem Name</th>
+<th>Value</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ItemNo</td>
+<td>1200</td>
+<td></td>
+</tr>
+<tr>
+<td>LotNo</td>
+<td>LOT00001</td>
+<td></td>
+</tr>
+<tr>
+<td>Quantity</td>
+<td>10</td>
+<td></td>
+</tr>
+<tr>
+<td>DataItem Name</td>
+<td>Value</td>
+<td>Locked</td>
+</tr>
+<tr>
+<td>DocumentNo</td>
+<td>106044</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>SourceDocument</td>
+<td>Purchase Order</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>SourceType</td>
+<td>39</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>LocationCode</td>
+<td>WHITE</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>NoOfLabels</td>
+<td>1</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>VariantCode</td>
+<td>\&lt;blank></td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>\&lt;blank></td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>UnitOfMeasure</td>
+<td>\&lt;blank></td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>QtyOutstanding</td>
+<td>\&lt;blank></td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>SerialNo</td>
+<td>\&lt;blank></td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>ExpirationDate</td>
+<td>\&lt;blank></td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>WarrantyDate</td>
+<td>\&lt;blank></td>
+<td>FALSE</td>
+</tr>
+</tbody>
+</table>
 <p>Handheld for Warehousing uses the contextual data of the purchase order number
 106044 and matches it to one or more lines matching the item number 1200.</p>
 <p>The lot number in this case is ignored because item number 1200 is not lot
@@ -4937,10 +5294,124 @@ outstanding to cover the receipt.</p>
 <p>Because the item has no variants, and is not item tracking the appropriate
 <strong>DataItems</strong> are locked off.</p>
 <p>The following response data is returned to device…</p>
-<p><img alt="" src="../media/d20f9166ec36f450e2d9beb742c49f40.png" /></p>
+<table>
+<thead>
+<tr>
+<th>DataItem Name</th>
+<th>Value</th>
+<th>Locked</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DocumentNo</td>
+<td>106044</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>SourceDocument</td>
+<td>Purchase Order</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>SourceType</td>
+<td>39</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>LocationCode</td>
+<td>WHITE</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>NoOfLabels</td>
+<td>1</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>ItemNo</td>
+<td>1200</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>VariantCode</td>
+<td>\&lt;blank></td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Back Wheel</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>UnitOfMeasure</td>
+<td>PCS</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>QtyOutstanding</td>
+<td>56</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>LotNo</td>
+<td>\&lt;blank></td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>SerialNo</td>
+<td>\&lt;blank></td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>Quantity</td>
+<td>10</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>ExpirationDate</td>
+<td>\&lt;blank></td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>WarrantyDate</td>
+<td>\&lt;blank></td>
+<td>TRUE</td>
+</tr>
+</tbody>
+</table>
 <p>All <strong>DataItems</strong> are now locked, we have enough data to process a receipt line.</p>
 <p>The following <strong>ColumnStyle</strong> data is returned for display…</p>
-<p><img alt="" src="../media/394df8e2e4c22b9c89c170cf71bfb168.png" /></p>
+<table>
+<thead>
+<tr>
+<th>DataItem Name</th>
+<th>Caption</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ItemNo</td>
+<td>Item No.</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Description</td>
+</tr>
+<tr>
+<td>UnitOfMeasure</td>
+<td>UoM</td>
+</tr>
+<tr>
+<td>QtyOutstanding</td>
+<td>Qty. Outstanding</td>
+</tr>
+<tr>
+<td>Quantity</td>
+<td>Quantity</td>
+</tr>
+</tbody>
+</table>
 <p>The device displays the returned data as instructed…</p>
 <p><img alt="" src="../media/a627de0b600e9ca55272a4a82be4ce42.png" /></p>
 <h2 id="round-trip-354-post">Round Trip #4 – Post!</h2>
@@ -4949,7 +5420,76 @@ the order number, the item number, and the quantity.</p>
 <p>The <strong>Post</strong> button becomes available on the device.</p>
 <p>When the user clicks <strong>Post</strong> all collected contextual data is passed to the
 framework with a request type of <strong>Post</strong>…</p>
-<p><img alt="" src="../media/457a9938333a9fa614a138687cd64995.png" /></p>
+<table>
+<thead>
+<tr>
+<th>DataItem Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DocumentNo</td>
+<td>106044</td>
+</tr>
+<tr>
+<td>SourceDocument</td>
+<td>Purchase Order</td>
+</tr>
+<tr>
+<td>SourceType</td>
+<td>39</td>
+</tr>
+<tr>
+<td>LocationCode</td>
+<td>WHITE</td>
+</tr>
+<tr>
+<td>NoOfLabels</td>
+<td>1</td>
+</tr>
+<tr>
+<td>ItemNo</td>
+<td>1200</td>
+</tr>
+<tr>
+<td>VariantCode</td>
+<td>\&lt;blank></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Back Wheel</td>
+</tr>
+<tr>
+<td>UnitOfMeasure</td>
+<td>PCS</td>
+</tr>
+<tr>
+<td>QtyOutstanding</td>
+<td>56</td>
+</tr>
+<tr>
+<td>LotNo</td>
+<td>\&lt;blank></td>
+</tr>
+<tr>
+<td>SerialNo</td>
+<td>\&lt;blank></td>
+</tr>
+<tr>
+<td>Quantity</td>
+<td>10</td>
+</tr>
+<tr>
+<td>ExpirationDate</td>
+<td>\&lt;blank></td>
+</tr>
+<tr>
+<td>WarrantyDate</td>
+<td>\&lt;blank></td>
+</tr>
+</tbody>
+</table>
 <ul>
 <li>
 <p>The Receipt Post function performs the following actions…</p>
