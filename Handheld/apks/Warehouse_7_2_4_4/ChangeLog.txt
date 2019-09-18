@@ -1,0 +1,7 @@
+v7.2.4.4 (88) 12/9/19
+Added hidden UPCA checksum setting
+Improved child form error message
+Old errors and events are cleared when the app starts up
+gs1 formatting exceptions are no longer sent to AppCenter
+Added extra data to the error logger
+Large error messages are truncated and the user is given an option to tap on them to see them
