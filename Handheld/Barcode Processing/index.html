@@ -5398,7 +5398,162 @@ results. To enable the scanner to return this delimiter scan this barcode:</p>
 <h3 id="zebra-scanners">Zebra Scanners</h3>
 <p>We use version 4 of the Zebra SDK (Symbol. Xamarin EMDK). This supports the
 below models:</p>
-<p><img alt="" src="../media/3b593f4bf3ddd35eabc78a453d8339bc.png" /></p>
+<table>
+<thead>
+<tr>
+<th><strong>Model Name</strong></th>
+<th><strong>Android Version</strong></th>
+<th><strong>Tested</strong></th>
+<th><strong>Notes</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MC33</td>
+<td>Nougat, Oreo</td>
+<td>Y</td>
+<td></td>
+</tr>
+<tr>
+<td>PS20</td>
+<td>Oreo</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>TC20</td>
+<td>Nougat</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>TC25</td>
+<td>Nougat</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>TC51</td>
+<td>Marshmallow, Nougat</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>TC52</td>
+<td>Oreo</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>TC56</td>
+<td>Marshmallow, Nougat</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>TC57</td>
+<td>Oreo</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>TC70x</td>
+<td>Marshmallow, Nougat</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>TC72</td>
+<td>Oreo</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>TC75x</td>
+<td>Marshmallow, Nougat</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>TC77</td>
+<td>Oreo</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>VC80x</td>
+<td>Nougat</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>WT6000</td>
+<td>Nougat</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>RS507</td>
+<td>-</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>RS6000</td>
+<td>-</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>RS5000</td>
+<td>-</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>RS4000</td>
+<td>-</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>DS2278</td>
+<td>-</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>DS3678</td>
+<td>-</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>DS3608</td>
+<td>-</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>LI3608</td>
+<td>-</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>LI3678</td>
+<td>-</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>TC8000</td>
+<td>Lollipop</td>
+<td>Y</td>
+<td>This device is supported in a previous version of the Zebra SDK. It works with V4 of the SDK, but not all barcode formats in V4 of the SDK are supported (it does not support Gs1DataMatrix and Gs1QRCode)</td>
+</tr>
+</tbody>
+</table>
 <h3 id="android-scanners">Android Scanners</h3>
 <p>We support version 4.1 and above.</p>
 <h2 id="scanner-set-up">Scanner Set Up</h2>
@@ -5629,8 +5784,12 @@ information about GS1 identifiers.</p>
 from the left-hand edge of the screen and tapping on “Scanner Diagnostics”</p>
 <p><img alt="A screenshot of a cell phone Description automatically generated" src="../media/2c9c4ab323978be448f55acadaee304b.png" /></p>
 <p>A screenshot of a cell phone Description automatically generated</p>
+<p>A screenshot of a cell phone Description automatically generated</p>
+<p>A screenshot of a cell phone Description automatically generated</p>
 <p>Swipe in from the left to reveal the About and Scanner Diagnostics options</p>
 <p><img alt="A screenshot of a cell phone Description automatically generated" src="../media/8934a7f05ba2131c0d6c703ab297760e.png" /></p>
+<p>A screenshot of a cell phone Description automatically generated</p>
+<p>A screenshot of a cell phone Description automatically generated</p>
 <p>A screenshot of a cell phone Description automatically generated</p>
 <p>Options to list the supported GS1 identifiers and to scan a barcode and read the
 identifiers and values that have been recognized in the barcode</p>
@@ -5638,31 +5797,676 @@ identifiers and values that have been recognized in the barcode</p>
 <p>This lists the symbology specifier returned by each scanner and what they are
 converted to for use in the app.</p>
 <h3 id="honeywell">Honeywell</h3>
-<p><img alt="" src="../media/492ed1a56b7fce351cf80cbe6b255cf9.png" /></p>
+<table>
+<thead>
+<tr>
+<th><strong>Honeywell Output</strong></th>
+<th><strong>App Symbology</strong></th>
+<th><strong>App Datatype</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>Aztec</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>5</td>
+<td>ChinaPost</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Codabar</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>7</td>
+<td>CodablockA</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>8</td>
+<td>CodablockF</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Code11</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Code93</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Code128</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Code128</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Isbt128</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Datamatrix</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Ean8</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Ean13</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>25</td>
+<td>Interleaved25</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>26</td>
+<td>Matrix25</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>27</td>
+<td>Standard25</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>29</td>
+<td>KoreanPost</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>30</td>
+<td>Maxicode</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>31</td>
+<td>MicroPdf417</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>32</td>
+<td>Msi</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>33</td>
+<td>Pdf417</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>36</td>
+<td>QrCode</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>38</td>
+<td>Telepen</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>39</td>
+<td>Tlc39</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>40</td>
+<td>Trioptic</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>41</td>
+<td>UpcA</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>42</td>
+<td>UpcE</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>44</td>
+<td>lata25</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>21</td>
+<td>RSS</td>
+<td>Text</td>
+</tr>
+</tbody>
+</table>
 <p>Note the EDA60 only supports 2D barcodes.</p>
 <h3 id="zebra">Zebra</h3>
-<p><img alt="" src="../media/c43a8c78c733f77aa2173a4ba22ab5e2.png" /></p>
+<table>
+<thead>
+<tr>
+<th><strong>Zebra Output</strong></th>
+<th><strong>App Symbology</strong></th>
+<th><strong>App Datatype</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>aztec</td>
+<td>Aztec</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>chinese2of15</td>
+<td>ChinaPost</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>codabar</td>
+<td>Codabar</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>compositec</td>
+<td>Compositec</td>
+<td>GS1</td>
+</tr>
+<tr>
+<td>compositeab</td>
+<td>Compositeab</td>
+<td>GS1</td>
+</tr>
+<tr>
+<td>code11</td>
+<td>Code11</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>code93</td>
+<td>Code93</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>code128</td>
+<td>Code128</td>
+<td>GS1</td>
+</tr>
+<tr>
+<td>ean128</td>
+<td>Code128</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>datamatrix</td>
+<td>Datamatrix</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>ean8</td>
+<td>Ean8</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>ean13</td>
+<td>Ean13</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>i2of5</td>
+<td>Interleaved25</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>matrix2of5</td>
+<td>Matrix25</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>isbt128</td>
+<td>Isbt128</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>korean3of5</td>
+<td>KoreanPost</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>maxicode</td>
+<td>Maxicode</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>micropdf</td>
+<td>MicroPdf417</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>msi</td>
+<td>Msi</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>pdf417</td>
+<td>Pdf417</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>qrcode</td>
+<td>QrCode</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>tlc39</td>
+<td>Tlc39</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>trioptic39</td>
+<td>Trioptic39</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>upca</td>
+<td>UpcA</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>upce0</td>
+<td>UpcE</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>Iata2of5</td>
+<td>Iata25</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>gs1_databar</td>
+<td>RSS</td>
+<td>GS1</td>
+</tr>
+<tr>
+<td>gs1_databar_exp</td>
+<td>RssExpanded</td>
+<td>GS1</td>
+</tr>
+<tr>
+<td>gs1_databar_lim</td>
+<td>RssLimited</td>
+<td>GS1</td>
+</tr>
+<tr>
+<td>gs1datamatrix</td>
+<td>DataMatrix</td>
+<td>GS1</td>
+</tr>
+<tr>
+<td>gs1qrcode</td>
+<td>QRCode</td>
+<td>GS1</td>
+</tr>
+</tbody>
+</table>
 <h3 id="zxing-android-camera">ZXing (Android Camera)</h3>
-<p><img alt="" src="../media/7b33adc5093dc4ecf51bb1d816dfcc68.png" /></p>
+<table>
+<thead>
+<tr>
+<th><strong>ZXing Format</strong></th>
+<th><strong>App Symbology</strong></th>
+<th><strong>App Datatype</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Aztec</td>
+<td>Aztec</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>Codabar</td>
+<td>Codabar</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>Code_128</td>
+<td>Code128</td>
+<td>*</td>
+</tr>
+<tr>
+<td>Code_93</td>
+<td>Code93</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>Data_Matrix</td>
+<td>Datamatrix</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>Ean_8</td>
+<td>Ean8</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>Ean_13</td>
+<td>Ean13</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>MAXICODE</td>
+<td>Maxicode</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>MSI</td>
+<td>Msi</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>PDF_417</td>
+<td>Pdf417</td>
+<td>*</td>
+</tr>
+<tr>
+<td>QR_Code</td>
+<td>QrCode</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>RSS_14</td>
+<td>Rss</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>RSS_EXPANDED</td>
+<td>RssExpanded</td>
+<td>*</td>
+</tr>
+<tr>
+<td>UPC_A</td>
+<td>UpcA</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>UPC_E</td>
+<td>UpcE</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>ITF</td>
+<td>Interleaved25</td>
+<td>Text</td>
+</tr>
+</tbody>
+</table>
 <p>* The app checks if the barcode starts with a FNC1 character. If it does it
 sets the data type as GS1. The ZXing library does not detect GS1 formatted data.</p>
 <h2 id="appendix-3-app-ident-mappings-in-handheld-for-warehousing">Appendix 3 – App Ident Mappings in Handheld for Warehousing</h2>
 <p>Below are tables for various functions detailing which AIs are mapped to which
 data items in version 7.1.2.0 of Handheld for Warehousing.</p>
 <h3 id="pick-express-pick-directed-movement-and-movement">Pick, Express Pick, Directed Movement and Movement</h3>
-<p><img alt="" src="../media/da43ec8a6da3970f69d8dbec611b23b9.png" /></p>
+<table>
+<thead>
+<tr>
+<th><strong>Data Item</strong></th>
+<th><strong>Application Identifier</strong></th>
+<th><strong>Application Identifier Code</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ItemNo</td>
+<td>SCC</td>
+<td>01</td>
+</tr>
+<tr>
+<td>ItemNo</td>
+<td>AddlProduct</td>
+<td>240</td>
+</tr>
+<tr>
+<td>ItemNo</td>
+<td>SSCTradeItems</td>
+<td>02</td>
+</tr>
+<tr>
+<td>LotNo</td>
+<td>BatchNumber</td>
+<td>10</td>
+</tr>
+<tr>
+<td>SerialNo</td>
+<td>SerialNumber</td>
+<td>21</td>
+</tr>
+</tbody>
+</table>
 <h3 id="production-consumption">Production Consumption</h3>
-<p><img alt="" src="../media/81600cd50176bfc97753f8f0c0b9dbbd.png" /></p>
+<table>
+<thead>
+<tr>
+<th><strong>Data Item</strong></th>
+<th><strong>Application Identifier</strong></th>
+<th><strong>Application Identifier Code</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CompItemNo</td>
+<td>SCC</td>
+<td>01</td>
+</tr>
+<tr>
+<td>CompItemNo</td>
+<td>AddlProduct</td>
+<td>240</td>
+</tr>
+<tr>
+<td>ItemNo</td>
+<td>SSCTradeItems</td>
+<td>02</td>
+</tr>
+<tr>
+<td>LotNo</td>
+<td>BatchNumber</td>
+<td>10</td>
+</tr>
+<tr>
+<td>SerialNo</td>
+<td>SerialNumber</td>
+<td>21</td>
+</tr>
+</tbody>
+</table>
 <h3 id="assembly-order">Assembly Order</h3>
-<p><img alt="" src="../media/cbf4938c4a6361ff882f5fa7dc135acb.png" /></p>
+<table>
+<thead>
+<tr>
+<th><strong>Data Item</strong></th>
+<th><strong>Application Identifier</strong></th>
+<th><strong>Application Identifier Code</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ComponentNo</td>
+<td>SCC</td>
+<td>01</td>
+</tr>
+<tr>
+<td>ComponentNo</td>
+<td>AddlProduct</td>
+<td>240</td>
+</tr>
+<tr>
+<td>ComponentNo</td>
+<td>SSCTradeItems</td>
+<td>02</td>
+</tr>
+</tbody>
+</table>
 <h3 id="receipt">Receipt</h3>
-<p><img alt="" src="../media/6ac640c784e34ff8edc9079ee149bf97.png" /></p>
+<table>
+<thead>
+<tr>
+<th><strong>Data Item</strong></th>
+<th><strong>Application Identifier</strong></th>
+<th><strong>Application Identifier Code</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ItemNo</td>
+<td>SCC</td>
+<td>01</td>
+</tr>
+<tr>
+<td>ItemNo</td>
+<td>AddlProduct</td>
+<td>240</td>
+</tr>
+<tr>
+<td>ItemNo</td>
+<td>SSCTradeItems</td>
+<td>02</td>
+</tr>
+<tr>
+<td>LotNo</td>
+<td>BatchNumber</td>
+<td>10</td>
+</tr>
+<tr>
+<td>SerialNo</td>
+<td>SerialNumber</td>
+<td>21</td>
+</tr>
+<tr>
+<td>ScannedExpirationDate</td>
+<td>ExpirationDate</td>
+<td>15 or 17</td>
+</tr>
+<tr>
+<td>Quantity</td>
+<td>Quantity</td>
+<td>37</td>
+</tr>
+</tbody>
+</table>
 <h3 id="item-attribute-item-photo-add-bins-item-substitution-and-item-cross-reference">Item Attribute, Item Photo, Add Bins, Item Substitution and Item Cross Reference</h3>
-<p><img alt="" src="../media/d2107a59fdf7cdc3b8dce225b4f68ea2.png" /></p>
+<table>
+<thead>
+<tr>
+<th><strong>Data Item</strong></th>
+<th><strong>Application Identifier</strong></th>
+<th><strong>Application Identifier Code</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ItemNo</td>
+<td>SCC</td>
+<td>01</td>
+</tr>
+<tr>
+<td>ItemNo</td>
+<td>AddlProduct</td>
+<td>240</td>
+</tr>
+<tr>
+<td>ItemNo</td>
+<td>SSCTradeItems</td>
+<td>02</td>
+</tr>
+</tbody>
+</table>
 <h3 id="physical-inventory-put-away-and-inventory-put-aways">Physical Inventory, Put Away and Inventory Put Aways</h3>
-<p><img alt="" src="../media/aa86f06c0e1abfcfd90f732354b21abd.png" /></p>
+<table>
+<thead>
+<tr>
+<th><strong>Data Item</strong></th>
+<th><strong>Application Identifier</strong></th>
+<th><strong>Application Identifier Code</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ItemNo</td>
+<td>SCC</td>
+<td>01</td>
+</tr>
+<tr>
+<td>ItemNo</td>
+<td>AddlProduct</td>
+<td>240</td>
+</tr>
+<tr>
+<td>ItemNo</td>
+<td>SSCTradeItems</td>
+<td>02</td>
+</tr>
+<tr>
+<td>LotNo</td>
+<td>BatchNumber</td>
+<td>10</td>
+</tr>
+<tr>
+<td>SerialNo</td>
+<td>SerialNumber</td>
+<td>21</td>
+</tr>
+<tr>
+<td>ScannedExpirationDate</td>
+<td>ExpirationDate</td>
+<td>15 or 17</td>
+</tr>
+</tbody>
+</table>
 <h3 id="production-output">Production Output</h3>
-<p><img alt="" src="../media/08cb4b9eaefab25782fa446bdcb59315.png" /></p>
+<table>
+<thead>
+<tr>
+<th><strong>Data Item</strong></th>
+<th><strong>Application Identifier</strong></th>
+<th><strong>Application Identifier Code</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LotNo</td>
+<td>BatchNumber</td>
+<td>10</td>
+</tr>
+<tr>
+<td>SerialNo</td>
+<td>SerialNumber</td>
+<td>21</td>
+</tr>
+<tr>
+<td>ScannedExpirationDate</td>
+<td>ExpirationDate</td>
+<td>15 or 17</td>
+</tr>
+<tr>
+<td>Quantity</td>
+<td>Quantity</td>
+<td>37</td>
+</tr>
+</tbody>
+</table>
                 
                   
                 
