@@ -1,0 +1,3 @@
+v7.2.4.5 (89) 02/10/19
+Fixed recursive logging problem
+Fixed invalid setup token locking the app
