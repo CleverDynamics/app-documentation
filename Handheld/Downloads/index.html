@@ -32,7 +32,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.0.2">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
     
     
       
@@ -40,9 +40,9 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.982221ab.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.0284f74d.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.224b79ff.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.01803549.css">
       
       
         
@@ -51,12 +51,12 @@
       
     
     
-      <script src="../../assets/javascripts/modernizr.1f0bcf2b.js"></script>
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Calibri+Light:300,400,400i,700|">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Calibri+Light:300,400,400i,700|&display=fallback">
         <style>body,input{font-family:"Calibri Light","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"","Courier New",Courier,monospace}</style>
       
     
@@ -108,7 +108,9 @@
               Clever Dynamics
             </span>
             <span class="md-header-nav__topic">
-              Downloads
+              
+                Downloads
+              
             </span>
           
         </div>
@@ -811,6 +813,13 @@
   
     <nav class="md-nav">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#7260" title="7.2.6.0" class="md-nav__link">
+    7.2.6.0
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#7242" title="7.2.4.2" class="md-nav__link">
@@ -4203,6 +4212,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#7260" title="7.2.6.0" class="md-nav__link">
+    7.2.6.0
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#7242" title="7.2.4.2" class="md-nav__link">
     7.2.4.2
   </a>
@@ -4241,6 +4257,47 @@
                   <h1>Downloads</h1>
                 
                 <h2 id="warehouse-android-app">Warehouse Android App</h2>
+<h3 id="7260">7.2.6.0</h3>
+<p><strong>Features:</strong></p>
+<ul>
+<li>
+<p>Added hidden UPCA checksum setting</p>
+</li>
+<li>
+<p>Improved child form error message</p>
+</li>
+<li>
+<p>Old errors and events are cleared when the app starts up</p>
+</li>
+<li>
+<p>gs1 formatting exceptions are no longer sent to AppCenter</p>
+</li>
+<li>
+<p>Added extra data to the error logger</p>
+</li>
+<li>
+<p>Large error messages are truncated and the user is given an option to tap on
+    them to see them</p>
+</li>
+<li>
+<p>Fixed recursive logging problem</p>
+</li>
+<li>
+<p>Fixed invalid setup token locking the app</p>
+</li>
+<li>
+<p>Multiple settings files can be imported.</p>
+</li>
+<li>
+<p>Settings files are checked on every start, even if there are already
+    settings present.</p>
+</li>
+<li>
+<p>Translations added from the Speech to Text branch</p>
+</li>
+</ul>
+<p><strong>File:</strong></p>
+<p><a href="../apks/Warehouse_7_2_6_0/Warehouse_7_2_6_0.apk">Warehouse_7_2_6_0.apk</a></p>
 <h3 id="7242">7.2.4.2</h3>
 <p><strong>Features:</strong></p>
 <ul>
@@ -4303,7 +4360,42 @@
 <h3 id="7220">7.2.2.0</h3>
 <p><strong>Features:</strong></p>
 <ul>
-<li>Public release of Handheld Framework 7.2 compatible version</li>
+<li>
+<p>Public release of Handheld Framework 7.2 compatible version</p>
+</li>
+<li>
+<p>\&lt;br/> is only swapped with \n in text fields in the web implementations.</p>
+</li>
+<li>
+<p>userID used instead of userId in GetWarehouseUser.</p>
+</li>
+<li>
+<p>Stopping and Starting the scanner is logged.</p>
+</li>
+<li>
+<p>GetHandheldAppVersions is called to work out the version of the Handheld
+    Framework. If this method is not present in the WSDL the version of the
+    Handheld Framework is assumed to be 7.1</p>
+</li>
+<li>
+<p>Login process for 7.2 now supported. Compatibility with 7.1 maintained.
+    Removed formatting characters from company name on the login screen. Handled
+    non granting of camera permissions better.</p>
+</li>
+<li>
+<p>Web service name is worked out by probing the WSDL - N.B. the possible
+    options are WhseWebService or HandheldFramework (or a name supplied by the
+    registration service).</p>
+</li>
+<li>
+<p>Intervening versions are Speech to Text POC packages.</p>
+</li>
+<li>
+<p>Fixed squashed button bug.</p>
+</li>
+<li>
+<p>Fixed bug after scanning a token barcode.</p>
+</li>
 </ul>
 <p><strong>File:</strong></p>
 <p><a href="file:///C:\Users\Reena.Patel\Technology%20Management\Clever%20Dynamics%20-%20Clever%20Dynamics%20Documentation\docs\Handheld\apks\Warehouse_7_2_2_0\Warehouse_7_2_2_0.apk">Warehouse_7_2_2_0.apk</a></p>
@@ -4376,7 +4468,7 @@
       
     </div>
     
-      <script src="../../assets/javascripts/application.d9aa80ab.js"></script>
+      <script src="../../assets/javascripts/application.245445c6.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       
