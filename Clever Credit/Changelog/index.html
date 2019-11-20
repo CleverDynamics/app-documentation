@@ -83,7 +83,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#version-2219" tabindex="1" class="md-skip">
+      <a href="#version-2220" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -2173,6 +2173,13 @@
   
     <label class="md-nav__title" for="__toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#version-2220" title="Version 2.2.20" class="md-nav__link">
+    Version 2.2.20
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#version-2219" title="Version 2.2.19" class="md-nav__link">
@@ -4303,6 +4310,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#version-2220" title="Version 2.2.20" class="md-nav__link">
+    Version 2.2.20
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#version-2219" title="Version 2.2.19" class="md-nav__link">
     Version 2.2.19
   </a>
@@ -4454,7 +4468,36 @@
                 
                   <h1>Changelog</h1>
                 
-                <h2 id="version-2219">Version 2.2.19</h2>
+                <h2 id="version-2220">Version 2.2.20</h2>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>Table IDs do not match error when clicking on Customer No. link in Stats
+    FactBox.</li>
+</ul>
+<p><strong>Enhancements</strong></p>
+<ul>
+<li>
+<p>On Before/ After Manual Release Events - Add events before/after manual
+    release in the Credit Management codeunit to allow custom subscribers to
+    override or extend the checks that are performed when an order is released.</p>
+</li>
+<li>
+<p>Allow a custom subscriber to have a custom definition of</p>
+<ul>
+<li>
+<p>Overdue Credit</p>
+</li>
+<li>
+<p>TotalOverCreditLimit</p>
+</li>
+<li>
+<p>Or just override the entire function to decide whether a particular
+    order should be credit held or not</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="version-2219">Version 2.2.19</h2>
 <p><strong>Bug Fixes</strong></p>
 <ul>
 <li>Creating an Interaction Hangs - When using "Make Phone Call" from the to-do
