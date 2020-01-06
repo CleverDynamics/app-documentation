@@ -83,7 +83,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#version-2100" tabindex="1" class="md-skip">
+      <a href="#version-2130" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -2895,6 +2895,27 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#version-2130" title="Version 2.13.0" class="md-nav__link">
+    Version 2.13.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-2120" title="Version 2.12.0" class="md-nav__link">
+    Version 2.12.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-2110" title="Version 2.11.0" class="md-nav__link">
+    Version 2.11.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#version-2100" title="Version 2.10.0" class="md-nav__link">
     Version 2.10.0
   </a>
@@ -4249,6 +4270,27 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#version-2130" title="Version 2.13.0" class="md-nav__link">
+    Version 2.13.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-2120" title="Version 2.12.0" class="md-nav__link">
+    Version 2.12.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-2110" title="Version 2.11.0" class="md-nav__link">
+    Version 2.11.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#version-2100" title="Version 2.10.0" class="md-nav__link">
     Version 2.10.0
   </a>
@@ -4274,7 +4316,112 @@
                 
                   <h1>Changelog</h1>
                 
-                <h2 id="version-2100">Version 2.10.0</h2>
+                <h2 id="version-2130">Version 2.13.0</h2>
+<p><strong>Enhancements</strong></p>
+<ul>
+<li>
+<p>Reference No. on Document Log Records. Add a reference no. field on document
+    log records that can be populated by another app that requires Document
+    Delivery's functionality.</p>
+</li>
+<li>
+<p>Event to include additional attachments. Include a new event publisher that
+    will allow a subscriber to include custom attachments into documents as they
+    are being processed.</p>
+</li>
+<li>
+<p>Action to apply default config from setup page notification. Add an action
+    to the setup page notification to apply default configuration.</p>
+</li>
+<li>
+<p>Don't Test AssureSign Connection With Incomplete Setup</p>
+</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>
+<p>Dialog placeholder bug. \@1\@\@\@\@ has been translated incorrectly and
+    introduced spaces into the placeholder which will cause an error when
+    Window. Update is used.</p>
+</li>
+<li>
+<p>Email body html content is corrupted after editing. Additional html
+    tags/text are added to the end of email body following editing</p>
+</li>
+</ul>
+<h2 id="version-2120">Version 2.12.0</h2>
+<p><strong>Enhancements</strong></p>
+<ul>
+<li>
+<p>Reintroduce Applies to Functionality. Field determines whether document type
+    attachment lines apply when the document type is being printed/email or
+    both. If the document is being submitted to AssureSign then the document
+    type attachments that are applied to emails should be followed.</p>
+</li>
+<li>
+<p>Update Build to Use Template</p>
+</li>
+<li>
+<p>Update Links in App Manifest</p>
+</li>
+<li>
+<p>Enforce Licensing. Do not allow new documents to be submitted when the
+    license has expired. All other functionality should still be enabled. Show a
+    notification if the licence has expired/is expiring from the document type
+    list/card and the batch selection page.</p>
+</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>Set password with Encryption Enabled. When setting the password in the DD
+    Password Mgt. codeunit the encrypted password is too long to be set against
+    the password text.</li>
+</ul>
+<h2 id="version-2110">Version 2.11.0</h2>
+<p><strong>Enhancements</strong></p>
+<ul>
+<li>
+<p>AssureSign Integration. Allow users to submit documents via AssureSign.</p>
+<ul>
+<li>
+<p>Select an appropriate template to create the AssureSign envelope with</p>
+</li>
+<li>
+<p>Download placeholder values that are required in the template and allow
+    the user to link them to Document Fields that provide the appropriate
+    values</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Include Document Log Records in Navigate. Extend the Navigate page to also
+    search for matching Document Log records e.g. the user should be able to
+    navigate from a posted sales invoice and see the document log(s) that
+    include the document. Showing the record should open the document log page
+    filtered to the appropriate records.</p>
+</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>
+<p>Increased Customer/Vendor Name Lengths. Test to demonstrate the error and
+    increase the length of our fields that the customer and vendor names are
+    copying into.</p>
+</li>
+<li>
+<p>Cannot convert from ‘Enum’ to ‘Integer’. Argument 2: cannot convert from
+    'Enum "Detail Type CDDTMN"' to 'Integer'</p>
+</li>
+<li>
+<p>Overflow Error Copying Document Types. Parameters in Translation Mgt.
+    codeunit </p>
+</li>
+<li>
+<p>Controls Not Visible on Copy Document Type report. The Copy From/To controls
+    are not visible on the copy document type report request page.</p>
+</li>
+</ul>
+<h2 id="version-2100">Version 2.10.0</h2>
 <p><strong>Enhancements</strong></p>
 <ul>
 <li>

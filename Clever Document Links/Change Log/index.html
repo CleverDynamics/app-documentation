@@ -83,7 +83,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#version-126" tabindex="1" class="md-skip">
+      <a href="#version-128" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -3087,6 +3087,20 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#version-128" title="Version 1.2.8" class="md-nav__link">
+    Version 1.2.8
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-127" title="Version 1.2.7" class="md-nav__link">
+    Version 1.2.7
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#version-126" title="Version 1.2.6" class="md-nav__link">
     Version 1.2.6
   </a>
@@ -4256,6 +4270,20 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#version-128" title="Version 1.2.8" class="md-nav__link">
+    Version 1.2.8
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-127" title="Version 1.2.7" class="md-nav__link">
+    Version 1.2.7
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#version-126" title="Version 1.2.6" class="md-nav__link">
     Version 1.2.6
   </a>
@@ -4288,7 +4316,51 @@
                 
                   <h1>Changelog</h1>
                 
-                <h2 id="version-126">Version 1.2.6</h2>
+                <h2 id="version-128">Version 1.2.8</h2>
+<p><strong>Enhancements</strong></p>
+<ul>
+<li>
+<p>Replace service password with isolated storage. Store the SharePoint
+    password in isolated storage rather than in the service password table.</p>
+</li>
+<li>
+<p>Enforce licensing. Don't allow new documents to be uploaded if the license
+    has expired. The user should still be able to view and download existing
+    documents even without a license.</p>
+</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>Permissions on Posted Purchase Credit Memo. Add file to FactBox on Posted
+    Purchase Credit Memo page. Error on no Permission to modify record</li>
+</ul>
+<h2 id="version-127">Version 1.2.7</h2>
+<p><strong>Enhancements</strong></p>
+<ul>
+<li>
+<p>Permission sets to control access to documents. Create two permission sets
+    for this addition. One that give users full permissions to the Doc Links
+    tables and another that only allow them to insert and modify, but not
+    Delete.</p>
+<ul>
+<li>
+<p>Test that the permission sets give the desired behaviour. In particular
+    test that users with the more limited permission set can still upload,
+    link and download documents. The only thing they should not be able to
+    is delete.</p>
+</li>
+<li>
+<p>These permission sets should be included in the Resources for the
+    extension (ask NM or JJ to help when you're ready).</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>Tests failing in country NL.</li>
+</ul>
+<h2 id="version-126">Version 1.2.6</h2>
 <p><strong>Bug Fixes</strong></p>
 <ul>
 <li>
