@@ -1,0 +1,3 @@
+Fixed bug in upgrading 7.2 OnPrem settings
+Fixed bug in closing scanner after the setup token screen has closed
+Fixed a bug in the Zebra scanner

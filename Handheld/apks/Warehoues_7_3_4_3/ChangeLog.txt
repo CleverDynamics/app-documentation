@@ -1,0 +1,9 @@
+v7.3.4.3
+Speech recognition and text to speech support added
+Display company name is obtained from the Handheld Framework
+User interface altered to use scalable images
+Results in a transaction / enquiry are ordered by the Handheld Framework
+Layout of the login screen has been improved for landscape devices
+Code 39 barcodes are always scanned in 'standard' mode
+
+
