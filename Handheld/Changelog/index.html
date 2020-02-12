@@ -83,7 +83,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#version-7210" tabindex="1" class="md-skip">
+      <a href="#version-7300" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -637,6 +637,13 @@
   
     <label class="md-nav__title" for="__toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#version-7300" title="Version 7.3.0.0" class="md-nav__link">
+    Version 7.3.0.0
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#version-7210" title="Version 7.2.1.0" class="md-nav__link">
@@ -4429,6 +4436,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#version-7300" title="Version 7.3.0.0" class="md-nav__link">
+    Version 7.3.0.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#version-7210" title="Version 7.2.1.0" class="md-nav__link">
     Version 7.2.1.0
   </a>
@@ -4538,7 +4552,60 @@
                 
                   <h1>Changelog</h1>
                 
-                <h2 id="version-7210">Version 7.2.1.0</h2>
+                <h2 id="version-7300">Version 7.3.0.0</h2>
+<p><strong>Enhancements</strong></p>
+<ul>
+<li>
+<p>Speech recognition and text to speech support added (both Azure and Google)</p>
+</li>
+<li>
+<p>The user interface has been altered to use scalable images</p>
+</li>
+<li>
+<p>Results in a transaction / enquiry are ordered by the Handheld Framework.
+    Individual rows can be truncated to fit on to one line to save space.
+    Individual results can also be highlighted for extra emphasis.</p>
+</li>
+<li>
+<p>Layout of the login screen has been improved for landscape devices</p>
+</li>
+<li>
+<p>Code 39 barcodes are always scanned in 'standard' mode - this removes an
+    inconsistency between how the Honeywell and Zebra devices scanned them
+    compared to the camera scanner</p>
+</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>
+<p>The company name is obtained from the Handheld Framework, not from the web
+    service URL as before.</p>
+</li>
+<li>
+<p>Put-Away Not Created When Scanning Receipt No-Receipt Line No.</p>
+</li>
+<li>
+<p>Blank Item No. Allowed When Processing Pick - On validating the item no. do
+    not allow a blank item no.</p>
+</li>
+<li>
+<p>Put-Away Unit of Measure</p>
+</li>
+<li>
+<p>Zone and Bin Code Deleted From Partial Pick Lines</p>
+</li>
+<li>
+<p>Phys. Inventory Not Working as expected – specifically around lot tracking.</p>
+</li>
+<li>
+<p>CallBack Error - Disrupting Reservation Entries - Posting a movement for an
+    item that is reserved to a specific document causes a confirmation dialog to
+    be shown in the client warning that reservation entries may be disrupted. In
+    the HH client this causes a call back error (which is shown when the web
+    service call attempts to show some UI element).</p>
+</li>
+</ul>
+<h2 id="version-7210">Version 7.2.1.0</h2>
 <p><strong>Enhancements</strong></p>
 <ul>
 <li>
