@@ -32,7 +32,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.0.2">
     
     
       
@@ -40,9 +40,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/application.0284f74d.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.982221ab.css">
       
-        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.01803549.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.224b79ff.css">
       
       
         
@@ -51,12 +51,12 @@
       
     
     
-      <script src="../../../assets/javascripts/modernizr.74668098.js"></script>
+      <script src="../../../assets/javascripts/modernizr.1f0bcf2b.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Calibri+Light:300,400,400i,700|&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Calibri+Light:300,400,400i,700|">
         <style>body,input{font-family:"Calibri Light","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"","Courier New",Courier,monospace}</style>
       
     
@@ -104,9 +104,7 @@
               Clever Dynamics
             </span>
             <span class="md-header-nav__topic">
-              
-                Doc.Delivery Attachments Card
-              
+              Doc.Delivery Attachments Card
             </span>
           
         </div>
@@ -3237,8 +3235,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Clever Global Search/How To Videos/" title="Clever How To Vidoes" class="md-nav__link">
-      Clever How To Vidoes
+    <a href="../../../Clever Global Search/How To Videos/" title="Clever How To Videos" class="md-nav__link">
+      Clever How To Videos
     </a>
   </li>
 
@@ -3322,6 +3320,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Clever PrintNode Integration/User Guide/Printer Selections/" title="Printer Selections" class="md-nav__link">
+      Printer Selections
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -3337,11 +3347,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-6-2" type="checkbox" id="nav-5-6-2">
     
     <label class="md-nav__link" for="nav-5-6-2">
-      Delevoper Guide
+      Developer Guide
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
       <label class="md-nav__title" for="nav-5-6-2">
-        Delevoper Guide
+        Developer Guide
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -4318,10 +4328,10 @@ manipulate to show the document that best suits your business requirements.</p>
 <p>The first FastTab is the <strong>General FastTab</strong>, which simply detail the document
 type you are on and what type of attachment you are looking at. The attachment
 type is based on the attachment line you highlighted before pressing the action.</p>
-<p><img alt="" src="../media/424c1366fd85f85e3d9863919d4cdf57.png" /></p>
+<p><img alt="" src="../media/63c12be1cc0ab1a271ecd1d94642cfc8.png" /></p>
 <p>Following on from general we then have the <strong>Report FastTab</strong>, most of the
 fields you will recognise.</p>
-<p><img alt="" src="../media/5505c1575aa0598b54455eee96f86166.png" /></p>
+<p><img alt="" src="../media/11addec205f8ccf824e34cf686bff47e.png" /></p>
 <p>However, there are a few extra ones that you may want to use, such as; <strong>Custom
 Layout Code</strong>. This allows you to create a custom layout report which will then
 be sent put as part of that report’s attachment, overriding the report you have
@@ -4333,9 +4343,28 @@ your selected records as they were selected from your primary table. For
 example, when running the Order confirmation, you are selecting records from the
 sales list. As the document types primary table is the Sales Header it means the
 report will be filtered based on you selecting the customers documents.</p>
-<p>You also choose the option <strong>Linked Tables</strong>, you use this in a scenario where
+<p>You also choose the option <strong>Linked Tables</strong>; you use this in a scenario where
 you have a report running from a linked table and you need those filters to run
 the report.</p>
+<p>As mentioned previously if your attachment is of type report all the above
+fields will be visible including a field called <strong>Optional.</strong></p>
+<p><img alt="" src="../media/713caf4686b7708f310a7c34924bdbef.png" /></p>
+<p>By default, this will be <strong>disabled</strong>. This action is used in circumstances
+where you are attaching a report to another report based on a set of
+requirements. For example, when sending a reminder to a customer you may also
+want to send the posted invoices related to that reminder. In most circumstances
+this will work as the payment is being applied to an invoice. On occasions where
+it isn’t, and you are simply reminding the customer to pay an amount the
+document send will fail as no attachment could be created (there is nothing to
+create).</p>
+<p>Using the same scenario above but <strong>enabling</strong> the optional field no errors will
+occur. This means if there is something to attach so an invoice to send out with
+the reminder then it will do. If there is no invoice that can be generated, then
+it will be just the reminder that goes out to the customer.</p>
+<p><strong>NB</strong>: You only flag the report that you want to be optionally sent. In the
+case above it will be set against the invoice report. The reminder you still
+want to send out, but attaching the invoice report is optional based on whether
+it can be created or not.</p>
                 
                   
                 
@@ -4405,7 +4434,7 @@ the report.</p>
       
     </div>
     
-      <script src="../../../assets/javascripts/application.245445c6.js"></script>
+      <script src="../../../assets/javascripts/application.d9aa80ab.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
       
