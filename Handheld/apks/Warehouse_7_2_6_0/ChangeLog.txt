@@ -1,4 +1,0 @@
-v7.2.6.0 (91) 25/10/19
-Multiple settings files can be imported.
-Settings files are checked on every start, even if there are already settings present.
-Translations added from the Speech to Text branch
