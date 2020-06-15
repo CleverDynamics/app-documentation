@@ -83,7 +83,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#230" tabindex="1" class="md-skip">
+      <a href="#232" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -2207,6 +2207,20 @@
   
     <label class="md-nav__title" for="__toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#232" title="2.3.2" class="md-nav__link">
+    2.3.2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#231" title="2.3.1" class="md-nav__link">
+    2.3.1
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#230" title="2.3.0" class="md-nav__link">
@@ -4593,6 +4607,20 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#232" title="2.3.2" class="md-nav__link">
+    2.3.2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#231" title="2.3.1" class="md-nav__link">
+    2.3.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#230" title="2.3.0" class="md-nav__link">
     2.3.0
   </a>
@@ -4772,7 +4800,15 @@
                 
                   <h1>Changelog</h1>
                 
-                <h2 id="230">2.3.0</h2>
+                <h2 id="232">2.3.2</h2>
+<p><strong>Enhancements</strong>
+- Users entering sales orders no longer require Customer modify permissions
+  - The Account Status field on the customer record may be updated when an order is entered and released which previously required explicit modify permissions on the Customer table
+  - The Clever Credit permission set now includes Indirect modify permission to the customer table which is elevated by the account status calculation code</p>
+<h2 id="231">2.3.1</h2>
+<p><strong>Bug Fixes</strong>
+- Rename query web service CredCtrlRemainAmt to CreditCtrlRemainAmtStatus (workaround for an issue upgrading BC SaaS tenants)</p>
+<h2 id="230">2.3.0</h2>
 <p><strong>Enhancements</strong></p>
 <ul>
 <li>New action on setup page to perform calculation of Clever Credit statistics (rather than on installation of the app)</li>
