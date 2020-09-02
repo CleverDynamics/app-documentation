@@ -1443,6 +1443,47 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#cal-changes-in-early-cumulative-updates-of-bc14" title="C/AL Changes In Early Cumulative Updates of BC14" class="md-nav__link">
+    C/AL Changes In Early Cumulative Updates of BC14
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#codeunit-5704-transferorder-post-shipment" title="Codeunit 5704 TransferOrder-Post Shipment" class="md-nav__link">
+    Codeunit 5704 TransferOrder-Post Shipment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#codeunit-5760-whse-post-receipt" title="Codeunit 5760 (Whse.-Post Receipt)" class="md-nav__link">
+    Codeunit 5760 (Whse.-Post Receipt)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#codeunut-7301-whse-jnl-register-line" title="Codeunut 7301 (Whse. Jnl.-Register Line)" class="md-nav__link">
+    Codeunut 7301 (Whse. Jnl.-Register Line)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#codeunit-23-item-jnl-post-batch" title="Codeunit 23 (Item Jnl.-Post Batch)" class="md-nav__link">
+    Codeunit 23 (Item Jnl.-Post Batch)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
       
@@ -4545,6 +4586,47 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#cal-changes-in-early-cumulative-updates-of-bc14" title="C/AL Changes In Early Cumulative Updates of BC14" class="md-nav__link">
+    C/AL Changes In Early Cumulative Updates of BC14
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#codeunit-5704-transferorder-post-shipment" title="Codeunit 5704 TransferOrder-Post Shipment" class="md-nav__link">
+    Codeunit 5704 TransferOrder-Post Shipment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#codeunit-5760-whse-post-receipt" title="Codeunit 5760 (Whse.-Post Receipt)" class="md-nav__link">
+    Codeunit 5760 (Whse.-Post Receipt)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#codeunut-7301-whse-jnl-register-line" title="Codeunut 7301 (Whse. Jnl.-Register Line)" class="md-nav__link">
+    Codeunut 7301 (Whse. Jnl.-Register Line)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#codeunit-23-item-jnl-post-batch" title="Codeunit 23 (Item Jnl.-Post Batch)" class="md-nav__link">
+    Codeunit 23 (Item Jnl.-Post Batch)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
       
@@ -4597,6 +4679,56 @@ end;
 
 <h2 id="publish-and-install-clever-containers-hybrid">Publish and Install Clever Containers Hybrid</h2>
 <p>Download the <em>Clever Containers Hybrid</em> app from the Business Central 14 folder from drive.cleverdynamics.com. This app contains only the functionality that relies on base application changes (a.k.a. hybrid development). These changes are rolled into the main <em>Clever Containers</em> app for later versions of Business Central.</p>
+<h2 id="cal-changes-in-early-cumulative-updates-of-bc14">C/AL Changes In Early Cumulative Updates of BC14</h2>
+<p>Depending on the cumulative update of BC14 that you are installing Clever Containers into it may be necessary to make additional C/AL changes.</p>
+<h3 id="codeunit-5704-transferorder-post-shipment">Codeunit 5704 TransferOrder-Post Shipment</h3>
+<p>OnCheckTransLine event (and the call to it) should have the following parameters.</p>
+<pre><code>[Integration]
+LOCAL PROCEDURE OnCheckTransLine@32(TransferLine@1000 : Record 5741;TransferHeader@1001 : Record 5740;Location@1002 : Record 14;WhseShip@1003 : Boolean);
+BEGIN
+END;
+</code></pre>
+
+<h3 id="codeunit-5760-whse-post-receipt">Codeunit 5760 (Whse.-Post Receipt)</h3>
+<p>Add OnAfterPostedWhseRcptLineInsert event and call to it</p>
+<pre><code>PROCEDURE CreatePostedRcptLine@4(VAR WhseRcptLine@1001 : Record 7317;VAR PostedWhseRcptHeader@1000 : Record 7318;VAR PostedWhseRcptLine@1002 : Record 7319;VAR TempHandlingSpecification@1003 : Record 336);
+BEGIN
+    UpdateWhseRcptLineBuf(WhseRcptLine);
+
+    [...]
+
+    INSERT;
+    OnAfterPostedWhseRcptLineInsert(PostedWhseRcptLine,WhseRcptLine);
+    END;
+</code></pre>
+
+<pre><code>[Integration]
+LOCAL PROCEDURE OnAfterPostedWhseRcptLineInsert@55(VAR PostedWhseReceiptLine@1000 : Record 7319;WarehouseReceiptLine@1001 : Record 7317);
+BEGIN
+END;
+</code></pre>
+
+<h3 id="codeunut-7301-whse-jnl-register-line">Codeunut 7301 (Whse. Jnl.-Register Line)</h3>
+<p>The OnInitWhseEntryCopyFromWhseJnlLine event and its call should include the <em>Sign</em> variable.</p>
+<pre><code>[Integration]
+LOCAL PROCEDURE OnInitWhseEntryCopyFromWhseJnlLine@11(VAR WarehouseEntry@1000 : Record 7312;WarehouseJournalLine@1001 : Record 7311;OnMovement@1002 : Boolean;Sign@1003 : Integer);
+BEGIN
+END;
+</code></pre>
+
+<h3 id="codeunit-23-item-jnl-post-batch">Codeunit 23 (Item Jnl.-Post Batch)</h3>
+<p>Include the <em>OnBeforeWhseJnlPostLineRun</em> event and calls to it immediately before the call to WhseJnlPostLine.RUN in the <em>PostWhseJnlLine</em> method.</p>
+<pre><code>IsHandled := FALSE;
+OnBeforeWhseJnlPostLineRun(ItemJnlLine,TempWhseJnlLine2,IsHandled);
+IF NOT IsHandled THEN
+    WhseJnlPostLine.RUN(TempWhseJnlLine2);
+</code></pre>
+
+<pre><code>[Integration]
+LOCAL PROCEDURE OnBeforeWhseJnlPostLineRun@43(ItemJournalLine@1000 : Record 83;VAR TempWarehouseJournalLine@1001 : TEMPORARY Record 7311;VAR IsHandled@1002 : Boolean);
+BEGIN
+END;
+</code></pre>
                 
                   
                 
