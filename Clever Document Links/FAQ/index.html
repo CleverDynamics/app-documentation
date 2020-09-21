@@ -4586,6 +4586,12 @@
 <blockquote>
 <p>See the technical specification here: <a href="https://www.ocrsdk.com/documentation/specifications/barcode-types/">https://www.ocrsdk.com/documentation/specifications/barcode-types/</a></p>
 </blockquote>
+<ul>
+<li>Is there a limit to the file size that can be downloaded by Clever Document Links?</li>
+</ul>
+<blockquote>
+<p>As the files are downloaded from SharePoint using its web API, the file size is limited by the maximum web response size that AL clients are configured to handle (by default 15MB). Please see <a href="https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/configure-server-instance#NavAdminSettings">https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/configure-server-instance#NavAdminSettings</a> for more information (particularly the NavHttpClientMaxResponseContentSize configuration key)</p>
+</blockquote>
                 
                   
                 
