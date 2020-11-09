@@ -5134,7 +5134,12 @@ created. It also helps in understanding what each code means.</p>
 cost is calculated based on the duty %, or the weight or volume of the item
 based on the item card fields. Options are Duty, Weight (KG), Volume (M3). These
 options can be selected by using the drop down arrow next to the field.</p>
-<p>Optionally set the <strong>Default Cost</strong> for this Landed Cost Type when the Calculation Type is either Weight or Volume. This will be inherited by new Item Landed Costs for this Landed Cost Type. When you update the Default Cost you will be prompted to update the Default Cost for all Item Landed Costs of this type. Answer yes to recalculate the Default Cost on the relevant Item Landed Costs.</p>
+<p>Optionally set the <strong>Default Cost</strong> for this Landed Cost Type when the
+Calculation Type is either Weight or Volume. This will be inherited by new Item
+Landed Costs for this Landed Cost Type. When you update the Default Cost you
+will be prompted to update the Default Cost for all Item Landed Costs of this
+type. Answer yes to recalculate the Default Cost on the relevant Item Landed
+Costs.</p>
 <p><img alt="" src="../media/03-03.png" /></p>
 <p><img alt="" src="../media/03-04.png" /></p>
 <p>By populating the field <strong>Include in Duty,</strong> against each code determines
@@ -5152,7 +5157,10 @@ accrual postings.</p>
 <p>You should also have a Inventory Accrual Acc (Interim) stated on your General
 Posting Setup for the relevant general product posting groups assigned to the
 items that will have landed costs as this is where the expected costs are posted
-on receipting the order.</p>
+on receipting the order. For this combination of Gen. Bus. Posting Group and
+Gen. Prod. Posting Group you should also set the <strong>Overhead Applied</strong> account to
+the same as the <strong>Inventory Accrual Acc (Interim).</strong>  This ensure the landed
+costs are posted correctly within the general ledger.</p>
 <p>Like the accrual account you need a <strong>Variance Account</strong> for each code where
 there is a difference between the expected cost (recorded on receipt) and actual
 cost on invoicing the variance is posted to this account.</p>
