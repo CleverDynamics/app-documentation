@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#112" class="md-skip">
+        <a href="#120" class="md-skip">
           Skip to content
         </a>
       
@@ -4059,6 +4059,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#120" class="md-nav__link">
+    1.2.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#112" class="md-nav__link">
     1.1.2
   </a>
@@ -5199,6 +5206,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#120" class="md-nav__link">
+    1.2.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#112" class="md-nav__link">
     1.1.2
   </a>
@@ -5255,24 +5269,49 @@
                 
                   <h1>Changelog</h1>
                 
-                <h2 id="112">1.1.2</h2>
+                <h2 id="120">1.2.0</h2>
+<p><strong>Enhancements</strong></p>
 <ul>
-<li>Fix: handle duplicate printer names. Especially where multiple PrintNode clients are connected to the same account more than one printer with the same name can be available e.g. XPS Document Writer - fixed a bug where this led to an error opening the Printer Management page</li>
+<li>Implement Printing Interface</li>
+</ul>
+<p><strong>Bug Fix</strong></p>
+<ul>
+<li>Print names with brackets causes filter error when enumerating printer trays</li>
+</ul>
+<h2 id="112">1.1.2</h2>
+<ul>
+<li>Fix: handle duplicate printer names. Especially where multiple PrintNode
+    clients are connected to the same account more than one printer with the
+    same name can be available e.g. XPS Document Writer - fixed a bug where this
+    led to an error opening the Printer Management page</li>
 </ul>
 <h2 id="111">1.1.1</h2>
 <ul>
-<li>Fix: do not handle print jobs when there is no corresponding printer selection record</li>
+<li>Fix: do not handle print jobs when there is no corresponding printer
+    selection record</li>
 </ul>
 <h2 id="110">1.1.0</h2>
 <ul>
-<li>Use new events that are available in Business Central 15.3 to support printer selections</li>
-<li>Supports specifying the printer and printer tray on the printer selection record and handling print jobs</li>
+<li>
+<p>Use new events that are available in Business Central 15.3 to support
+    printer selections</p>
+<ul>
+<li>Supports specifying the printer and printer tray on the printer
+    selection record and handling print jobs</li>
+</ul>
+</li>
 </ul>
 <h2 id="102">1.0.2</h2>
 <ul>
-<li>Replace Service Password table with Isolated Storage</li>
-<li>Use Clever Dynamics licensing service</li>
-<li>Update links in app manifest</li>
+<li>
+<p>Replace Service Password table with Isolated Storage</p>
+</li>
+<li>
+<p>Use Clever Dynamics licensing service</p>
+</li>
+<li>
+<p>Update links in app manifest</p>
+</li>
 </ul>
 <h2 id="101">1.0.1</h2>
 <ul>
@@ -5280,7 +5319,8 @@
 </ul>
 <h2 id="10">1.0</h2>
 <ul>
-<li>Initial version, integration with PrintNode service to enumerate available printers and trays, submit print jobs to PrintNode</li>
+<li>Initial version, integration with PrintNode service to enumerate available
+    printers and trays, submit print jobs to PrintNode</li>
 </ul>
                 
               
