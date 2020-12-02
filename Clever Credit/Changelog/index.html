@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#236" class="md-skip">
+        <a href="#237" class="md-skip">
           Skip to content
         </a>
       
@@ -2791,6 +2791,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#237" class="md-nav__link">
+    2.3.7
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#236" class="md-nav__link">
     2.3.6
   </a>
@@ -5360,6 +5367,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#237" class="md-nav__link">
+    2.3.7
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#236" class="md-nav__link">
     2.3.6
   </a>
@@ -5577,43 +5591,109 @@
                 
                   <h1>Changelog</h1>
                 
-                <h2 id="236">2.3.6</h2>
-<p><strong>Bug Fixes</strong>
-- Error renumbering customer record</p>
+                <h2 id="237">2.3.7</h2>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>Status on Credit Released Orders - Release order from the Credit Held list,
+    sets the Credit Status to "OK" It should set the Credit Status to "Credit
+    Released". The filtered release list doesn’t show the orders that have been
+    released, because its filtered to "Credit Released"</li>
+</ul>
+<p><strong>Enhancements</strong></p>
+<ul>
+<li>
+<p>Reassign Credit controller - Once a Credit Controller has been assigned to a
+    Customer there isn’t a way to reassign them to another credit controller</p>
+</li>
+<li>
+<p>Customer Posting Group added to main page</p>
+</li>
+</ul>
+<h2 id="236">2.3.6</h2>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>Error renumbering customer record</li>
+</ul>
 <h2 id="235">2.3.5</h2>
-<p><strong>Bug Fixes</strong>
-- Reclaculate All / Recalculate Entries does not update customer status</p>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>Recalculate All / Recalculate Entries does not update customer status</li>
+</ul>
 <h2 id="234">2.3.4</h2>
-<p><strong>Bug Fixes</strong>
-- Customer modify permission still required after fix in 2.3.2</p>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>Customer modify permission still required after fix in 2.3.2</li>
+</ul>
 <h2 id="233">2.3.3</h2>
-<p><strong>Bug Fixes</strong>
-- Upgrade code missing permissions</p>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>Upgrade code missing permissions</li>
+</ul>
 <h2 id="232">2.3.2</h2>
-<p><strong>Enhancements</strong>
-- Users entering sales orders no longer require Customer modify permissions
-  - The Account Status field on the customer record may be updated when an order is entered and released which previously required explicit modify permissions on the Customer table
-  - The Clever Credit permission set now includes Indirect modify permission to the customer table which is elevated by the account status calculation code</p>
+<p><strong>Enhancements</strong></p>
+<ul>
+<li>
+<p>Users entering sales orders no longer require Customer modify permissions</p>
+<ul>
+<li>
+<p>The Account Status field on the customer record may be updated when an
+    order is entered and released which previously required explicit modify
+    permissions on the Customer table</p>
+</li>
+<li>
+<p>The Clever Credit permission set now includes Indirect modify permission
+    to the customer table which is elevated by the account status
+    calculation code</p>
+</li>
+</ul>
+</li>
+</ul>
 <h2 id="231">2.3.1</h2>
-<p><strong>Bug Fixes</strong>
-- Rename query web service CredCtrlRemainAmt to CreditCtrlRemainAmtStatus (workaround for an issue upgrading BC SaaS tenants)</p>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>Rename query web service CredCtrlRemainAmt to CreditCtrlRemainAmtStatus
+    (workaround for an issue upgrading BC SaaS tenants)</li>
+</ul>
 <h2 id="230">2.3.0</h2>
 <p><strong>Enhancements</strong></p>
 <ul>
-<li>New action on setup page to perform calculation of Clever Credit statistics (rather than on installation of the app)</li>
-<li>Ability to select different contacts on the interaction page</li>
-<li>Call manual release methods in Release Sales Documents codeunit</li>
-<li>Select/deselect highlighted entries on interaction subpage</li>
-<li>Different interaction types - ability to select between them on the interaction page</li>
+<li>
+<p>New action on setup page to perform calculation of Clever Credit statistics
+    (rather than on installation of the app)</p>
+</li>
+<li>
+<p>Ability to select different contacts on the interaction page</p>
+</li>
+<li>
+<p>Call manual release methods in Release Sales Documents codeunit</p>
+</li>
+<li>
+<p>Select/deselect highlighted entries on interaction subpage</p>
+</li>
+<li>
+<p>Different interaction types - ability to select between them on the
+    interaction page</p>
+<ul>
 <li>"Make Phone Call" label changed to "Create Interaction"</li>
+</ul>
+</li>
 </ul>
 <h2 id="2222">2.2.22</h2>
 <p><strong>Enhancements</strong></p>
 <ul>
-<li>Dependency on Clever Dashboard app to provide dashboard measures and charts on role centres</li>
-<li>New queries published as web services to support dashboard measures</li>
-<li>Before/After events in Credit Mgt. - Release codeunit</li>
-<li>Performance improvements to the calculation of Clever Credit statistics</li>
+<li>
+<p>Dependency on Clever Dashboard app to provide dashboard measures and charts
+    on role centres</p>
+</li>
+<li>
+<p>New queries published as web services to support dashboard measures</p>
+</li>
+<li>
+<p>Before/After events in Credit Mgt. - Release codeunit</p>
+</li>
+<li>
+<p>Performance improvements to the calculation of Clever Credit statistics</p>
+</li>
 </ul>
 <h2 id="2221">2.2.21</h2>
 <p><strong>Bug Fixes</strong></p>
@@ -5694,7 +5774,7 @@
 <p>"Company Registration No."</p>
 </li>
 <li>
-<p>"Company Registration No. TMN" </p>
+<p>"Company Registration No. TMN"</p>
 </li>
 </ul>
 </li>
@@ -5710,7 +5790,7 @@ We will need to remove the first field and ForceSync when we upgrade.</p>
 <p><strong>Bug Fixes</strong></p>
 <ul>
 <li>The date is not valid - 0D due date - Handle customer ledger entries with
-    blank due date when calculating overdue days </li>
+    blank due date when calculating overdue days</li>
 </ul>
 <h2 id="2215">2.2.15</h2>
 <p><strong>Enhancements</strong></p>
@@ -5746,14 +5826,14 @@ We will need to remove the first field and ForceSync when we upgrade.</p>
 <li>
 <p>Reset customer contact no on business relation change - When business
     relation customer is changed, reset the original customer record and assign
-    the contact no against  new customer.</p>
+    the contact no against new customer.</p>
 </li>
 </ul>
 <h2 id="2213">2.2.13</h2>
 <p><strong>Enhancements</strong></p>
 <ul>
 <li>
-<p>Renumber into Clever Finance Range - Renumber into 9097029 - 9097128</p>
+<p>Renumber into Clever Finance Range - Renumber into 9097029 - 9097128</p>
 </li>
 <li>
 <p>Rework calling Customer Statement - MS are changing how the customer
@@ -5774,9 +5854,8 @@ We will need to remove the first field and ForceSync when we upgrade.</p>
 </li>
 <li>
 <p>Use Events OnBefore/OnAfter Manual Reopen/Release - Replace page action
-    subscriptions with subscriptions to the
-    OnBefore/OnAfter <strong>Manual</strong> Reopen/Release events which are now available in
-    the sales release codeunit.</p>
+    subscriptions with subscriptions to the OnBefore/OnAfter <strong>Manual</strong>
+    Reopen/Release events which are now available in the sales release codeunit.</p>
 </li>
 <li>
 <p>Remove Service Password Permission - Remove Service Password permission in
@@ -6035,7 +6114,7 @@ functions that are run On Open of the Clever Credit page.</p>
 <ul>
 <li>Credit Controller Code from User ID – when creating the Credit Control code
     ee take the first 10 characters and convert it to be the Code, if there’s
-    more than one we remove the last character and add a number. After checking
+    more than one we remove the last character and add a number. After checking
     that a credit controller exists with the same code, copy the User ID and
     then make it 2 characters shorter.</li>
 </ul>
