@@ -5131,17 +5131,22 @@
                 
                 <p>Our App provides you will two different ways in which a stock count can be done.
 The first is called a <strong>Physical Inventory Count</strong> (Phys. Inventory). The second
-is Requested Physical Inventory Count. Although they do the same thing, they
-both work differently on the device and in Microsoft Dynamics NAV.</p>
+is <strong>Requested Physical Inventory Count</strong> (Req. Phys. Inventory). Although they
+do the same thing, they both work differently on the device and in Microsoft
+Dynamics NAV.</p>
 <p><img alt="" src="../media/e1986655af4d665967b6251a5e8854f6.png" /></p>
 <p>The first of the two fast tabs is labelled <strong>Phys. Inventory FastTab.</strong> You will
-notice the default configuration has populated some of the fields, which as you
-know these can be changed to suit your business needs.</p>
+need to populate these to suit your business needs.</p>
 <p><img alt="" src="../media/ec1f899836fe73a456bfc900c6b5a61f.png" /></p>
 <p>The first field in the FastTab is the <strong>Whse. Phys. Inv. Template.</strong> This is the
-Journal template that will be used when your users are updating lines, they have
-just counted which have been assigned to them via Microsoft Dynamics NAV. The
-field <strong>Pick Count Whse. Batch is the field</strong></p>
+Warehouse Journal template that will be used when your users are updating lines,
+they have just counted which have been assigned to them via Microsoft Dynamics
+NAV. The field <strong>Pick Count Whse. Batch</strong> should be populated with the warehouse
+batch name of the template you will be posting the journal lines against. <strong>Item
+Phys. Inv. Template</strong> this is the Item Journal template that will be used when
+your users are updating lines. Pick Count Item Batch should be populated with
+the Item batch name of the template you will be posting the journal lines
+against.</p>
 <p>The final field on the FastTab applies to either way of doing a stock count. If
 the option <strong>Blind Stock Count</strong>, is ticked the calculated quantity will <strong>not</strong>
 be displayed on the device during a stock count</p>
@@ -5153,7 +5158,7 @@ Microsoft Dynamics NAV.</p>
 <p>The app has two options for creating the journal your user creates when
 counting. The journal can be created with the batch name being the UserID of the
 device or you can choose a default batch name that you want all the journal
-lines been posted to. If you plan on using the <strong>Default Batch for Req Phys.,</strong>
+lines to be posted to. If you plan on using the <strong>Default Batch for Req Phys.,</strong>
 then you must make sure you enable that option. Once enabled you then need to
 fill in the other fields on the FastTab, indicating the journal in which you
 would like all your users to post their count lines to.</p>
