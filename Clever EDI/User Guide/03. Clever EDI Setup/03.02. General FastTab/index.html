@@ -5156,12 +5156,14 @@
                 <p>The first FastTab on the EDI Setup page is the <strong>General FastTab.</strong> The fields
 <strong>in this FastTab</strong> are general settings which need to be specified for EDI
 notifications and interpreting barcodes.</p>
-<p><img alt="" src="../media/03-02-01.png" /></p>
-<p>The first field is the <strong>GLN Code</strong>. This is your Global Location Number, it is
-a unique identifier which you may know given to your company in order to
-recognise (typically) your warehouse location. If you know this number you may
-want to populate the field however Technology Management can assist with
-obtaining this when setting up connections.</p>
+<p><img alt="" src="../media/27a1f1fb4bc667db9de627f9417aca18.png" /></p>
+<p>The first field is <strong>Sandbox Testing</strong>. This Is a failsafe and should be turned
+on if you are working in a sandbox environment before sending out EDI documents.
+The next field is the <strong>GLN Code</strong>. This is your Global Location Number, it is a
+unique identifier which you may know given to your company in order to recognise
+(typically) your warehouse location. If you know this number you may want to
+populate the field however Technology Management can assist with obtaining this
+when setting up connections.</p>
 <p>The field below that is the <strong>Email Profile Name</strong> is the name of the user who
 will be receiving the EDI error reports.</p>
 <p>The <strong>System Administrator E-Mail</strong> is linked to the Profile name. There is no
@@ -5176,15 +5178,15 @@ notifying them of the failure. This is all handheld by enabling the flag
 <p>You can use the drop-down arrows on the fields <strong>Inner Barcode UOM Code</strong> and
 <strong>Outer Barcode UOM Code</strong> to choose the UOM codes.</p>
 <p><img alt="" src="../media/03-02-02.png" /></p>
-<p>Populating the Inner Barcode UOM code will help in locating the orginal
+<p>Populating the Inner Barcode UOM code will help in locating the original
 <strong>Inbound Order</strong> document when sending the invoice.</p>
-<p>When invoices are sent, Clever EDI will find the orginal order and send out the
+<p>When invoices are sent, Clever EDI will find the original order and send out the
 barcodes on the invoices based on the original barcode’s UOM (Unit of Measure).
 If for some reason the original order has been deleted the solution will look to
 the UOM populated in this field (Inner Barcode UOM Code). it will take that UOM
 and look at the <strong>Item’s Cross References</strong>, filtering the page to find the
 matching record. Once found it is that barcode that will sent out on the
-Invoice, rather than the orginal inbound document UOM.</p>
+Invoice, rather than the original inbound document UOM.</p>
                 
               
               
