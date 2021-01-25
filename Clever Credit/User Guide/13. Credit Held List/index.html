@@ -5167,19 +5167,33 @@
 processes, you will begin to see it working when processing documents through
 Business Central.</p>
 <p>Based on your setup, when you release a document the following will be checked:</p>
-<ul>
+<ol>
 <li>
-<p>Is the customer over their credit limit?</p>
+<p>Over Credit Limit - This is the calculation we use to check how much the
+    customer is over the credit limit. (We apply a date filter on the Customer
+    ‘Document Date’)</p>
+<p>Customer "Balance (LCY)" + Customer "Outstanding Orders (LCY)" + Customer
+"Shipped Not Invoiced (LCY)" – Customer "Credit Limit (LCY)"</p>
+</li>
+</ol>
+<p>Only when this calculation is greater than 0 will it be held.</p>
+<ol>
+<li>Overdue balance - Any customer ledger entries which are due before this
+    document date and are open and positive, then taking away any
+    payments/credits (positive FALSE entries). Taking into the consideration the
+    Customer Overdue Grace Period field on the Customer Card.</li>
+</ol>
+<p>Only when this Amount is greater than 0 will it be held.</p>
+<ol>
+<li>
+<p>Customer set to “Credit Hold All Documents” on the card.</p>
 </li>
 <li>
-<p>Does the customer have an overdue balance?</p>
+<p>Customer blocked field is set to anything other than blank.</p>
 </li>
-<li>
-<p>Is <strong>Credit Hold All Documents</strong> checked on the customer card?</p>
-</li>
-</ul>
-<p>If any of the above are true, then the document will be put on the Credit Held
-List.</p>
+</ol>
+<p>Each of these reasons we populate the “Credit Held Reason” field on the Sales
+document</p>
 <p><img alt="" src="../media/13-01.png" /></p>
 <p>When this happens, a pop-up dialogue will inform you that the <strong>Credit Status</strong>
 of the order will be set to <strong>Credit Held</strong>. The Status of the order will remain
