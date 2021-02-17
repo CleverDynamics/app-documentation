@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#default-credit-controller" class="md-skip">
+        <a href="#clever-credit-setup" class="md-skip">
           Skip to content
         </a>
       
@@ -2632,6 +2632,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#clever-credit-setup" class="md-nav__link">
+    Clever Credit Setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#default-credit-controller" class="md-nav__link">
     Default Credit Controller
   </a>
@@ -2639,8 +2646,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#calculating-statistics" class="md-nav__link">
-    Calculating Statistics
+  <a href="#credit-control" class="md-nav__link">
+    Credit Control
   </a>
   
 </li>
@@ -5233,6 +5240,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#clever-credit-setup" class="md-nav__link">
+    Clever Credit Setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#default-credit-controller" class="md-nav__link">
     Default Credit Controller
   </a>
@@ -5240,8 +5254,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#calculating-statistics" class="md-nav__link">
-    Calculating Statistics
+  <a href="#credit-control" class="md-nav__link">
+    Credit Control
   </a>
   
 </li>
@@ -5261,42 +5275,44 @@
                 
                   <h1>Clever Credit Setup</h1>
                 
-                <p>Once the app is installed there are several ways to set it up.</p>
+                <h2 id="clever-credit-setup">Clever Credit Setup</h2>
+<p>Once the app is installed there are several ways to set it up.</p>
 <p>The first option is to go through the setup manually. This consists of going
 into each of the setup pages (highlighted throughout the user guide) and
 creating the required business setup. The other option is to use the <strong>Assisted
 Setup(s)</strong>.</p>
-<p><img alt="" src="../media/02-01.png" /></p>
-<p><img alt="" src="../media/02-02.png" /></p>
-<p>Below we will explain the requirements for manually setting up the app, the
-first thing to do is to navigate to the <strong>Clever Credit Setup</strong> page.</p>
-<p>In the Clever Credit Setup page, you will notice a range of different options
+<p>The first thing to do is to navigate to the <strong>Clever Credit Setup</strong> page by
+typing it into your search bar.</p>
+<p>To apply the <strong>Default Configuration</strong> package, select the option from the menu,
+you may also get a notification pop up as your can see in the screenshot below.</p>
+<p><img alt="" src="../media/e102fb5da210a4e683cbbb944ac93386.png" /></p>
+<p>If you want to set it up manually, you will notice a range of different options
 that can be selected as well as actions along the ribbon, these will be
 explained in more detail further on in the user guide.</p>
-<p><img alt="" src="../media/02-03.png" /></p>
+<p><img alt="" src="../media/9f5b3b48bce10b000c5ba995978a9c91.png" /></p>
 <p>The Credit Hold boxes, in the General FastTab, control which document(s) should
 be held if a customer has an overdue balance.</p>
-<p>A tick against the field, <strong>Release Doc. On Credit Release</strong>, will mean that
-when a Credit Controller navigates through NAV to release the document from
-being <strong>Credit Held</strong>, it will also set the <strong>Status</strong> field (situated on the
-document header) to <strong>Released</strong>. This indicates to users and NAV that the
-document(s) can move through to the next stage of their process.</p>
-<p><img alt="" src="../media/02-04.png" /></p>
+<p>If <strong>Release Doc. On Credit Release</strong> is turned on, this will mean that when a
+Credit Controller navigates through Business Central to release the document
+from being <strong>Credit Held</strong>, it will also set the <strong>Status</strong> field (situated on
+the document header) to <strong>Released</strong>. This indicates to users and Business
+Central that the document(s) can move through to the next stage of their
+process.</p>
+<p>The selections made in the Clever Credit setup page are known as <strong>Global
+Settings</strong>. The example setup done in the screen shots above, will mean that any
+customer who is over their credit limit or has an overdue payment will have
+their <strong>Sales Orders</strong> put on hold automatically.</p>
 <h2 id="default-credit-controller">Default Credit Controller</h2>
 <p>The <strong>Default Credit Controller</strong> can be selected during this stage of the
 setup. This user will be able to release all credit held documents and will see
 customers on the credit control page that have not been assigned to another
 Credit Controller.</p>
+<p><img alt="" src="../media/3bd6dbadf5d83571a4ce7ae68bec886d.png" /></p>
 <p><strong>NB</strong>: The Default Credit Controller is created based on the first person
 (within a Company), who accesses the Role Centre after the Clever Credit App has
 been installed. The flexibility within the app means that from this page you can
-create a different user to be the default Credit Controller, should you require.</p>
-<p>The selections made in the Clever Credit setup page are known as <strong>Global
-Settings</strong>. The example setup done in the screen shots above, will mean that any
-customer who is over their credit limit or has an overdue payment will have
-their <strong>Sales Orders</strong> put on hold automatically.</p>
-<h2 id="calculating-statistics">Calculating Statistics</h2>
-<p>You will receive a notification prompting you to calculate statistics. The <strong>Calc. Statistics</strong> action starts a background process to calculate the figures which are used as described in <a href="../Calculating Stats">Calculating Stats</a></p>
+create a different user to be the default Credit Controller, should you require.  </p>
+<h2 id="credit-control">Credit Control</h2>
 <p><img alt="" src="../media/02-05.png" /></p>
 <p>Under the Credit Control FastTab there is a setting called <strong>Recalculate on
 Cust. Ledger Entry Insert</strong>.</p>
@@ -5308,7 +5324,7 @@ and will always show real time figures within your appropriate aging bands.</p>
 you reopen the clever credit page.</p>
 <p>Notifications for when a sales document has been credit held can be optionally
 disabled.</p>
-<p>To disable the notification navigate to the <strong>My Notifications</strong> page and
+<p>To disable the notification, navigate to the <strong>My Notifications</strong> page and
 uncheck the <strong>Enabled</strong> field.</p>
 <p><img alt="" src="../media/02-06.png" /></p>
                 
