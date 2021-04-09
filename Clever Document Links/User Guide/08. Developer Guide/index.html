@@ -5224,6 +5224,66 @@ pages we haven’t put it on.</p>
 <p>And your done, nothing more to it than that.</p>
 </li>
 </ol>
+<p>codeunit "Document Links Mgt. CDLTMN" has the following functions to manage
+Document Links against a record.</p>
+<ul>
+<li>
+<p>CopyDocumentLinks(FromRecordID: RecordID; ToRecordID: RecordID)</p>
+<ul>
+<li>
+<p>This function will copy any existing document links from a given record
+    to another.</p>
+<ul>
+<li>
+<p>FromRecordID – Record ID of the source record</p>
+</li>
+<li>
+<p>ToRecordID – Record ID of the destination record</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>DeleteDocumentLinks(RecRef: RecordRef; RunTrigger: Boolean)</p>
+<ul>
+<li>
+<p>This function will delete any document links for a given record</p>
+<ul>
+<li>
+<p>RecRef – Record Ref of the source record</p>
+</li>
+<li>
+<p>RunTrigger – will attempt to delete the Linked Documents record,
+    including the files from the storage location, if there are no other
+    links to the file.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>RenameDocumentLinks(RecRef: RecordRef; xRecRef: RecordRef)</p>
+<ul>
+<li>
+<p>This function will copy the document links to a new record and then
+    remove the links against the original record.</p>
+<ul>
+<li>
+<p>RecRef – Record Ref of the new record</p>
+</li>
+<li>
+<p>xRecRef - Record Ref of the original record</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Note: To support rename or deletion of records from business central, both
+RenameDocumentLinks and DeleteDocumentLinks are invoked within the product from
+GlobalTriggerManagment through subscribing to events OnAfterOnDatabaseRename and
+OnAfterOnDatabaseDelete</p>
                 
               
               
