@@ -1,0 +1,6433 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.13">
+    
+    
+      
+        <title>Changelog - Clever Dynamics</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.077507d7.min.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ff0a5ce4.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#009485">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Calibri+Light:300,400,400i,700%7C&display=fallback">
+        <style>body,input{font-family:"Calibri Light",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="teal" data-md-color-accent="">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#238" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="Clever Dynamics" class="md-header-nav__button md-logo" aria-label="Clever Dynamics">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Clever Dynamics
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Changelog
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Clever Dynamics" class="md-nav__button md-logo" aria-label="Clever Dynamics">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Clever Dynamics
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Clever WMS
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Clever WMS" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Clever WMS
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1">
+      Handheld
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Handheld" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        <span class="md-nav__icon md-icon"></span>
+        Handheld
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-1-1" type="checkbox" id="nav-2-1-1">
+    
+    <label class="md-nav__link" for="nav-2-1-1">
+      User Guide
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="User Guide" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-1-1">
+        <span class="md-nav__icon md-icon"></span>
+        User Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/User%20Guide/Home/" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/User%20Guide/permission%20set%20HH/" title="Permission Sets" class="md-nav__link">
+      Permission Sets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/User%20Guide/Role%20Centre/" title="Role Centre" class="md-nav__link">
+      Role Centre
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-1-1-4" type="checkbox" id="nav-2-1-1-4">
+    
+    <label class="md-nav__link" for="nav-2-1-1-4">
+      Handheld Setup
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Handheld Setup" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-1-1-4">
+        <span class="md-nav__icon md-icon"></span>
+        Handheld Setup
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/User%20Guide/Handheld%20Setup/Default%20Configuration%20Packages/" title="Default Configuration Packages" class="md-nav__link">
+      Default Configuration Packages
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/User%20Guide/Handheld%20Setup/General%20FastTab/" title="General FastTab" class="md-nav__link">
+      General FastTab
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/User%20Guide/Handheld%20Setup/Receipt%20FastTab/" title="Receipt FastTab" class="md-nav__link">
+      Receipt FastTab
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/User%20Guide/Handheld%20Setup/Warehouse%20Activities%20FastTab/" title="Warehouse Activities FastTab" class="md-nav__link">
+      Warehouse Activities FastTab
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/User%20Guide/Handheld%20Setup/Movement%20FastTab/" title="Movement FastTab" class="md-nav__link">
+      Movement FastTab
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/User%20Guide/Handheld%20Setup/Req%20Phys%20%26%20Req%20Inventory%20Journal/" title="Req & Req. Phys. Inventory FastTabs" class="md-nav__link">
+      Req & Req. Phys. Inventory FastTabs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/User%20Guide/Handheld%20Setup/Date%20Format/" title="Date Format" class="md-nav__link">
+      Date Format
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/User%20Guide/Handheld%20Setup/Logging/" title="Logging" class="md-nav__link">
+      Logging
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/User%20Guide/Handheld%20Users/" title="Handheld Users" class="md-nav__link">
+      Handheld Users
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/User%20Guide/Device%20Menu%20and%20Themes/" title="Device Menu & Themes" class="md-nav__link">
+      Device Menu & Themes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/User%20Guide/Device%20Enquiries/" title="Device Enquiries" class="md-nav__link">
+      Device Enquiries
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/User%20Guide/Relationships/" title="Relationships" class="md-nav__link">
+      Relationships
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/User%20Guide/Device%20Personalization/" title="Device Personalization" class="md-nav__link">
+      Device Personalization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/User%20Guide/Reason%20Codes/" title="Reason Codes" class="md-nav__link">
+      Reason Codes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-1-1-11" type="checkbox" id="nav-2-1-1-11">
+    
+    <label class="md-nav__link" for="nav-2-1-1-11">
+      Device Functions
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Device Functions" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-1-1-11">
+        <span class="md-nav__icon md-icon"></span>
+        Device Functions
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/User%20Guide/Device%20Functions/Device%20Functions/" title="What are Device Functions?" class="md-nav__link">
+      What are Device Functions?
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/User%20Guide/Device%20Functions/Receipting/" title="Receiving" class="md-nav__link">
+      Receiving
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/User%20Guide/Device%20Functions/Picking/" title="Picking" class="md-nav__link">
+      Picking
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/User%20Guide/Device%20Functions/Enquiries/" title="Enquiries" class="md-nav__link">
+      Enquiries
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/User%20Guide/Device%20Functions/Internal/" title="Internal" class="md-nav__link">
+      Internal
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/User%20Guide/Device%20Functions/Stock%20Count/" title="Stock Count" class="md-nav__link">
+      Stock Count
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/User%20Guide/Device%20Functions/Manufaturing/" title="Manufacturing" class="md-nav__link">
+      Manufacturing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/User%20Guide/Device%20Functions/Device%20and%20User%20Setup/" title="Device & User Settings" class="md-nav__link">
+      Device & User Settings
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/User%20Guide/GS1%20Identifiers/" title="GS1 Identifiers" class="md-nav__link">
+      GS1 Identifiers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/User%20Guide/Token%20Registration/" title="Token Registration" class="md-nav__link">
+      Token Registration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/User%20Guide/Voice/" title="Voice Setup" class="md-nav__link">
+      Voice Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/User%20Guide/FAQ/" title="FAQ" class="md-nav__link">
+      FAQ
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/Getting%20Started/" title="Getting Started" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/Changelog/" title="Changelog" class="md-nav__link">
+      Changelog
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/Appendix/" title="Appendix" class="md-nav__link">
+      Appendix
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/Barcode%20Processing/" title="Barcode Processing" class="md-nav__link">
+      Barcode Processing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-1-6" type="checkbox" id="nav-2-1-6">
+    
+    <label class="md-nav__link" for="nav-2-1-6">
+      Developers Guide
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Developers Guide" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-1-6">
+        <span class="md-nav__icon md-icon"></span>
+        Developers Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/Developers%20Guide/About/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/Developers%20Guide/Validation_Context_Response_Column%20Style/" title="Validation,Context,Response & Column Style" class="md-nav__link">
+      Validation,Context,Response & Column Style
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/Developers%20Guide/Examples/" title="Round Trip of a Receipt" class="md-nav__link">
+      Round Trip of a Receipt
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/Developers%20Guide/Extending%20the%20Solution/" title="Extending the Solution" class="md-nav__link">
+      Extending the Solution
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/Developers%20Guide/Published%20Events/" title="Published Events" class="md-nav__link">
+      Published Events
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/Developers%20Guide/Sender%20and%20Session%20Functions/" title="Sender & Session Functions" class="md-nav__link">
+      Sender & Session Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/Developers%20Guide/Bespoke%20Examples/" title="Bespoke Examples" class="md-nav__link">
+      Bespoke Examples
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/Developers%20Guide/General%20Examples/" title="General Examples" class="md-nav__link">
+      General Examples
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/Developers%20Guide/New%20Bespoke%20Functions/" title="New Bespoke Functions" class="md-nav__link">
+      New Bespoke Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/Developers%20Guide/Developing%20in%20a%20Local%20Docker%20Container/" title="Developing in a Local Docker Container" class="md-nav__link">
+      Developing in a Local Docker Container
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/Downloads/" title="Downloads" class="md-nav__link">
+      Downloads
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Handheld/Clever%20How%20To%20Videos/" title="Clever How To Videos" class="md-nav__link">
+      Clever How To Videos
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2">
+      Shipment Management
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Shipment Management" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        <span class="md-nav__icon md-icon"></span>
+        Shipment Management
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2-1" type="checkbox" id="nav-2-2-1">
+    
+    <label class="md-nav__link" for="nav-2-2-1">
+      User Guide
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="User Guide" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-2-1">
+        <span class="md-nav__icon md-icon"></span>
+        User Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Shipment%20Management/User%20Guide/About/" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Shipment%20Management/User%20Guide/permission%20set%20spm/" title="Permission Sets" class="md-nav__link">
+      Permission Sets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2-1-3" type="checkbox" id="nav-2-2-1-3">
+    
+    <label class="md-nav__link" for="nav-2-2-1-3">
+      Shipment Management Setup
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Shipment Management Setup" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-2-1-3">
+        <span class="md-nav__icon md-icon"></span>
+        Shipment Management Setup
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Shipment%20Management/User%20Guide/Shipment%20Management%20Setup/Scheduling%20FastTab/" title="Scheduling FastTab" class="md-nav__link">
+      Scheduling FastTab
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Shipment%20Management/User%20Guide/Shipment%20Management%20Setup/Drop%20FastTab/" title="Drops FastTab" class="md-nav__link">
+      Drops FastTab
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Shipment%20Management/User%20Guide/Shipment%20Management%20Setup/Collections%20FastTab/" title="Collections FastTab" class="md-nav__link">
+      Collections FastTab
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Shipment%20Management/User%20Guide/Shipment%20Management%20Setup/Sorting%20FastTab/" title="Sorting FastTab" class="md-nav__link">
+      Sorting FastTab
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Shipment%20Management/User%20Guide/Shipment%20Management%20Setup/Posting%20FastTab/" title="Posting FastTab" class="md-nav__link">
+      Posting FastTab
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Shipment%20Management/User%20Guide/Shipment%20Management%20Setup/Route%20Status%20List/" title="Route Status List" class="md-nav__link">
+      Route Status List
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Shipment%20Management/User%20Guide/Shipment%20Management%20Setup/Report%20Selections/" title="Report Selections" class="md-nav__link">
+      Report Selections
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Shipment%20Management/User%20Guide/Delivery%20Areas/" title="Delivery Areas" class="md-nav__link">
+      Delivery Areas
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Shipment%20Management/User%20Guide/Delivery%20Schedules/" title="Delivery Schedules" class="md-nav__link">
+      Delivery Schedules
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Shipment%20Management/User%20Guide/Delivery%20Area%20Schedules/" title="Delivery Area Schedules" class="md-nav__link">
+      Delivery Area Schedules
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Shipment%20Management/User%20Guide/Vehicles_Drivers/" title="Vehicles & Drivers" class="md-nav__link">
+      Vehicles & Drivers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Shipment%20Management/User%20Guide/Update%20Existing%20Documents/" title="Update Existing Documents" class="md-nav__link">
+      Update Existing Documents
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Shipment%20Management/User%20Guide/Routes/" title="Shipment Mgt. Routes" class="md-nav__link">
+      Shipment Mgt. Routes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Shipment%20Management/User%20Guide/Route%20Card/" title="Shipment Mgt. Route Card" class="md-nav__link">
+      Shipment Mgt. Route Card
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Shipment%20Management/User%20Guide/Posted%20Shipment%20Routes/" title="Posted Routes" class="md-nav__link">
+      Posted Routes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Shipment%20Management/Changelog/" title="Changelog" class="md-nav__link">
+      Changelog
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Shipment%20Management/FAQ/" title="FAQs" class="md-nav__link">
+      FAQs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Shipment%20Management/Clever%20How%20to%20Videos/" title="Clever How to Videos" class="md-nav__link">
+      Clever How to Videos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Shipment%20Management/Appendix/" title="Appendix" class="md-nav__link">
+      Appendix
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3">
+    
+    <label class="md-nav__link" for="nav-2-3">
+      Shipping Agent Integration
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Shipping Agent Integration" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-3">
+        <span class="md-nav__icon md-icon"></span>
+        Shipping Agent Integration
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-3-1" type="checkbox" id="nav-2-3-1">
+    
+    <label class="md-nav__link" for="nav-2-3-1">
+      User Guide
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="User Guide" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-3-1">
+        <span class="md-nav__icon md-icon"></span>
+        User Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/01%20About/" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/02%20Permission%20Sets/" title="Permission Sets" class="md-nav__link">
+      Permission Sets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/03%20Extension%20Management/" title="Extension Management" class="md-nav__link">
+      Extension Management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-3-1-4" type="checkbox" id="nav-2-3-1-4">
+    
+    <label class="md-nav__link" for="nav-2-3-1-4">
+      System Setup
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="System Setup" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-3-1-4">
+        <span class="md-nav__icon md-icon"></span>
+        System Setup
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/04%20Printnode%20Setup/" title="PrintNode Setup" class="md-nav__link">
+      PrintNode Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/05%20Label%20Printer%20Selections/" title="Label Printer Selection" class="md-nav__link">
+      Label Printer Selection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/06%20Printer%20Settings/" title="Printer Settings" class="md-nav__link">
+      Printer Settings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/07%20Shipment%20Methods/" title="Shipment Methods" class="md-nav__link">
+      Shipment Methods
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/08%20Shipping%20Classifications/" title="Shipping Classifications" class="md-nav__link">
+      Shipping Classifications
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/09%20Item%20Fields%20Required%20for%20Shipping%20Agent%20Integration/" title="Item Fields Required for Shipment Agent Integration" class="md-nav__link">
+      Item Fields Required for Shipment Agent Integration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/10%20Shipping%20Agent%20Integration%20Setup/" title="Shipping Agent Integration Setup" class="md-nav__link">
+      Shipping Agent Integration Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/11%20Integration%20Setup/" title="Integration Setup" class="md-nav__link">
+      Integration Setup
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-3-1-5" type="checkbox" id="nav-2-3-1-5">
+    
+    <label class="md-nav__link" for="nav-2-3-1-5">
+      Shipping Agent Setup
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Shipping Agent Setup" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-3-1-5">
+        <span class="md-nav__icon md-icon"></span>
+        Shipping Agent Setup
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/70%20Shipping%20Agent%20Required%20Information%20Checklist/" title="Shipping Agent Integration Checklist" class="md-nav__link">
+      Shipping Agent Integration Checklist
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/12%20Interfaces/" title="Interfaces" class="md-nav__link">
+      Interfaces
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/13%20Shipping%20Agents/" title="Shipping Agents" class="md-nav__link">
+      Shipping Agents
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/14%20Packaging%20Definitions/" title="Packaging Definitions" class="md-nav__link">
+      Packaging Definitions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/15%20Label%20Definitions/" title="Label Definitions" class="md-nav__link">
+      Label Definitions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/16%20Integration%20Services/" title="Integration Services" class="md-nav__link">
+      Integration Services
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/16.5%20Specific%20Parameters/" title="Specific Parameters" class="md-nav__link">
+      Specific Parameters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/17%20Shipping%20Agent%20Services/" title="Shipping Agent Services" class="md-nav__link">
+      Shipping Agent Services
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/18%20Shipping%20Item%20Classifications/" title="Shipping Item Classifications" class="md-nav__link">
+      Shipping Item Classifications
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/19%20Copying%20Shipping%20Item%20Classifications/" title="Copying Shipping Item Classifications" class="md-nav__link">
+      Copying Shipping Item Classifications
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/20%20Updating%20Warehouse%20Shipments/" title="Updating Warehouse Shipments" class="md-nav__link">
+      Updating Warehouse Shipments
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-3-1-6" type="checkbox" id="nav-2-3-1-6">
+    
+    <label class="md-nav__link" for="nav-2-3-1-6">
+      Orders & Shipments
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Orders & Shipments" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-3-1-6">
+        <span class="md-nav__icon md-icon"></span>
+        Orders & Shipments
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/30%20Consigning%20Sales%20Orders/" title="Consigning Sales Orders" class="md-nav__link">
+      Consigning Sales Orders
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/31%20Custom%20Addresses/" title="Custom Addresses" class="md-nav__link">
+      Custom Addresses
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/40%20Warehouse%20Shipments/" title="Warehouse Shipments" class="md-nav__link">
+      Warehouse Shipments
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/41%20Posting%20Warehouse%20Shipments/" title="Posting Warehouse Shipment" class="md-nav__link">
+      Posting Warehouse Shipment
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/42%20Posted%20Sales%20Shipments/" title="Posted Sales Shipments" class="md-nav__link">
+      Posted Sales Shipments
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/43%20Package%20Tracking/" title="Package Tracking" class="md-nav__link">
+      Package Tracking
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-3-1-7" type="checkbox" id="nav-2-3-1-7">
+    
+    <label class="md-nav__link" for="nav-2-3-1-7">
+      Consignments
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Consignments" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-3-1-7">
+        <span class="md-nav__icon md-icon"></span>
+        Consignments
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/50%20Consignments/" title="Consignments" class="md-nav__link">
+      Consignments
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/51%20Manually%20Creating%20Consignments/" title="Manually Creating Consignments" class="md-nav__link">
+      Manually Creating Consignments
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/52%20Consignment%20Packaging/" title="Consignment Packaging" class="md-nav__link">
+      Consignment Packaging
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/53%20Consignment%20Submission/" title="Consginment Submission" class="md-nav__link">
+      Consginment Submission
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/54%20Consignment%20Label%20Printing/" title="Consignment Label Printing" class="md-nav__link">
+      Consignment Label Printing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/55%20Consignment%20Cancellations/" title="Consignment Cancellations" class="md-nav__link">
+      Consignment Cancellations
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/63%20Resubmitting%20Consignments/" title="Resubmitting Consignments" class="md-nav__link">
+      Resubmitting Consignments
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-3-1-8" type="checkbox" id="nav-2-3-1-8">
+    
+    <label class="md-nav__link" for="nav-2-3-1-8">
+      API Integration & Troubleshooting
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="API Integration & Troubleshooting" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-3-1-8">
+        <span class="md-nav__icon md-icon"></span>
+        API Integration & Troubleshooting
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/60%20Consignment%20Message%20Requests/" title="Consignment Message Requests" class="md-nav__link">
+      Consignment Message Requests
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/61%20Consignment%20Message%20Response/" title="Consignment Message Response" class="md-nav__link">
+      Consignment Message Response
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/62%20Consignment%20Error%20Troubleshooting/" title="Consignment Error Troubleshooting" class="md-nav__link">
+      Consignment Error Troubleshooting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/64%20Exporting%20Message%20Requests/" title="Exporting Message Requests" class="md-nav__link">
+      Exporting Message Requests
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/65%20Exporting%20Message%20Responses/" title="Exporting Message Responses" class="md-nav__link">
+      Exporting Message Responses
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/User%20Guide/66%20Exact%20XML%20Submission/" title="Exact XML Submission" class="md-nav__link">
+      Exact XML Submission
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/FAQ/" title="FAQ's" class="md-nav__link">
+      FAQ's
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/Change%20Log/" title="Change Log" class="md-nav__link">
+      Change Log
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/Glossary/" title="Glossary" class="md-nav__link">
+      Glossary
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Shipping%20Agent%20Integration/Appendix/" title="Appendix" class="md-nav__link">
+      Appendix
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4">
+    
+    <label class="md-nav__link" for="nav-2-4">
+      Clever Containers
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Clever Containers" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-4">
+        <span class="md-nav__icon md-icon"></span>
+        Clever Containers
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Containers/BC14%20Installation/" title="BC14 Installation" class="md-nav__link">
+      BC14 Installation
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Clever MES
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Clever MES" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Clever MES
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
+    
+    <label class="md-nav__link" for="nav-3-1">
+      User Guide
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="User Guide" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
+        <span class="md-nav__icon md-icon"></span>
+        User Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20MES/User%20Guide/01.%20About/" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20MES/User%20Guide/02.%20Permission%20Sets/" title="Permission Sets" class="md-nav__link">
+      Permission Sets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1-3" type="checkbox" id="nav-3-1-3">
+    
+    <label class="md-nav__link" for="nav-3-1-3">
+      Portal Framework
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Portal Framework" data-md-level="3">
+      <label class="md-nav__title" for="nav-3-1-3">
+        <span class="md-nav__icon md-icon"></span>
+        Portal Framework
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20MES/User%20Guide/Portal%20Framework/Portal%20Applications/" title="Portal Applications" class="md-nav__link">
+      Portal Applications
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20MES/User%20Guide/Portal%20Framework/Devices/" title="Devices" class="md-nav__link">
+      Devices
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20MES/User%20Guide/Portal%20Framework/Device%20Data/" title="Device Data" class="md-nav__link">
+      Device Data
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20MES/User%20Guide/04.%20Default%20Configuration/" title="Default Configuration" class="md-nav__link">
+      Default Configuration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1-5" type="checkbox" id="nav-3-1-5">
+    
+    <label class="md-nav__link" for="nav-3-1-5">
+      MES Setup
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="MES Setup" data-md-level="3">
+      <label class="md-nav__title" for="nav-3-1-5">
+        <span class="md-nav__icon md-icon"></span>
+        MES Setup
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20MES/User%20Guide/MES%20Setup/Registering%20the%20Application/" title="Registering the Application" class="md-nav__link">
+      Registering the Application
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20MES/User%20Guide/MES%20Setup/MES%20Setup%20General/" title="General FastTab" class="md-nav__link">
+      General FastTab
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20MES/User%20Guide/MES%20Setup/MES%20Setup%20Data%20Selections/" title="Data Selections FastTab" class="md-nav__link">
+      Data Selections FastTab
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20MES/User%20Guide/MES%20Setup/MES%20Setup%20Output%20Screen/" title="Output Screen FastTab" class="md-nav__link">
+      Output Screen FastTab
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20MES/User%20Guide/MES%20Setup/MES%20Setup%20Operators/" title="Operators FastTab" class="md-nav__link">
+      Operators FastTab
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20MES/User%20Guide/MES%20Setup/Stop%20Codes/" title="Stop Codes FastTab" class="md-nav__link">
+      Stop Codes FastTab
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20MES/User%20Guide/MES%20Setup/Device%20Status%20Colours/" title="Device Status Colours" class="md-nav__link">
+      Device Status Colours
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20MES/User%20Guide/MES%20Setup/Other%20Actions/" title="Other Actions" class="md-nav__link">
+      Other Actions
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20MES/User%20Guide/06.%20MES%20Operators/" title="MES Operators" class="md-nav__link">
+      MES Operators
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20MES/User%20Guide/07.%20Machine%20Centres/" title="Machine Centers" class="md-nav__link">
+      Machine Centers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1-8" type="checkbox" id="nav-3-1-8">
+    
+    <label class="md-nav__link" for="nav-3-1-8">
+      Output Screens
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Output Screens" data-md-level="3">
+      <label class="md-nav__title" for="nav-3-1-8">
+        <span class="md-nav__icon md-icon"></span>
+        Output Screens
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20MES/User%20Guide/Output%20Screen/Logging%20in/" title="Logging In" class="md-nav__link">
+      Logging In
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20MES/User%20Guide/Output%20Screen/Machine%20Information/" title="Machine Information" class="md-nav__link">
+      Machine Information
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20MES/User%20Guide/Output%20Screen/Production%20Information/" title="Production Information" class="md-nav__link">
+      Production Information
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20MES/User%20Guide/Output%20Screen/Output%20Quantities/" title="Output Quantities" class="md-nav__link">
+      Output Quantities
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20MES/User%20Guide/Output%20Screen/Operator%20Information/" title="Operator Information" class="md-nav__link">
+      Operator Information
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20MES/User%20Guide/Output%20Screen/Production%20Routing%20Lines/" title="Production Routing Lines" class="md-nav__link">
+      Production Routing Lines
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20MES/User%20Guide/09.%20Stop%20Codes/" title="Stop Codes" class="md-nav__link">
+      Stop Codes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20MES/User%20Guide/10.%20MES%20Exit%20Codes/" title="MES Exit Codes" class="md-nav__link">
+      MES Exit Codes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20MES/User%20Guide/11.%20By%20Products/" title="By-Products" class="md-nav__link">
+      By-Products
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20MES/User%20Guide/12.%20Instructions/" title="Instructions" class="md-nav__link">
+      Instructions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20MES/User%20Guide/13.%20Notes/" title="Notes" class="md-nav__link">
+      Notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20MES/User%20Guide/14.%20Posting%20Components/" title="Posting Components" class="md-nav__link">
+      Posting Components
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20MES/User%20Guide/15.%20Posting%20Scrap/" title="Posting Scrap" class="md-nav__link">
+      Posting Scrap
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20MES/User%20Guide/16.%20Switching%20Devices/" title="Switching Devices" class="md-nav__link">
+      Switching Devices
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20MES/User%20Guide/17.%20MES%20Logging/" title="MES Logging" class="md-nav__link">
+      MES Logging
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20MES/Getting%20Started/" title="Getting Started" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20MES/MES%20Change%20Log/" title="ChangeLog" class="md-nav__link">
+      ChangeLog
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20MES/How%20To%20Videos/" title="Clever How To Videos" class="md-nav__link">
+      Clever How To Videos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20MES/Appendix/" title="Appendix" class="md-nav__link">
+      Appendix
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20MES/Developer%20Guide/Developer%20Guide/" title="Developer Guide" class="md-nav__link">
+      Developer Guide
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Clever Essentials
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Clever Essentials" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Clever Essentials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-1" type="checkbox" id="nav-4-1" checked>
+    
+    <label class="md-nav__link" for="nav-4-1">
+      Clever Credit
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Clever Credit" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-1">
+        <span class="md-nav__icon md-icon"></span>
+        Clever Credit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-1-1" type="checkbox" id="nav-4-1-1">
+    
+    <label class="md-nav__link" for="nav-4-1-1">
+      User Guide
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="User Guide" data-md-level="3">
+      <label class="md-nav__title" for="nav-4-1-1">
+        <span class="md-nav__icon md-icon"></span>
+        User Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../User%20Guide/01.%20About/" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../User%20Guide/02.%20Clever%20Credit%20Setup/" title="Clever Credit Setup" class="md-nav__link">
+      Clever Credit Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../User%20Guide/03.%20Calculating%20Stats/" title="Calculating Stats" class="md-nav__link">
+      Calculating Stats
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../User%20Guide/04.%20Permission%20Sets/" title="Permission Sets" class="md-nav__link">
+      Permission Sets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../User%20Guide/05.%20Clever%20Credit/" title="Clever Credit" class="md-nav__link">
+      Clever Credit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../User%20Guide/06.%20Credit%20Controllers/" title="Credit Controllers" class="md-nav__link">
+      Credit Controllers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../User%20Guide/07.%20Clever%20Credit%20Assisted%20Setup/" title="Clever Credit - Assisted Setup" class="md-nav__link">
+      Clever Credit - Assisted Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../User%20Guide/08.%20New%20Credit%20Controllers%20-%20Assisted%20Setup/" title="New Credit Controllers - Assisted Setup" class="md-nav__link">
+      New Credit Controllers - Assisted Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../User%20Guide/09.%20Aging%20Bands/" title="Aging Bands" class="md-nav__link">
+      Aging Bands
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../User%20Guide/10.%20Payment%20Methods/" title="Payment Methods" class="md-nav__link">
+      Payment Methods
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../User%20Guide/11.%20Clever%20Credit%20Status%20Codes/" title="Clever Credit Status Codes" class="md-nav__link">
+      Clever Credit Status Codes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../User%20Guide/12.%20Clever%20Credit%20FastTab/" title="Clever Credit FastTab" class="md-nav__link">
+      Clever Credit FastTab
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../User%20Guide/13.%20Credit%20Held%20List/" title="Credit Held List" class="md-nav__link">
+      Credit Held List
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../User%20Guide/14.%20Managing%20Credit%20Held%20Documents/" title="Managing Credit Held Documents" class="md-nav__link">
+      Managing Credit Held Documents
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../User%20Guide/15.%20Clever%20Interactions%20and%20To-do/" title="Clever Interactions and To-do" class="md-nav__link">
+      Clever Interactions and To-do
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../User%20Guide/16.%20Adding%20Notes/" title="Adding Notes" class="md-nav__link">
+      Adding Notes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Changelog
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" title="Changelog" class="md-nav__link md-nav__link--active">
+      Changelog
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#238" class="md-nav__link">
+    2.3.8
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#237" class="md-nav__link">
+    2.3.7
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#236" class="md-nav__link">
+    2.3.6
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#235" class="md-nav__link">
+    2.3.5
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#234" class="md-nav__link">
+    2.3.4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#233" class="md-nav__link">
+    2.3.3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#232" class="md-nav__link">
+    2.3.2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#231" class="md-nav__link">
+    2.3.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#230" class="md-nav__link">
+    2.3.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2222" class="md-nav__link">
+    2.2.22
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2221" class="md-nav__link">
+    2.2.21
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2220" class="md-nav__link">
+    2.2.20
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2219" class="md-nav__link">
+    2.2.19
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2218" class="md-nav__link">
+    2.2.18
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2217" class="md-nav__link">
+    2.2.17
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2216" class="md-nav__link">
+    2.2.16
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2215" class="md-nav__link">
+    2.2.15
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2214" class="md-nav__link">
+    2.2.14
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2213" class="md-nav__link">
+    2.2.13
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2212" class="md-nav__link">
+    2.2.12
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2211" class="md-nav__link">
+    2.2.11
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2210" class="md-nav__link">
+    2.2.10
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#229" class="md-nav__link">
+    2.2.9
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#227" class="md-nav__link">
+    2.2.7
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#226" class="md-nav__link">
+    2.2.6
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2251" class="md-nav__link">
+    2.2.5.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#104" class="md-nav__link">
+    1.0.4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#103" class="md-nav__link">
+    1.0.3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#102" class="md-nav__link">
+    1.0.2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#101" class="md-nav__link">
+    1.0.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    1.0
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../FAQ/" title="FAQs" class="md-nav__link">
+      FAQs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Clever%20How%20To%20Videos/" title="Clever How To Videos" class="md-nav__link">
+      Clever How To Videos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Appendix/" title="Appendix" class="md-nav__link">
+      Appendix
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+    
+    <label class="md-nav__link" for="nav-4-2">
+      Clever Data Validation
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Clever Data Validation" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        <span class="md-nav__icon md-icon"></span>
+        Clever Data Validation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2-1" type="checkbox" id="nav-4-2-1">
+    
+    <label class="md-nav__link" for="nav-4-2-1">
+      User Guide
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="User Guide" data-md-level="3">
+      <label class="md-nav__title" for="nav-4-2-1">
+        <span class="md-nav__icon md-icon"></span>
+        User Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Data%20Validation/User%20Guide/01.%20About/" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Data%20Validation/User%20Guide/02.%20Data%20Validation%20Templates/" title="Data Validation Templates" class="md-nav__link">
+      Data Validation Templates
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Data%20Validation/User%20Guide/03.%20Data%20Validation%20Templates%20Card/" title="Data Validation Templates Card" class="md-nav__link">
+      Data Validation Templates Card
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Data%20Validation/User%20Guide/04.%20Validate%20Data/" title="Validate Data" class="md-nav__link">
+      Validate Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Data%20Validation/User%20Guide/05.%20Data%20Validation%20Error%20List/" title="Data Validation Error List" class="md-nav__link">
+      Data Validation Error List
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Data%20Validation/clever%20how%20to%20videos/" title="Clever How To Videos" class="md-nav__link">
+      Clever How To Videos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Data%20Validation/Appendix/" title="Appendix" class="md-nav__link">
+      Appendix
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Data%20Validation/Change%20Log/" title="Change Log" class="md-nav__link">
+      Change Log
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      Clever Document Delivery
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Clever Document Delivery" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        <span class="md-nav__icon md-icon"></span>
+        Clever Document Delivery
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-3-1" type="checkbox" id="nav-4-3-1">
+    
+    <label class="md-nav__link" for="nav-4-3-1">
+      User Guide
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="User Guide" data-md-level="3">
+      <label class="md-nav__title" for="nav-4-3-1">
+        <span class="md-nav__icon md-icon"></span>
+        User Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Delivery/User%20Guide/01.%20About/" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Delivery/User%20Guide/02.%20Permission%20Sets/" title="Permission Sets" class="md-nav__link">
+      Permission Sets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-3-1-3" type="checkbox" id="nav-4-3-1-3">
+    
+    <label class="md-nav__link" for="nav-4-3-1-3">
+      Document Delivery Setup
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Document Delivery Setup" data-md-level="4">
+      <label class="md-nav__title" for="nav-4-3-1-3">
+        <span class="md-nav__icon md-icon"></span>
+        Document Delivery Setup
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Delivery/User%20Guide/Document%20Delivery%20Setup/Default%20Configuration/" title="Default Configuration" class="md-nav__link">
+      Default Configuration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Delivery/User%20Guide/Document%20Delivery%20Setup/Test%20Mode/" title="Test Mode" class="md-nav__link">
+      Test Mode
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Delivery/User%20Guide/Document%20Delivery%20Setup/Password%20Protection/" title="Password Protection" class="md-nav__link">
+      Password Protection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Delivery/User%20Guide/Document%20Delivery%20Setup/PrintNode/" title="PrintNode Setup" class="md-nav__link">
+      PrintNode Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Delivery/User%20Guide/Document%20Delivery%20Setup/on%20Prem%20printing/" title="On Prem Printing" class="md-nav__link">
+      On Prem Printing
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-3-1-4" type="checkbox" id="nav-4-3-1-4">
+    
+    <label class="md-nav__link" for="nav-4-3-1-4">
+      Document Types
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Document Types" data-md-level="4">
+      <label class="md-nav__title" for="nav-4-3-1-4">
+        <span class="md-nav__icon md-icon"></span>
+        Document Types
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Delivery/User%20Guide/Document%20Types/General%20FastTab/" title="General FastTab" class="md-nav__link">
+      General FastTab
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Delivery/User%20Guide/Document%20Types/Delivery%20FastTab/" title="Delivery FastTab" class="md-nav__link">
+      Delivery FastTab
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Delivery/User%20Guide/Document%20Types/Attachments%20FastTab/" title="Attachments FastTab" class="md-nav__link">
+      Attachments FastTab
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Delivery/User%20Guide/Document%20Types/Fields%20FastTab/" title="Fields FastTab" class="md-nav__link">
+      Fields FastTab
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Delivery/User%20Guide/Linked%20Tables/" title="Linked Tables" class="md-nav__link">
+      Linked Tables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Delivery/User%20Guide/Doc%20Delivery%20Attachments/" title="Doc.Delivery Attachments" class="md-nav__link">
+      Doc.Delivery Attachments
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Delivery/User%20Guide/Doc%20Delivery%20Attachments%20Card/" title="Doc.Delivery Attachments Card" class="md-nav__link">
+      Doc.Delivery Attachments Card
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Delivery/User%20Guide/Email%20Body/" title="Email Body" class="md-nav__link">
+      Email Body
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Delivery/User%20Guide/Document%20Log/" title="Document Log" class="md-nav__link">
+      Document Log
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Delivery/User%20Guide/Job%20Queue%20Entries/" title="Job Queue Entries - Setup" class="md-nav__link">
+      Job Queue Entries - Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Delivery/User%20Guide/Custom%20Values/" title="Custom Values" class="md-nav__link">
+      Custom Values
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Delivery/User%20Guide/Custom%20Rules/" title="Custom Rules" class="md-nav__link">
+      Custom Rules
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Delivery/User%20Guide/Send%20Email/" title="Send Email" class="md-nav__link">
+      Send Email
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Delivery/User%20Guide/Queue%20Email/" title="Queue Email" class="md-nav__link">
+      Queue Email
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Delivery/User%20Guide/SMTP%20Setup/" title="SMTP Setup" class="md-nav__link">
+      SMTP Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-3-1-16" type="checkbox" id="nav-4-3-1-16">
+    
+    <label class="md-nav__link" for="nav-4-3-1-16">
+      AssureSign Integration
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="AssureSign Integration" data-md-level="4">
+      <label class="md-nav__title" for="nav-4-3-1-16">
+        <span class="md-nav__icon md-icon"></span>
+        AssureSign Integration
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Delivery/User%20Guide/AssureSign%20Integration/Overview/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Delivery/User%20Guide/AssureSign%20Integration/Connection%20Setup/" title="Connection Setup" class="md-nav__link">
+      Connection Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Delivery/User%20Guide/AssureSign%20Integration/Document%20Type%20Setup/" title="Document Type Setup" class="md-nav__link">
+      Document Type Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Delivery/User%20Guide/AssureSign%20Integration/Submitting%20Documents%20to%20AssureSign/" title="Submitting Documents to AssureSign" class="md-nav__link">
+      Submitting Documents to AssureSign
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-3-1-17" type="checkbox" id="nav-4-3-1-17">
+    
+    <label class="md-nav__link" for="nav-4-3-1-17">
+      Advanced Configuration
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Advanced Configuration" data-md-level="4">
+      <label class="md-nav__title" for="nav-4-3-1-17">
+        <span class="md-nav__icon md-icon"></span>
+        Advanced Configuration
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Delivery/User%20Guide/Advanced%20Config/Advanced%20Config/" title="Advanced Config" class="md-nav__link">
+      Advanced Config
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Delivery/User%20Guide/Advanced%20Config/Sending%20Different%20Attachments%20per%20Customer/" title="Sending Different Attachments per Customer" class="md-nav__link">
+      Sending Different Attachments per Customer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Delivery/User%20Guide/Advanced%20Config/Including%20User%20Names%20in%20Email%20Bodies/" title="Including User Names in Email Bodies" class="md-nav__link">
+      Including User Names in Email Bodies
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-3-2" type="checkbox" id="nav-4-3-2">
+    
+    <label class="md-nav__link" for="nav-4-3-2">
+      Developer Guide
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Developer Guide" data-md-level="3">
+      <label class="md-nav__title" for="nav-4-3-2">
+        <span class="md-nav__icon md-icon"></span>
+        Developer Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Delivery/Developer%20Guide/Overview/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Delivery/Developer%20Guide/Extending%20Clever%20Document%20Delivery/" title="Extending Clever Document Delivery" class="md-nav__link">
+      Extending Clever Document Delivery
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Delivery/Developer%20Guide/Invoking%20Clever%20Document%20Delivery/" title="Invoking Clever Document Delivery" class="md-nav__link">
+      Invoking Clever Document Delivery
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Delivery/FAQ/" title="FAQs" class="md-nav__link">
+      FAQs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Delivery/Clever%20How%20To%20Videos/" title="Clever How To Videos" class="md-nav__link">
+      Clever How To Videos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Delivery/Changelog/" title="Changelog" class="md-nav__link">
+      Changelog
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Delivery/Appendix/" title="Appendix" class="md-nav__link">
+      Appendix
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
+    
+    <label class="md-nav__link" for="nav-4-4">
+      Clever Document Links
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Clever Document Links" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        <span class="md-nav__icon md-icon"></span>
+        Clever Document Links
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-4-1" type="checkbox" id="nav-4-4-1">
+    
+    <label class="md-nav__link" for="nav-4-4-1">
+      User Guide
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="User Guide" data-md-level="3">
+      <label class="md-nav__title" for="nav-4-4-1">
+        <span class="md-nav__icon md-icon"></span>
+        User Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Links/User%20Guide/01.%20About/" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Links/User%20Guide/02.%20Permission%20Sets/" title="Permission Sets" class="md-nav__link">
+      Permission Sets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Links/User%20Guide/03.%20Document%20Links%20Setup/" title="Document Links Setup" class="md-nav__link">
+      Document Links Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Links/User%20Guide/04.%20Doc%20Links%20File%20Drop%20FactBox/" title="Doc.Links File Drop FactBox" class="md-nav__link">
+      Doc.Links File Drop FactBox
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-4-1-5" type="checkbox" id="nav-4-4-1-5">
+    
+    <label class="md-nav__link" for="nav-4-4-1-5">
+      Doc Links Process
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Doc Links Process" data-md-level="4">
+      <label class="md-nav__title" for="nav-4-4-1-5">
+        <span class="md-nav__icon md-icon"></span>
+        Doc Links Process
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Links/User%20Guide/Doc%20Links%20Process/Doc%20Links%20Process%20Documents/" title="Doc.Links Process Documents" class="md-nav__link">
+      Doc.Links Process Documents
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Links/User%20Guide/Doc%20Links%20Process/Search%20Fields/" title="Search Fields" class="md-nav__link">
+      Search Fields
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Links/User%20Guide/06.%20Barcode%20Imports/" title="Barcode Imports" class="md-nav__link">
+      Barcode Imports
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Links/User%20Guide/07.%20Document%20Attributes/" title="Document Attributes" class="md-nav__link">
+      Document Attributes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Links/User%20Guide/08.%20Developer%20Guide/" title="Developer Guide" class="md-nav__link">
+      Developer Guide
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Links/Change%20Log/" title="Changelog" class="md-nav__link">
+      Changelog
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Links/FAQ/" title="FAQs" class="md-nav__link">
+      FAQs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Links/Clever%20How%20To%20Videos/" title="Clever How To Videos" class="md-nav__link">
+      Clever How To Videos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Document%20Links/Appendix/" title="Appendix" class="md-nav__link">
+      Appendix
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+    
+    <label class="md-nav__link" for="nav-4-5">
+      Clever Global Search
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Clever Global Search" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-5">
+        <span class="md-nav__icon md-icon"></span>
+        Clever Global Search
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-5-1" type="checkbox" id="nav-4-5-1">
+    
+    <label class="md-nav__link" for="nav-4-5-1">
+      User Guide
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="User Guide" data-md-level="3">
+      <label class="md-nav__title" for="nav-4-5-1">
+        <span class="md-nav__icon md-icon"></span>
+        User Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Global%20Search/User%20Guide/01.%20About/" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Global%20Search/User%20Guide/02.%20Global%20Search%20Setup/" title="Clever Search Setup" class="md-nav__link">
+      Clever Search Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Global%20Search/User%20Guide/03.%20Global%20Search/" title="Clever Search" class="md-nav__link">
+      Clever Search
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Global%20Search/User%20Guide/04.%20Global%20Obfuscation%20Setup/" title="Obfuscation" class="md-nav__link">
+      Obfuscation
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Global%20Search/95%20Change%20Log/" title="Change Log" class="md-nav__link">
+      Change Log
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Global%20Search/96%20On%20Premise%20Licencing/" title="On Premise Licencing" class="md-nav__link">
+      On Premise Licencing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Global%20Search/97%20FAQ/" title="FAQ" class="md-nav__link">
+      FAQ
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Global%20Search/98%20How%20To%20Videos/" title="Clever How To Videos" class="md-nav__link">
+      Clever How To Videos
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-6" type="checkbox" id="nav-4-6">
+    
+    <label class="md-nav__link" for="nav-4-6">
+      Clever PrintNode Integration
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Clever PrintNode Integration" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-6">
+        <span class="md-nav__icon md-icon"></span>
+        Clever PrintNode Integration
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-6-1" type="checkbox" id="nav-4-6-1">
+    
+    <label class="md-nav__link" for="nav-4-6-1">
+      User Guide
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="User Guide" data-md-level="3">
+      <label class="md-nav__title" for="nav-4-6-1">
+        <span class="md-nav__icon md-icon"></span>
+        User Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20PrintNode%20Integration/User%20Guide/01.%20About/" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20PrintNode%20Integration/User%20Guide/02.%20PrintNode%20Setup/" title="PrintNode Setup" class="md-nav__link">
+      PrintNode Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20PrintNode%20Integration/User%20Guide/03.%20Printer%20Selections/" title="Printer Selections" class="md-nav__link">
+      Printer Selections
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20PrintNode%20Integration/User%20Guide/04.%20API%20Key%20-%20Partner/" title="API Key - Partner" class="md-nav__link">
+      API Key - Partner
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20PrintNode%20Integration/User%20Guide/05.%20API%20Key%20-%20End%20User/" title="API Key - End User" class="md-nav__link">
+      API Key - End User
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20PrintNode%20Integration/Changelog/" title="Changelog" class="md-nav__link">
+      Changelog
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-6-3" type="checkbox" id="nav-4-6-3">
+    
+    <label class="md-nav__link" for="nav-4-6-3">
+      Developer Guide
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Developer Guide" data-md-level="3">
+      <label class="md-nav__title" for="nav-4-6-3">
+        <span class="md-nav__icon md-icon"></span>
+        Developer Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20PrintNode%20Integration/Developer%20Guide/Overview/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Other Clever Apps
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Other Clever Apps" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon"></span>
+        Other Clever Apps
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-1" type="checkbox" id="nav-5-1">
+    
+    <label class="md-nav__link" for="nav-5-1">
+      Clever EDI
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Clever EDI" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-1">
+        <span class="md-nav__icon md-icon"></span>
+        Clever EDI
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-1-1" type="checkbox" id="nav-5-1-1">
+    
+    <label class="md-nav__link" for="nav-5-1-1">
+      User Guide
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="User Guide" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-1-1">
+        <span class="md-nav__icon md-icon"></span>
+        User Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20EDI/User%20Guide/01.%20About/" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20EDI/User%20Guide/02.%20Permission%20Sets/" title="Permission Sets" class="md-nav__link">
+      Permission Sets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-1-1-3" type="checkbox" id="nav-5-1-1-3">
+    
+    <label class="md-nav__link" for="nav-5-1-1-3">
+      Clever EDI Setup
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Clever EDI Setup" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-1-1-3">
+        <span class="md-nav__icon md-icon"></span>
+        Clever EDI Setup
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20EDI/User%20Guide/03.%20Clever%20EDI%20Setup/03.01.%20EDI%20Setup/" title="EDI Setup" class="md-nav__link">
+      EDI Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20EDI/User%20Guide/03.%20Clever%20EDI%20Setup/03.02.%20General%20FastTab/" title="General FastTab" class="md-nav__link">
+      General FastTab
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20EDI/User%20Guide/03.%20Clever%20EDI%20Setup/03.03.%20Systems%20FastTab/" title="Systems FastTab" class="md-nav__link">
+      Systems FastTab
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20EDI/User%20Guide/03.%20Clever%20EDI%20Setup/03.04.%20Email%20Contact%20FastTab/" title="Email Contact FastTab" class="md-nav__link">
+      Email Contact FastTab
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-1-1-4" type="checkbox" id="nav-5-1-1-4">
+    
+    <label class="md-nav__link" for="nav-5-1-1-4">
+      Document Agreements
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Document Agreements" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-1-1-4">
+        <span class="md-nav__icon md-icon"></span>
+        Document Agreements
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20EDI/User%20Guide/04.%20Document%20Agreements/04.01.%20Creating%20A%20Document%20Agreement/" title="Creating A Document Agreement" class="md-nav__link">
+      Creating A Document Agreement
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20EDI/User%20Guide/04.%20Document%20Agreements/04.02.%20Partner%20Setup%20FastTab/" title="Partner Setup FastTab" class="md-nav__link">
+      Partner Setup FastTab
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20EDI/User%20Guide/04.%20Document%20Agreements/04.03.%20Message%20Agreements%20FastTab/" title="Message Agreements FastTab" class="md-nav__link">
+      Message Agreements FastTab
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20EDI/User%20Guide/04.%20Document%20Agreements/04.04.%20Message%20Options%20FastTab/" title="Message Options FastTab" class="md-nav__link">
+      Message Options FastTab
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20EDI/User%20Guide/04.%20Document%20Agreements/04.05.%20Document%20Validation%20FastTab/" title="Document Validation FastTab" class="md-nav__link">
+      Document Validation FastTab
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20EDI/User%20Guide/05.%20Document%20Types/" title="Document Types" class="md-nav__link">
+      Document Types
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20EDI/User%20Guide/06.%20Pending%20Inbound%20Documents/" title="Pending Inbound Documents" class="md-nav__link">
+      Pending Inbound Documents
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20EDI/User%20Guide/07.%20Outbound%20Documents/" title="Outbound Documents" class="md-nav__link">
+      Outbound Documents
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20EDI/User%20Guide/08.%20EDI%20Portal/" title="EDI Portal" class="md-nav__link">
+      EDI Portal
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20EDI/User%20Guide/09.%20Field%20Mapping/" title="Field Mapping" class="md-nav__link">
+      Field Mapping
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20EDI/Getting%20Started/" title="Getting Started" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20EDI/FAQ/" title="FAQs" class="md-nav__link">
+      FAQs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20EDI/Clever%20How%20to%20Videos/" title="Clever How To Videos" class="md-nav__link">
+      Clever How To Videos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20EDI/Appendix/" title="Appendix" class="md-nav__link">
+      Appendix
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
+    
+    <label class="md-nav__link" for="nav-5-2">
+      Clever Landed Costs
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Clever Landed Costs" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-2">
+        <span class="md-nav__icon md-icon"></span>
+        Clever Landed Costs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-2-1" type="checkbox" id="nav-5-2-1">
+    
+    <label class="md-nav__link" for="nav-5-2-1">
+      User Guide
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="User Guide" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-2-1">
+        <span class="md-nav__icon md-icon"></span>
+        User Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Landed%20Costs/User%20Guide/01.%20About/" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Landed%20Costs/User%20Guide/02.%20Permission%20Sets/" title="Permission Sets" class="md-nav__link">
+      Permission Sets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Landed%20Costs/User%20Guide/03.%20Landed%20Cost%20Types/" title="Landed Cost Types" class="md-nav__link">
+      Landed Cost Types
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Landed%20Costs/User%20Guide/04.%20Item%20Landed%20Costs/" title="Item Landed Costs" class="md-nav__link">
+      Item Landed Costs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Landed%20Costs/User%20Guide/05.%20Purchase%20Orders/" title="Purchase Orders" class="md-nav__link">
+      Purchase Orders
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Landed%20Costs/User%20Guide/06.%20Landed%20Cost%20Containers/" title="Landed Cost Containers" class="md-nav__link">
+      Landed Cost Containers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Landed%20Costs/User%20Guide/07.%20Purchase%20Receipts/" title="Purchase Receipts" class="md-nav__link">
+      Purchase Receipts
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Landed%20Costs/User%20Guide/08.%20Invoicing%20Landed%20Costs/" title="Invoicing Landed Costs" class="md-nav__link">
+      Invoicing Landed Costs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Landed%20Costs/User%20Guide/09.%20Landed%20Cost%20Journal/" title="Landed Cost Journal" class="md-nav__link">
+      Landed Cost Journal
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Landed%20Costs/Appendix/" title="Appendix" class="md-nav__link">
+      Appendix
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Landed%20Costs/Changelog/" title="Changelog" class="md-nav__link">
+      Changelog
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
+    
+    <label class="md-nav__link" for="nav-5-3">
+      Clever Promotions
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Clever Promotions" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-3">
+        <span class="md-nav__icon md-icon"></span>
+        Clever Promotions
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-3-1" type="checkbox" id="nav-5-3-1">
+    
+    <label class="md-nav__link" for="nav-5-3-1">
+      User Guide
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="User Guide" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-3-1">
+        <span class="md-nav__icon md-icon"></span>
+        User Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Promotions/User%20Guide/About/" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Promotions/User%20Guide/Permisison%20set%20Pro/" title="Permission Sets" class="md-nav__link">
+      Permission Sets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Promotions/User%20Guide/Promotion%20Setup/" title="Promotion Setup" class="md-nav__link">
+      Promotion Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Promotions/User%20Guide/Sales_Receivables%20Setup/" title="Sales & Receivables Setup" class="md-nav__link">
+      Sales & Receivables Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Promotions/User%20Guide/Clever%20Promotions%20List/" title="Clever Promotions List" class="md-nav__link">
+      Clever Promotions List
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-3-1-6" type="checkbox" id="nav-5-3-1-6">
+    
+    <label class="md-nav__link" for="nav-5-3-1-6">
+      Promotions Card
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Promotions Card" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-3-1-6">
+        <span class="md-nav__icon md-icon"></span>
+        Promotions Card
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Promotions/User%20Guide/Promotions%20Card/Promotions%20Card/" title="General FastTab" class="md-nav__link">
+      General FastTab
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Promotions/User%20Guide/Promotions%20Card/Customer%20FastTab/" title="Customer FastTab" class="md-nav__link">
+      Customer FastTab
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Promotions/User%20Guide/Promotions%20Card/Qualification%20Criteria%20FastTab/" title="Qualification Criteria FastTab" class="md-nav__link">
+      Qualification Criteria FastTab
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Promotions/User%20Guide/Promotions%20Card/Promotions%20Benefit%20FastTab/" title="Promotions Benefit FastTab" class="md-nav__link">
+      Promotions Benefit FastTab
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Promotions/User%20Guide/Promotion%20Codes/" title="Promotion Codes" class="md-nav__link">
+      Promotion Codes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Promotions/User%20Guide/Clever%20Promtions_%20Assisted%20Setup/" title="Clever Promotions - Assisted Setup" class="md-nav__link">
+      Clever Promotions - Assisted Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Promotions/User%20Guide/Promotion%20Codes_Assisted%20Setup/" title="Promotion Codes - Assisted Setup" class="md-nav__link">
+      Promotion Codes - Assisted Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Promotions/User%20Guide/Applying_unapplying%20Promotions/" title="Applying & Un-Applying Promotions" class="md-nav__link">
+      Applying & Un-Applying Promotions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Promotions/User%20Guide/Document%20Promotion%20Codes/" title="Document Promotion Codes" class="md-nav__link">
+      Document Promotion Codes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Promotions/User%20Guide/Promotion%20Summary/" title="Promotion Summary" class="md-nav__link">
+      Promotion Summary
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Promotions/Example%20Setup/" title="Example Scenarios" class="md-nav__link">
+      Example Scenarios
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Promotions/FAQ/" title="FAQs" class="md-nav__link">
+      FAQs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Promotions/Changelog/" title="Changelog" class="md-nav__link">
+      Changelog
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Promotions/Clever%20How%20To%20Videos/" title="Clever How To Videos" class="md-nav__link">
+      Clever How To Videos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Promotions/Appendix/" title="Appendix" class="md-nav__link">
+      Appendix
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-4" type="checkbox" id="nav-5-4">
+    
+    <label class="md-nav__link" for="nav-5-4">
+      Clever Dashboard
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Clever Dashboard" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-4">
+        <span class="md-nav__icon md-icon"></span>
+        Clever Dashboard
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-4-1" type="checkbox" id="nav-5-4-1">
+    
+    <label class="md-nav__link" for="nav-5-4-1">
+      User Guide
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="User Guide" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-4-1">
+        <span class="md-nav__icon md-icon"></span>
+        User Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Dashboard/User%20Guide/Overview/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Dashboard/User%20Guide/Dashboard%20Setup/" title="Setup" class="md-nav__link">
+      Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Dashboard/User%20Guide/Dashboard%20Measures/" title="Dashboard Measures" class="md-nav__link">
+      Dashboard Measures
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Dashboard/User%20Guide/Dashboards/" title="Dashboards" class="md-nav__link">
+      Dashboards
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-5" type="checkbox" id="nav-5-5">
+    
+    <label class="md-nav__link" for="nav-5-5">
+      Clever Config
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Clever Config" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-5">
+        <span class="md-nav__icon md-icon"></span>
+        Clever Config
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Config/Overview/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Clever%20Config/Changelog/" title="Changelog" class="md-nav__link">
+      Changelog
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../Licensing/" title="Licensing" class="md-nav__link">
+      Licensing
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#238" class="md-nav__link">
+    2.3.8
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#237" class="md-nav__link">
+    2.3.7
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#236" class="md-nav__link">
+    2.3.6
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#235" class="md-nav__link">
+    2.3.5
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#234" class="md-nav__link">
+    2.3.4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#233" class="md-nav__link">
+    2.3.3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#232" class="md-nav__link">
+    2.3.2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#231" class="md-nav__link">
+    2.3.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#230" class="md-nav__link">
+    2.3.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2222" class="md-nav__link">
+    2.2.22
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2221" class="md-nav__link">
+    2.2.21
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2220" class="md-nav__link">
+    2.2.20
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2219" class="md-nav__link">
+    2.2.19
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2218" class="md-nav__link">
+    2.2.18
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2217" class="md-nav__link">
+    2.2.17
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2216" class="md-nav__link">
+    2.2.16
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2215" class="md-nav__link">
+    2.2.15
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2214" class="md-nav__link">
+    2.2.14
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2213" class="md-nav__link">
+    2.2.13
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2212" class="md-nav__link">
+    2.2.12
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2211" class="md-nav__link">
+    2.2.11
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2210" class="md-nav__link">
+    2.2.10
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#229" class="md-nav__link">
+    2.2.9
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#227" class="md-nav__link">
+    2.2.7
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#226" class="md-nav__link">
+    2.2.6
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2251" class="md-nav__link">
+    2.2.5.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#104" class="md-nav__link">
+    1.0.4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#103" class="md-nav__link">
+    1.0.3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#102" class="md-nav__link">
+    1.0.2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#101" class="md-nav__link">
+    1.0.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    1.0
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                  <h1>Changelog</h1>
+                
+                <h2 id="238">2.3.8</h2>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>Interactions not saving</li>
+</ul>
+<h2 id="237">2.3.7</h2>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>Status on Credit Released Orders - Release order from the Credit Held list,
+    sets the Credit Status to "OK" It should set the Credit Status to "Credit
+    Released". The filtered release list doesn’t show the orders that have been
+    released, because its filtered to "Credit Released"</li>
+</ul>
+<p><strong>Enhancements</strong></p>
+<ul>
+<li>
+<p>Reassign Credit controller - Once a Credit Controller has been assigned to a
+    Customer there isn’t a way to reassign them to another credit controller</p>
+</li>
+<li>
+<p>Customer Posting Group added to main page</p>
+</li>
+</ul>
+<h2 id="236">2.3.6</h2>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>Error renumbering customer record</li>
+</ul>
+<h2 id="235">2.3.5</h2>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>Recalculate All / Recalculate Entries does not update customer status</li>
+</ul>
+<h2 id="234">2.3.4</h2>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>Customer modify permission still required after fix in 2.3.2</li>
+</ul>
+<h2 id="233">2.3.3</h2>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>Upgrade code missing permissions</li>
+</ul>
+<h2 id="232">2.3.2</h2>
+<p><strong>Enhancements</strong></p>
+<ul>
+<li>
+<p>Users entering sales orders no longer require Customer modify permissions</p>
+<ul>
+<li>
+<p>The Account Status field on the customer record may be updated when an
+    order is entered and released which previously required explicit modify
+    permissions on the Customer table</p>
+</li>
+<li>
+<p>The Clever Credit permission set now includes Indirect modify permission
+    to the customer table which is elevated by the account status
+    calculation code</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="231">2.3.1</h2>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>Rename query web service CredCtrlRemainAmt to CreditCtrlRemainAmtStatus
+    (workaround for an issue upgrading BC SaaS tenants)</li>
+</ul>
+<h2 id="230">2.3.0</h2>
+<p><strong>Enhancements</strong></p>
+<ul>
+<li>
+<p>New action on setup page to perform calculation of Clever Credit statistics
+    (rather than on installation of the app)</p>
+</li>
+<li>
+<p>Ability to select different contacts on the interaction page</p>
+</li>
+<li>
+<p>Call manual release methods in Release Sales Documents codeunit</p>
+</li>
+<li>
+<p>Select/deselect highlighted entries on interaction subpage</p>
+</li>
+<li>
+<p>Different interaction types - ability to select between them on the
+    interaction page</p>
+<ul>
+<li>"Make Phone Call" label changed to "Create Interaction"</li>
+</ul>
+</li>
+</ul>
+<h2 id="2222">2.2.22</h2>
+<p><strong>Enhancements</strong></p>
+<ul>
+<li>
+<p>Dependency on Clever Dashboard app to provide dashboard measures and charts
+    on role centres</p>
+</li>
+<li>
+<p>New queries published as web services to support dashboard measures</p>
+</li>
+<li>
+<p>Before/After events in Credit Mgt. - Release codeunit</p>
+</li>
+<li>
+<p>Performance improvements to the calculation of Clever Credit statistics</p>
+</li>
+</ul>
+<h2 id="2221">2.2.21</h2>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>
+<p>Calculation of Selected Entries on Make Phone Call Page – issue when entries
+    were being selected and unselected during an interaction. The totals are not
+    being displayed on the header of the interaction card.</p>
+</li>
+<li>
+<p>Style Credit Status on Sales Header.</p>
+<ul>
+<li>
+<p>Call to SetCreditManagementStatusStyle is OnValidate of field "Credit
+    Mgt. Status Style TMN" which is never called. Make this call from
+    OnValidate of "Credit Status TMN".</p>
+</li>
+<li>
+<p>Set Style and StyleExpr properties on Sales Order page.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Enhancements</strong></p>
+<ul>
+<li>Cancelling Credit Check. User currently has no way of cancelling the request
+    for the accounts dept to review the order. Add a new action that will allow
+    the user to cancel the credit check while the status is still credit held.</li>
+</ul>
+<h2 id="2220">2.2.20</h2>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>Table IDs do not match error when clicking on Customer No. link in Stats
+    FactBox.</li>
+</ul>
+<p><strong>Enhancements</strong></p>
+<ul>
+<li>
+<p>On Before/ After Manual Release Events - Add events before/after manual
+    release in the Credit Management codeunit to allow custom subscribers to
+    override or extend the checks that are performed when an order is released.</p>
+</li>
+<li>
+<p>Allow a custom subscriber to have a custom definition of</p>
+<ul>
+<li>
+<p>Overdue Credit</p>
+</li>
+<li>
+<p>TotalOverCreditLimit</p>
+</li>
+<li>
+<p>Or just override the entire function to decide whether a particular
+    order should be credit held or not</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="2219">2.2.19</h2>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>Creating an Interaction Hangs - When using "Make Phone Call" from the to-do
+    list page.</li>
+</ul>
+<h2 id="2218">2.2.18</h2>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>Handle licenses for trials and licenses the same i.e. the definition for
+    AppIsLicensed() should be the same irrespective of the type of license.</li>
+</ul>
+<h2 id="2217">2.2.17</h2>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>
+<p>2.2.16 has two fields:</p>
+<ul>
+<li>
+<p>"Company Registration No."</p>
+</li>
+<li>
+<p>"Company Registration No. TMN"</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>We cannot publish this version to AppSource with a field without the TMN suffix.
+We will need to remove the first field and ForceSync when we upgrade.</p>
+<h2 id="2216">2.2.16</h2>
+<p><strong>Enhancements</strong></p>
+<ul>
+<li>Use Clever Config Licensing - Use new functions in Clever Config to acquire
+    the license count.</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>The date is not valid - 0D due date - Handle customer ledger entries with
+    blank due date when calculating overdue days</li>
+</ul>
+<h2 id="2215">2.2.15</h2>
+<p><strong>Enhancements</strong></p>
+<ul>
+<li>Add Company Registration No. to customer card</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>Handle field rename - Handle field rename for fields which were over 30 char
+    before. Allow for upgrading from previous versions</li>
+</ul>
+<h2 id="2214">2.2.14</h2>
+<p><strong>Enhancements</strong></p>
+<ul>
+<li>Ability to Filter Credit Held List by Credit Controller - Add Credit
+    Controller field to Credit Held list and make it available for users to
+    filter on. Flowfield from Customer table? Field that is populated on
+    validation of Bill-to Customer No?</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>
+<p>Split the License check to check whether the app is licensed and secondly
+    that the user is licensed. Changed license check when releasing/posting
+    sales documents to only check if the app is licensed as users who are not
+    credit controllers must be able to release documents.</p>
+</li>
+<li>
+<p>Customer record cannot be deleted - Customer record cannot be deleted. The
+    bug was fixed in credit management (objects), migrate the bug fix into the
+    app.</p>
+</li>
+<li>
+<p>Reset customer contact no on business relation change - When business
+    relation customer is changed, reset the original customer record and assign
+    the contact no against new customer.</p>
+</li>
+</ul>
+<h2 id="2213">2.2.13</h2>
+<p><strong>Enhancements</strong></p>
+<ul>
+<li>
+<p>Renumber into Clever Finance Range - Renumber into 9097029 - 9097128</p>
+</li>
+<li>
+<p>Rework calling Customer Statement - MS are changing how the customer
+    statement gets called. We need to copy in Clever Credit.</p>
+</li>
+<li>
+<p>Calculating Account Status When Calculating Ledger Entries - Use the routine
+    that recalculates ledger entries to update the customer's account status.
+    The only way that a customer should need to have their status updating
+    without any other trigger (releasing an order, inserting a detailed CLE) is
+    when a ledger entry moves from the not due ageing bucket to the first due
+    ageing bucket.</p>
+</li>
+<li>
+<p>Recalculate Account Status When Grace Period Changes - Changing the grace
+    period might change whether some invoices are considered overdue and
+    therefore change the status of the customer account.</p>
+</li>
+<li>
+<p>Use Events OnBefore/OnAfter Manual Reopen/Release - Replace page action
+    subscriptions with subscriptions to the OnBefore/OnAfter <strong>Manual</strong>
+    Reopen/Release events which are now available in the sales release codeunit.</p>
+</li>
+<li>
+<p>Remove Service Password Permission - Remove Service Password permission in
+    Clever Credit Setup table - it isn't required anymore and the Service
+    Password table will be removed in a future version.</p>
+</li>
+</ul>
+<h2 id="2212">2.2.12</h2>
+<p><strong>Enhancements</strong></p>
+<ul>
+<li>
+<p>Clever Credit Page Filters - Set the filter on the Credit Controller page
+    according to the following logic:</p>
+<ul>
+<li>
+<p>If the current user is the default credit controller then show customers
+    with a matching or blank credit controller code</p>
+</li>
+<li>
+<p>If the current user is not the default credit controller, filter to
+    customers with a matching credit controller code</p>
+<ul>
+<li>If no customer records fall within the filter, then remove change
+    the filter to show customers with a blank credit controller code.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Optionally Bypass Cust. Account Status Calculation - Especially for data
+    migration scenarios. Otherwise the calls the CLE. Modify cause a calculation
+    each time.</p>
+</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>
+<p>NA Build Failing - Reference to VAT Statements - Fix build for NA image -
+    otherwise installation will fail for US and CA tenants.</p>
+</li>
+<li>
+<p>Installing App Fails When CLEs with No. Customer No. are Present - Prevent
+    the app from attempting to retrieve the customer record in this case. The
+    immediate problem is for the v1 app - presumably when the it is attempting
+    to calculate customer stats when the CLE archived data is restored - but
+    this could cause a problem for any version of the app.</p>
+</li>
+<li>
+<p>A CLE without a customer no. is valid e.g. when some data compression has
+    been performed on the db.</p>
+</li>
+</ul>
+<h2 id="2211">2.2.11</h2>
+<p><strong>Enhancements</strong></p>
+<ul>
+<li>An option has been added to the My Notifications page to optionally disable
+    credit held notifications on sales documents.</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>
+<p>Fix to update the account status on the bill-to customer</p>
+</li>
+<li>
+<p>DD (Clever Document Delivery) integration using incorrect field. The actions
+    Queue/Send email on the Clever Credit page, pass a RecRef of the current
+    records to DD. Previously this page was based on the Customer record, since
+    its source table is now the Credit Control Cust. Entry TMN</p>
+</li>
+<li>
+<p>Update the actions to get the corresponding Customer entry first, and pass
+    this to DD</p>
+</li>
+</ul>
+<h2 id="2210">2.2.10</h2>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>
+<p>Update the Account Status when changing the due date on the customer ledger
+    entry, therefore if the dates are changed so an invoice is no longer overdue
+    the status on the customer card is updated.</p>
+</li>
+<li>
+<p>When an order has been released from credit held you can amend the order and
+    users can re-release if the order value is below the original amount,
+    however adding a line discount of 100% or an order value of zero means the
+    order is credit held again. This has been changed so that zero value orders
+    do not go through the credit hold process again and can be re-released.</p>
+</li>
+</ul>
+<h2 id="229">2.2.9</h2>
+<p><strong>Enhancements</strong></p>
+<ul>
+<li>Update Account Status on Sales Order Deletion - Customer account status
+    should be recalculated when a sales order is deleted e.g. if the order took
+    them over their credit limit and deleting that order takes them back under
+    again.</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>Incorrect Date used for Credit calculation - We use the Document Date of the
+    document to drive the credit calculation this should be changed to TODAY.</li>
+</ul>
+<h2 id="227">2.2.7</h2>
+<p><strong>Enhancements</strong></p>
+<ul>
+<li>
+<p>Credit Held Reason Priority - Change the order in which Credit Held Reasons
+    are assigned to orders. Reasons in order of importance:</p>
+<ul>
+<li>
+<p>Overdue (most important to show)</p>
+</li>
+<li>
+<p>Over Credit Limit</p>
+</li>
+<li>
+<p>Blocked</p>
+</li>
+<li>
+<p>Credit Hold All Documents (least important to show)</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Progress Bar for Recalculate Functions – Add a progress bar to the Recalculate X
+functions that are run On Open of the Clever Credit page.</p>
+<ul>
+<li>Calculate account status of the sell-to customer no. on release of a sales
+    document. Recalculate the status of the sell-to customer no. when a sales
+    document is released. This is for the scenario where an outstanding order
+    puts a customer over their credit limit.</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>SETFILTER on Hold Incorrect - Overdue Credit query uses a filter on the On
+    Hold field</li>
+</ul>
+<h2 id="226">2.2.6</h2>
+<p><strong>Enhancements</strong></p>
+<ul>
+<li>
+<p>Add "Account Status" option/enum card. Add this field (non-editable) to the
+    customer card and list and credit control pages. Add a function to calculate
+    the value of this field - allow it to be overridden by a subscriber.</p>
+<ul>
+<li>
+<p>Blank</p>
+</li>
+<li>
+<p>Overdue</p>
+</li>
+<li>
+<p>Over Credit Limit</p>
+</li>
+<li>
+<p>Blocked</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="2251">2.2.5.1</h2>
+<p><strong>Enhancements</strong></p>
+<ul>
+<li>Licensing from Setup Page - Allow the user to access the Clever Credit Setup
+    page, even if their session is not licensed and add an action to open the
+    license details page from there.</li>
+</ul>
+<h2 id="104">1.0.4</h2>
+<p><strong>Enhancements</strong></p>
+<ul>
+<li>
+<p>Add Credit Controller to Clever Credit Interaction - Add and populate Credit
+    Controller Code field. Use that field to set the Credit Controller Code of
+    To-Do entries.</p>
+</li>
+<li>
+<p>Enforce Licensed No. of Credit Controllers - Licensing by the number of
+    credit controllers seems a better way to manage a count of licenses for our
+    app.</p>
+</li>
+<li>
+<p>Event Subscribers - easier to read and more concise if the code was in the
+    extension objects themselves (or calls from the extension objects to
+    functions in codeunits, where appropriate).</p>
+</li>
+<li>
+<p>Code Analysis - a tidy up to stop the repository throwing up warnings from
+    the code analysis.</p>
+</li>
+<li>
+<p>UI/UX Changes - Changes to the UI, promoted actions, captions etc.
+    particularly around the Credit Held List and Manage Credit Status</p>
+</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>
+<p>Overflow Error Showing on Chart - Overflow error decimal to integer
+    attempting to drilldown on average days to pay.</p>
+</li>
+<li>
+<p>License details not visible - No way to get to licence details page from
+    Clever Credit page.</p>
+</li>
+<li>
+<p>FactBox on Customer Ledger Entries Shows Unrelated Interactions - Ensure
+    that only interactions for the given ledger entry are shown in the FactBox.</p>
+</li>
+<li>
+<p>Permissions Error on Opening Assisted Setup Page - A user who doesn't have
+    our permission set assigned attempts to open the Assisted Setup page
+    receives a permissions error that they don't have permission to read from a
+    table in our range.</p>
+</li>
+<li>
+<p>Overflow on Decimal -> Int – occurs when displaying the chart on drilldown
+    of Avg. Days to Pay for a customer</p>
+</li>
+</ul>
+<h2 id="103">1.0.3</h2>
+<p><strong>Enhancements</strong></p>
+<ul>
+<li>
+<p>Descriptions on Interactions/To-Dos - make better use of the description
+    field on interactions/to-dos to make it clearer why certain records have
+    been created.</p>
+<ul>
+<li>
+<p>Move To-Dos Description - Move the description field below the customer
+    fields on the To-Do card and after the customer fields on the To-Do
+    List. Also, show the To-Do Entry No. as the first column on the To-Do
+    list page.</p>
+</li>
+<li>
+<p>Descriptions on Interactions - Add a description field to the
+    interaction card - which should be editable. This description should
+    carry through to the to-do when automatically creating a to-do because a
+    next interaction date has been entered.</p>
+</li>
+<li>
+<p>If the description field is blank when the Next Interaction Date is
+    populated, populate the description with the text "Follow up call from
+    %1" where %1 is the date of this interaction.</p>
+</li>
+<li>
+<p>Description of To-Do’s Created from Promised Payment Date - When we
+    automatically create a to-do by entering a promised payment date on a
+    customer ledger entry, we should populate the description of that to-do
+    with "Check promised payment has been received."</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>Credit Controller Code from User ID – when creating the Credit Control code
+    ee take the first 10 characters and convert it to be the Code, if there’s
+    more than one we remove the last character and add a number. After checking
+    that a credit controller exists with the same code, copy the User ID and
+    then make it 2 characters shorter.</li>
+</ul>
+<h2 id="102">1.0.2</h2>
+<p><strong>Enhancements</strong></p>
+<ul>
+<li>License Details Page - Create new page to display the status of the licence,
+    when the trial expires and give the option to set a new date for the expiry
+    of the trial. Create a new codeunit that will be responsible for checking
+    the status of the licence when certain actions are performed in the product,
+    pop notifications to warn that the trial is about to expire etc.</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>Assigning Customers to Credit Controller – if you cancel the lookup dialog
+    box without assigning any customers to the credit controller, all the
+    customers in your customer list are assigned to the credit controller.</li>
+</ul>
+<h2 id="101">1.0.1</h2>
+<p><strong>Enhancements</strong></p>
+<ul>
+<li>
+<p>Assign Customers Action on Credit Controller List - Add a new action to the
+    Credit Controller List page. Show the Customer List (filtered to customers
+    who have a blank Credit Controller). If the OK button is used to close the
+    page iterate through the selected customers and set the Credit Controller
+    code on each of them.</p>
+</li>
+<li>
+<p>Rework Select Column on Clever Credit Interaction - The current UX works
+    nicely on the Windows client, but not on the web client.</p>
+</li>
+<li>
+<p>Print Selected Invoices from Clever Credit Interaction Screen - Add action
+    to print selected invoices from the <strong>Make Phone Call</strong> screen. This will
+    allow the user to download a PDF of the invoices and send to the customer
+    while they are on the phone to them.</p>
+</li>
+<li>
+<p>Days to Pay Chart - Add a new chart to the Clever Credit Statistics page to
+    show the trend of a customer's payments over time. Plot the number of days
+    to pay each invoice against time as a line chart. This will allow the user
+    to see at a glance the trend of customer payments over time.</p>
+</li>
+<li>
+<p>View Credit Control Interactions from CLEs (Customer Ledger Entries) - From
+    the CLEs page the user can see invoices on the account. Add a FactBox so
+    that they can see any interactions that have been made with the customer
+    where this invoice has been discussed.</p>
+</li>
+<li>
+<p>Message on Passing Credit Check - Display a message when a document passes
+    the credit check when initiated by the user from the action on the Sales
+    Order.</p>
+</li>
+<li>
+<p>Add Credit Mgt. Items to Relevant Role Centers - Add a navigation to the
+    Accountant and Business Manager profiles.</p>
+</li>
+<li>
+<p>Improvements made to the:</p>
+<ul>
+<li>
+<p>Assisted setup pages – fields moved around, clearer labeling of fields
+    and what setup is required.</p>
+</li>
+<li>
+<p>Credit Controller pages – clearer visibility of setup</p>
+</li>
+<li>
+<p>Sales Documents - highlight credit held documents, show necessary Clever
+    Credit fields to carry out sales actions correctly.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>DateFormula AssistEdits - Add assist edit functionality to dateformula
+    fields that are added to the app. Dateformulas are not easy to work with at
+    the best of times, let alone if we are assuming that the user does not have
+    any Microsoft Dynamics 365 Business Central experience.</p>
+</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>
+<p>Customer Table is empty Error – this happens when a Credit Controller is
+    linked to a current User, but no customers have bene assigned to the credit
+    controller. If the user, then tries to open the Clever Credit Page it
+    errors.</p>
+</li>
+<li>
+<p>Do Not Calculate Days to Pay for Non-Invoice Cust. Ledger Entries- They are
+    being calculated making the Clever credit statistics entries hard to read.</p>
+</li>
+<li>
+<p>Credit Control Contact Lookup - The Credit Control Contact on the customer
+    card should only lookup to person contacts that are related to the customer
+    account. Currently is it showing all contacts.</p>
+</li>
+</ul>
+<h2 id="10">1.0</h2>
+<p><strong>Enhancements</strong></p>
+<ul>
+<li>
+<p>Default Data – Providing a function to create some default data when the app
+    is installed. This is to include Aging Bands &amp; Default Credit Controller.</p>
+</li>
+<li>
+<p>Notifications for JIT (Just in Time – prompt accordingly when setup needs to
+    be done, rather than as soon as the App is installed) Setup.</p>
+<ul>
+<li>
+<p>Notification to perform global setup when the app is first installed</p>
+</li>
+<li>
+<p>Link to open Credit Control page</p>
+</li>
+<li>
+<p>Notification to create some credit controllers when Credit Control page
+    is opened.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Assisted Setup – Assisted setups have been created to help guide users
+    through Clever Credit setup and creating Credit Controllers.</p>
+</li>
+<li>
+<p>Populate Credit Controller Filter on the Clever Credit Page – if you are
+    setup as a credit controller the Clever Credit list will filter customers to
+    those you correspond to. If the current Credit Controller is the default
+    credit controller show customer records that have a blank credit controller
+    value.</p>
+</li>
+<li>
+<p>Unassign Customers on Delete – Customer should be unassigned from a credit
+    controller when they are deleted.</p>
+</li>
+<li>
+<p>Refactor Codeunits - Change Clever Credit to be split into several smaller
+    codeunits.</p>
+</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../User%20Guide/16.%20Adding%20Notes/" title="Adding Notes" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Adding Notes
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../FAQ/" title="FAQs" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                FAQs
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.2d1db4bd.min.js"></script>
+      <script src="../../assets/javascripts/bundle.6627ddf3.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.5eca75d3.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
