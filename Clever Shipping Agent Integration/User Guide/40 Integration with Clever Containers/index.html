@@ -14,7 +14,7 @@
     
     
       
-        <title>Warehouse Shipments - Clever Dynamics</title>
+        <title>Integration with Clever Containers - Clever Dynamics</title>
       
     
     
@@ -88,7 +88,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Warehouse Shipments
+              Integration with Clever Containers
             
           </span>
         </div>
@@ -1567,6 +1567,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21%20Delivery%20Instructions/" class="md-nav__link">
+        Delivery Instructions
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -1623,6 +1635,18 @@
             
   
   
+  
+    <li class="md-nav__item">
+      <a href="../39%20Warehouse%20Shipments/" class="md-nav__link">
+        Warehouse Shipments
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
     
   
   
@@ -1633,7 +1657,7 @@
       
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Warehouse Shipments
+        Integration with Clever Containers
       </a>
       
     </li>
@@ -5280,76 +5304,19 @@
               
                 
                 
-                  <h1>Warehouse Shipments</h1>
+                  <h1>Integration with Clever Containers</h1>
                 
-                <p>When a warehouse shipment is created a number of fields are defaulted from the
-setup but can be changed as required. These are on the shipping section of the
-warehouse shipment, at the bottom of the page.</p>
-<p><img alt="" src="../media/40-01.png" /></p>
-<p>The <strong>External Document No</strong> is automatically populated from the source document
-for the Warehouse, this is no different from Standard Business Central. This
-reference, if edited, is password to the consignment via the posted shipment and
-will appear on most shipping agent's consignment labels so that the recipient
-knows which purchase order etc. to book in against.</p>
-<p><strong>Shipment Date</strong> is another standard field but will be the date that the
-consignment is expected to be shipped on, note that the consignment submission
-will fail if this is in the past.</p>
-<p>The <strong>Export</strong> flag is read only and is automatically set if the Country/Region
-code the shipment is to be consigned to is not blank or matching the
-Country/Region Code of the location its being shipped out of.</p>
-<p>The <strong>Shipment Method Code</strong> needs to be set for Export consignment only as it
-determines if duty is payable by the organisation consigning (i.e. you) or
-recipient of the consignment (i.e. your customer). This is indicated by the Duty
-not Paid flag against each Shipment method on the Shipment Method table. The
-Shipment Method will default from the source document on the first line of the
-warehouse shipment and cannot be different per line.</p>
-<p>The <strong>Shipping Agent Code</strong> and the <strong>Shipping Agent Service Code</strong> will be set
-to the default service when the warehouse shipment is created, unless a specific
-one was specified on the sales order.</p>
-<p>The default will depend on if the Export flag is set to yes, if so, the
-International Default service will be used rather than the Domestic default.</p>
-<p><strong>Weight to Ship</strong> is calculated by taking the Gross Weight from the item card
-for each item and multiplying by the Qty. to Ship (Base) on each line, then
-adding the result up for all the warehouse shipment lines. This means that this
-is only populated when a pick is registered for warehouses where picking is
-being used.</p>
-<p>Similarly, the <strong>Volume to Ship</strong> is calculated using the Cubage field from the
-Item Unit of Measure table, multiplied by the quantity to ship on each line.
-Again, this will only be populated once picks have been registered if they are
-in use.</p>
-<p>The <strong>Shipping Agent Packaging Code</strong> defaults from either the Shipping Agent
-Service if set or the Shipping Agent Integration setup if not.</p>
-<p>The <strong>Shipping Classification</strong> will automatically be set dependent on the
-lowest classification of items on the warehouse shipment. Shipment
-classifications are only needed for Dangerous Goods declarations so can be blank
-if you are not consigning hazardous goods. This will be automatically default to
-the Warehouse Shipment line with the lowest priority.</p>
-<p>The <strong>No. of Packages</strong> field defaults to zero and needs to be entered as the
-number of packages which each need a shipping label, you cannot exceed the
-number specified in the Max. Expended Packages field on the Shipping Agent
-Integration setup screen so that users do not mistype quantities and consign
-excessive packages. This is the only <strong>mandatory field</strong> for any consignment,
-you will get an error if you try to post the shipment with this left as zero for
-a shipping agent and service with integration enabled.</p>
-<p><img alt="" src="../media/40-02.png" /></p>
-<p>The <strong>Create Consignment</strong> field will always be set to on if the Shipment Agent
-and Service selected are configured as ‘integrated’. When set to this, it
-automatically creates a consignment for the items being shipped when the
-warehouse shipment is posted.</p>
-<p>The <strong>Submit Consignment</strong> defaults to the ‘Submit Consignment’ setting in the
-Shipping Agent Card. This will automatically submit the created consignment to
-the Shipping Agent, and if successful, print the package labels. Plus, when
-configured, send an email to the consignment recipient, after the warehouse
-shipment is posted. This should be the default setting once the integration is
-working smoothly as it streamlines the shipment process.</p>
-<p>The <strong>Open Consignment After Posting</strong> option, automatically opens the
-consignment page and displays the consignment that has been created from this
-warehouse shipment after the warehouse shipment has been posted. This is useful
-if not auto submitting because a setting needs to be edited on the consignment
-itself. Remember the Warehouse Shipment page will close when fully posted, this
-option opens the consignment page as an alternative rather than returning you to
-the Warehouse Shipment List or the Sales Order.</p>
-<p>Note all of these actions happen for both ‘Ship’ and ‘Ship &amp; Invoice’ postings.</p>
+                <p>This Shipping Agent Integration Extension can also utilise the functionality
+contained within the Clever Containers Extension as some Shipping Agents, like
+DPD for example, require that you enter in some additional Container detail when
+shipping internationally.</p>
+<p><strong>Note</strong> - Please refer to the ‘Clever Containers’ documentation for more
+information.</p>
+<p>When Container Tracking entries have been added against a Warehouse Shipment and
+a Consignment is generated when it is shipped, the Container entries will be
+automatically copied across and can be viewed against the ‘Consignment Lines’ as
+shown in the example below.</p>
+<p><img alt="" src="../media/b88ab33e6d8819a1c26110c305c2ff36.png" /></p>
                 
               
               
@@ -5368,7 +5335,7 @@ the Warehouse Shipment List or the Sales Order.</p>
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../31%20Custom%20Addresses/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../39%20Warehouse%20Shipments/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -5377,7 +5344,7 @@ the Warehouse Shipment List or the Sales Order.</p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              Custom Addresses
+              Warehouse Shipments
             </div>
           </div>
         </a>
