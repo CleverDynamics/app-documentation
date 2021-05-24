@@ -5306,13 +5306,37 @@
                 
                   <h1>Shipment Methods</h1>
                 
-                <p>If you intend to consign shipments internationally and therefore export, the
-system will need to understand if the consignment is to be sent Duty Paid or if
-Duty is to be collected from the recipient.</p>
-<p>This is done by setting the <strong>Duty not Paid</strong> flag against the different
-Shipment Methods. Note that this should be set on where the Duty has to be
-collected from the recipient of the consignment.</p>
-<p><img alt="" src="../media/07-01.png" /></p>
+                <p>Some additional fields have been added to the ‘Shipment Methods’ Page which need
+to be considered when setting up Clever Shipping Agent Integration. All of the
+additional fields will be used when processing International Consignments.</p>
+<p><img alt="" src="../media/7dd85845054d013d70480a582b718008.png" /></p>
+<p><strong>Duty Paid By Field:</strong></p>
+<p>When selecting a Shipment Method on a Consignment, this field will be used to
+define who is responsible for paying the Duty amounts for the Consignment. The
+options to select from are:</p>
+<p><strong>Sender</strong> – The Duty amounts will be paid by the Sender.</p>
+<p><strong>Recipient</strong> – The Duty amounts will be paid by the recipient.</p>
+<p><strong>Third Party</strong> – The Duty amounts will be paid by a Third Party. The account
+number for the third party should be defined in the ‘Duty Account No’ field
+against the ‘Shipping Agent’.</p>
+<p>NOTE - The account number defined here should be the account number that Customs
+will use to charge the duty amounts against rather than an account number from
+Business Central. <img alt="" src="../media/151ceba4c98dec5a74db927ec5ae307a.png" /></p>
+<p><strong>Shipping Paid By Field:</strong></p>
+<p>When selecting a Shipment Method on a Consignment, this field will be used to
+define who is responsible for paying the Shipment Charges for the Consignment.
+The options to select from are:</p>
+<p><strong>Sender</strong> – The Shipment Charges will be paid by the Sender.</p>
+<p><strong>Recipient</strong> – The Shipment Charges will be paid by the recipient.</p>
+<p><strong>Third Party</strong> – The Shipment Charges will be paid by a Third Party. The
+account number for the third party should be defined in the ‘Shipping Account
+No’ field against the ‘Shipping Agent’.</p>
+<p>NOTE - The account number defined here should be the account number that Customs
+will use to charge the shipment amounts against rather than an account number
+from Business Central. <img alt="" src="../media/f3eeccf2aa20cb2e4ac7512e79124390.png" /></p>
+<p><strong>Terms of Trade Code Field:</strong></p>
+<p>The value defined into this field will be used on Consignment Submissions to
+Customs by the Shipping Agent.</p>
                 
               
               
