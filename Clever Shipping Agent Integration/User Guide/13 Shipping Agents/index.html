@@ -5306,61 +5306,163 @@
                 
                   <h1>Shipping Agents</h1>
                 
-                <p>This is a further setup that you need to complete for each shipping agent.</p>
-<p>First find the Shipping Agent list, then find the Shipping Agent you want to
-configure integration for, you may have to create it if it doesn’t already
-exist.</p>
-<p>On this page you should also indicate your default shipping agent, this is the
-one that warehouse shipments will default to if no specific agent is specified
-on the sales order.</p>
-<p><img alt="" src="../media/13-01.png" /></p>
-<p>Once you have selected a default (you can only have one), then select
-Integration Setup from the action bar.</p>
+                <p>Some additional fields have been added against ‘Shipping Agents’ which need to
+be completed in order to use Clever Shipping Agent Integration. These fields
+should be completed as required.</p>
+<p><img alt="" src="../media/706d1c881e897495baa592d98bc92204.png" /></p>
+<table>
+<thead>
+<tr>
+<th>NOTE – The ‘Shipping Account No’ and the ‘Duty Account No’ fields are utilised by the ‘Shipment Method’. Please refer to this lesson for more information.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>EORI No Field:</strong></p>
+<p>In this field, you can choose to define the EORI number (Economic Operator
+Registration and Identification Number) you want to supply to the Shipping
+Agent. This would normally be your own EORI number i.e., the Consignment Sender,
+but it could also be used when you are shipping on behalf of other people.</p>
+<table>
+<thead>
+<tr>
+<th>NOTE – The EORI Number can also be defined in the ‘Company Information’ Page but it will be overwritten by this value if populated.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Tax Identification No Field:</strong></p>
+<p>In this field, you can choose to define the Tax/VAT number you want to supply to
+the Shipping Agent. This would normally be your own Tax/VAT number i.e., the
+Consignment Sender, but it could also be used when you are shipping on behalf of
+other people.</p>
+<table>
+<thead>
+<tr>
+<th>NOTE – The Tax/VAT Number can also be defined in the ‘Company Information’ Page but it will be overwritten by this value if populated.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Default Agent Field:</strong></p>
+<p>In this field, you can tick the ‘Default Agent’ field against your default
+shipping agent. Once ticked, this will then be used by default on Warehouse
+Shipments when a Shipping Agent has not been defined on the Sales Order.</p>
+<p><strong>Integration Setup</strong></p>
+<p>Once all the fields have been completed as required, you should then select the
+‘Integration Setup’ option from the Ribbon.</p>
 <p><img alt="" src="../media/13-02.png" /></p>
-<p>If you haven’t accessed this before you will get an empty page. Click the +
-symbol at the top of the page to create a record for this Shipping Agent.</p>
-<p>Then we need to complete the following sections and fields</p>
-<p><strong>General</strong></p>
-<p><strong>Shipping Agent Code</strong>: This should have been automatically completed as the
-shipping agent you had selected when you selected Integration Setup on the
-Shipping Agent list.</p>
-<p><strong>Account No.</strong>: Enter your account number with this shipping agent</p>
-<p><strong>Integration Interface</strong>: Select the record from the Interfaces list that
-you’ve setup for this Shipping Agent</p>
-<p><strong>Submit Consignment on Warehouse Posting</strong>: Set this to ON if you want a
-consignment not just created when a Warehouse Shipment is posted but submitted
-to the shipping agent automatically as well. This will only happen where this
-Shipping Agent is selected on the Warehouse Shipment.</p>
-<p><strong>Open Consignment After Posting:</strong> This option makes the Consignment page open
-with the consignment that has been created (and optionally submitted, see above)
-after the warehouse shipment is posted.</p>
-<p><strong>Shipping</strong></p>
-<p><strong>Shipper ID:</strong> This is your unique shipping point assigned to you by the
-shipping agent, it defines where they have to collect from.</p>
-<p><strong>Shipping Agent Integration Code:</strong> Again, select the Shipping Agent you are
-Integrating to from the options</p>
-<p>After setting the Shipping Agent Integration Code you will see the Packaging and
+<table>
+<thead>
+<tr>
+<th>NOTE - If you are setting up a Shipping Agent for the first time, you will need to click the ‘New’ button in order to create a new ‘Shipping Agent Card’ for the Shipping Agent.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><img alt="" src="../media/9899d863d3db79aefbb9697bc0ad6ead.png" /></p>
+<p><strong>General Fast Tab</strong></p>
+<p><img alt="" src="../media/293ee0830ea04b9fd29c961dc8582224.png" /></p>
+<p><strong>Shipping Agent Code Field</strong>:</p>
+<p>This should have been automatically completed as the shipping agent you had
+selected from the Shipping Agent List.</p>
+<p><strong>Shipping Agent Name Field:</strong></p>
+<p>This field is un-editable and will be automatically populated with the name of
+the Shipping Agent you selected from the Shipping Agent List.</p>
+<p><strong>Account No. Field</strong>:</p>
+<p>In this field, enter in your account number for the shipping agent.</p>
+<p><strong>Integration Interface Field</strong>:</p>
+<p>Select the record from the Interfaces list that you have setup for the Shipping
+Agent.</p>
+<p><strong>Check Items on Document Release Field:</strong></p>
+<p>If this field is enabled then when releasing a document, Business Central will
+check the setup of the item to ensure that all the required fields have been
+populated. If they haven’t, then an error will appear:</p>
+<p><img alt="" src="../media/f47643ff41dcd7399b27f0de007d6e99.png" /></p>
+<p><strong>Submit Consignment on Warehouse Posting Field</strong>:</p>
+<p>Set this to ON if you want a consignment not just created when a Warehouse
+Shipment is posted but submitted to the shipping agent automatically as well.
+This will only happen where this Shipping Agent is selected on the Warehouse
+Shipment.</p>
+<p><strong>Open Consignment After Posting Field:</strong></p>
+<p>This option makes the Consignment page open with the consignment that has been
+created (and optionally submitted, see above) after the warehouse shipment is
+posted.</p>
+<p><strong>Document Upload Process Type:</strong></p>
+<p>This field relates to the uploading of documents against a Consignment. Please
+refer to this section for more information.</p>
+<p><strong>Shipping FastTab</strong></p>
+<p><img alt="" src="../media/517d56b0851cf1959c1f09377cc3935c.png" /></p>
+<p><strong>Shipper ID Field:</strong></p>
+<p>This is your unique shipping point assigned to you by the shipping agent, it
+defines where they have to collect from.</p>
+<p><strong>Shipping Agent Integration Code Field:</strong></p>
+<p>Again, select the Shipping Agent you are Integrating to from the options. After
+setting the Shipping Agent Integration Code you will see the Packaging and
 Labels sections of the page are populated with the options for that Shipping
 Agent automatically. These can be changed if required.</p>
-<p><strong>Label Code:</strong> Select the format of the shipping label you want to use for this
-shipping agent from the list of possible options. This will depend on the
-printer that you are planning to use to print the shipping labels.</p>
+<p><strong>Label Code Field:</strong></p>
+<p>Select the format of the shipping label you want to use for this shipping agent
+from the list of possible options. This will depend on the printer that you are
+planning to use to print the shipping labels.</p>
 <p>Which label code you require depends on the printer you are going to use to
 print your shipping labels. While PDF will work for standard ‘laser printer’
 type printers, Zebra’s ZPL or EPL is better for use with their specialist label
 printers. Eltron v2 is used on older label printers from companies now also
 owned by Zebra. To be sure you select the right option please consult your
 printer documentation or your shipping agent.</p>
-<p><strong>Packaging Code</strong>: Again, select the default packaging code you intend to use
-with this shipping agent from the list of possible options.</p>
-<p>While there are a long list of shipping agent specified options for most
-shipping agents, its common to select the ‘Your Packaging’ option if you consign
-the packages in your own packaging.</p>
-<p><strong>Weight Unit of Measure</strong>: Select the unit of measure that will be used to
-submit consignments to the Shipping Agent. Usually KG.</p>
-<p><strong>Max. Expected Packages</strong>: Enter the maximum number of expected packages you
-will be submitting via the API. This is to prevent typing errors resulting in
-excessive consignments where for instance mistyping 2 sends 22 packages.</p>
+<p><strong>Packaging Code Field</strong>:</p>
+<p>Again, select the default packaging code you intend to use with this shipping
+agent from the list of possible options. While there are a long list of shipping
+agent specified options for most shipping agents, its common to select the ‘Your
+Packaging’ option if you consign the packages in your own packaging.</p>
+<p><strong>Weight Unit of Measure Field</strong>:</p>
+<p>Select the unit of measure that will be used to submit consignments to the
+Shipping Agent. Usually KG.</p>
+<p><strong>Max. Expected Packages Field</strong>:</p>
+<p>Enter the maximum number of expected packages you will be submitting via the
+API. This is to prevent typing errors resulting in excessive consignments where
+for instance mistyping 2 sends 22 packages.</p>
+<p><strong>Packaging FastTab</strong></p>
+<p><strong><img alt="" src="../media/cd4f2a40e3876e2402b9a26ebc7ca3f3.png" /></strong></p>
+<p>Please refer to this section for more information. <a href="https://docs.cleverdynamics.com/Clever%20Shipping%20Agent%20Integration/User%20Guide/14%20Packaging%20Definitions/">Packaging
+Definitions</a></p>
+<p><strong>Labels FastTab</strong></p>
+<p><strong><img alt="" src="../media/875cb864ad3481205895f7944aef8f2e.png" /></strong></p>
+<p>Please refer to this section for more information. <a href="https://docs.cleverdynamics.com/Clever%20Shipping%20Agent%20Integration/User%20Guide/15%20Label%20Definitions/">Label
+Definitions</a></p>
+<p><strong>Documents FastTab</strong></p>
+<p><strong><img alt="" src="../media/5135cd2aed77e060c69ab3e48d42ad56.png" /></strong></p>
+<p>The options available on this FastTab all relate to the uploading of documents
+against a Consignment. Please refer to this section for more information.</p>
+<p><strong>Ribbon Options</strong></p>
+<p>The following options are all available to select under the ‘Related’ Menu.</p>
+<p><img alt="" src="../media/8bad12291abd0d0acb3d04adcb67f524.png" /></p>
+<p><strong>Services Option:</strong></p>
+<p>Please refer to this section for more information. <a href="https://docs.cleverdynamics.com/Clever%20Shipping%20Agent%20Integration/User%20Guide/16%20Integration%20Services/">Integration
+Services</a></p>
+<p><strong>Parameters Option:</strong></p>
+<p>Please refer to this section for more information. <a href="https://docs.cleverdynamics.com/Clever%20Shipping%20Agent%20Integration/User%20Guide/16.5%20Specific%20Parameters/">Specific
+Parameters</a></p>
+<p><strong>Document Types Option:</strong></p>
+<p>The options available here all relate to the uploading of documents against a
+Consignment. Please refer to this section for more information.</p>
                 
               
               
