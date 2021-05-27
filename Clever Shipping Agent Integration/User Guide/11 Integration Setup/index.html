@@ -5308,13 +5308,9 @@
                 
                 <p>Next, we need to setup the link to Clever Dynamics Azure based web service that
 enables the different agent integrations that are supported.</p>
-<p>Search for ‘Integration Setup’</p>
-<p>Create a new record if one does not exist and set the fields on the page as
-follows</p>
-<p><strong>EndPoint</strong>: sai102.cleverdynamics.com</p>
-<p>Note the 102 is the version of the endpoint which we increment when adding or
-changing a specific shipping agent interface. You may be asked to enter a later
-number than sai102.</p>
+<p>Search for ‘Integration Setup’ and complete the fields as follows:</p>
+<p><img alt="" src="../media/41bdec3e0f03e5ca84913ab16881f7ca.png" /></p>
+<p><strong>EndPoint</strong>: <a href="https://api.cleverdynamics.com/SAI/2.4.0/ProcessMessage">https://api.cleverdynamics.com/SAI/2.4.0/ProcessMessage</a></p>
 <p><strong>Sender ID:</strong> CLEVER_DYNAMICS</p>
 <p><strong>File Delimiter:</strong> , (Comma)</p>
 <p><strong>Modification Offset (Seconds):</strong> 2</p>
@@ -5324,10 +5320,10 @@ messages fail. If you require this then set the following fields</p>
 <p>Notification Type : SMTP</p>
 <p>Notification Sender : the email address these messages are sent from</p>
 <p>Notification Recipients : the email addresses these messages are sent to</p>
-<p><img alt="" src="../media/11-01.png" /></p>
 <p><strong>Platforms &amp; Platform Versions</strong></p>
 <p>While still on the Integration Setup page select the Navigate, Platforms option
 from the action bar.</p>
+<p><img alt="" src="../media/5a7d550ee8cf8bcc4bf251594c14e65b.png" /></p>
 <p>You should immediately see a page similar to the screenshot below. The records
 for the different shipping agents have been created automatically when the
 Integration Setup page was completed. Seeing these records means your Business
@@ -5338,7 +5334,12 @@ published by Clever Dynamics.</p>
 select Actions, Versions from the action bar and see the API versions we support
 for each company.</p>
 <p><img alt="" src="../media/11-03.png" /></p>
-<p>These versions will allow you to seamlessly ‘upgrade’ when the different shipping agents change the specification of the API the Clever Shipping Agent Integration communicates with. As those API’s change they should increment the version, Clever Dynamics will publish a version supporting their new version, this integration will pull down the option of that new version and then you can test and go with no downtime.</p>
+<p>These versions will allow you to seamlessly ‘upgrade’ when the different
+shipping agents change the specification of the API the Clever Shipping Agent
+Integration communicates with. As those API’s change they should increment the
+version, Clever Dynamics will publish a version supporting their new version,
+this integration will pull down the option of that new version and then you can
+test and go with no downtime.</p>
                 
               
               
