@@ -5307,36 +5307,68 @@
                   <h1>Interfaces</h1>
                 
                 <p>Now we are going to configure the interface to the specific shipping agent or
-agents that you wish to communicate with. This process needs to be repeated for
-each Shipping Agent API that you wish to communicate with.</p>
-<p>Search and open the Interfaces page.</p>
-<p>Create new record using the +New option</p>
-<p>Complete the General tab with the Code and Name you want for this integration.</p>
-<p>In the <strong>Connectivity</strong> Tab</p>
-<p><strong>Endpoint</strong>: This is the production web service address of this integration</p>
-<p><strong>Use Test Endpoint</strong>: Used to switch between the test and production endpoints,
-when this is set to yes, any messages will be sent to the test endpoint.</p>
-<p><strong>Test Endpoint</strong>: This is the web service address of the shipping agents test
-web service. This is an optional field.</p>
-<p><strong>Platform Code</strong>: From the dropdown select the Platform code for the shipping
-agent you are integrating with</p>
-<p><strong>Platform Version</strong>: Select the Platform Version you want to use from this
-Platform Code, there may well only be one option</p>
-<p><img alt="" src="../media/12-01.png" /></p>
-<p>Note: The fields in the Discounts &amp; Shipping tab are not used for Clever
-Shipping Agent Integration. This page is part of the Clever Integration
-extension and these fields are for where interfaces are defined to other systems
-such as Ecommerce Systems.</p>
-<p><strong>Extra Credentials</strong></p>
-<p>Some shipping agents require more credentials than a simple username and
-password (we’re looking at you FedEx). For those we need to select Navigate,
-Credentials from the Interface Card page.</p>
-<p><img alt="" src="../media/12-02.png" /></p>
-<p>Once open you should see a record with no Code or Description with the username
-and obscured password from the Interface Card page already there. You can then
-add further entries as needed by the particular service you are integrating
+agents that you wish to communicate with. A separate record will need to be
+created for all the different Shipping Agent API’s that you wish to communicate
 with.</p>
-<p><img alt="" src="../media/12-03.png" /></p>
+<p><img alt="" src="../media/eeaf4ae7df752aa8ae7a80153343d4b2.png" /></p>
+<p><strong>Endpoint Field</strong>:</p>
+<p>This field will need to be populated with the production web service address
+used for this Shipping Agent.</p>
+<p>On the ‘Interface’ card, complete the fields as required.</p>
+<p><img alt="" src="../media/29789955f3936ed9fc8de848894b3acf.png" /></p>
+<p>On the ‘General’ FastTab, enter in the ‘Code’ and ‘Name’ fields with the
+Shipping Agent details.</p>
+<p>On the ‘Connectivity’ FastTab, complete the fields as required:</p>
+<p><strong>Use Test Endpoint Field</strong>:</p>
+<p>Used to switch between the test and production endpoints, when this is set to
+yes, any messages will be sent to the test endpoint.</p>
+<p><strong>Test Endpoint Field</strong>:</p>
+<p>This is the web service address of the shipping agents test web service. This is
+an optional field.</p>
+<p><strong>Platform Code Field</strong>:</p>
+<p>From the dropdown select the Platform code for the shipping agent you are
+integrating with.</p>
+<p><strong>Platform Version Field</strong>:</p>
+<p>Select the Platform Version you want to use from this Platform Code, there may
+well only be one option.</p>
+<table>
+<thead>
+<tr>
+<th>Note - The fields in the ‘Discounts &amp; Shipping’ FastTab are not used for Clever Shipping Agent Integration. This page is part of the Clever Integration App and these fields are for where interfaces are defined to other systems such as Ecommerce Systems.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Related Menu Options</strong></p>
+<p><img alt="" src="../media/29c61c037fe2ba0d3a7252eee03b2254.png" /></p>
+<p><strong>Credentials Option:</strong></p>
+<p>Some shipping agents require more credentials than a simple username and
+password and this information should be entered onto the ‘Interface Credentials’
+Page.</p>
+<table>
+<thead>
+<tr>
+<th>Note – The first entry will be automatically created for you when the ‘User Name’ and ‘Password’ are entered on the ‘Interface’ Card.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Examples of the additional information required for each Shipping Agent is shown
+below:</p>
+<p><strong>FedEx:</strong></p>
+<p><img alt="" src="../media/cac751c936aa4f69d5e16c02e271200b.png" /></p>
+<p><strong>DPD:</strong></p>
+<p>The ‘Credential Value’ used for the ‘GEOCLIENT’ entry should be in the format of
+account/xxxxxx where the xxxxxx is your six digit account number.</p>
+<p><strong><img alt="" src="../media/d45bb0c624a465d2beba49f2d43599f5.png" /></strong></p>
                 
               
               
